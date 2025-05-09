@@ -21,7 +21,7 @@ export default function ChatBot() {
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const chatWindowRef = useRef<HTMLDivElement>(null);
-  const MAX_MESSAGE_LENGTH = 500;
+  const MAX_MESSAGE_LENGTH = 250;
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
