@@ -1,31 +1,40 @@
 {
   "testimonials": [
     {
-      "id": 1,
-      "name": "John Smith",
-      "role": "Senior Engineering Manager",
-      "company": "Tech Corp",
-      "image": "/images/testimonials/john-smith.jpg",
-      "testimonial": "Rohan is an exceptional developer who consistently delivers high-quality work. His attention to detail and problem-solving skills have been invaluable to our team.",
-      "linkedin": "https://linkedin.com/in/johnsmith"
+      "id": 4,
+      "name": "Bilal Shafiq",
+      "role": "Sr Manager, Software Engineering",
+      "company": "McGraw Hill",
+      "testimonial": "Rohan is an outstanding professional I had the pleasure of working with at McGraw Hill. He excels in both web and mobile development, demonstrating versatility across multiple roles. Rohan's technical expertise and analytical skills make him a valuable asset to any team. His great communication and collaborative nature enhance his effectiveness. I would gladly work with Rohan again and highly recommend him for any professional opportunity.",
+      "linkedin": "https://www.linkedin.com/in/bilal-shafiq-4a24244/",
+      "experience": "mcgraw-hill-education"
     },
     {
-      "id": 2,
-      "name": "Sarah Johnson",
-      "role": "Product Director",
-      "company": "Innovate Inc",
-      "image": "/images/testimonials/sarah-johnson.jpg",
-      "testimonial": "Working with Rohan was a pleasure. His technical expertise and ability to communicate complex ideas clearly made him an invaluable asset to our project.",
-      "linkedin": "https://linkedin.com/in/sarahjohnson"
+      "id": 5,
+      "name": "Matthew Hamburger",
+      "role": "Expert in Flutter",
+      "company": "McGraw Hill",
+      "testimonial": "Rohan always had a great attitude on our project and quickly worked thru the challenging iOS features we worked on.",
+      "linkedin": "https://www.linkedin.com/in/matthew-hamburger-0277092/",
+      "experience": "mcgraw-hill-education"
     },
     {
-      "id": 3,
-      "name": "Michael Chen",
-      "role": "CTO",
-      "company": "StartupX",
-      "image": "/images/testimonials/michael-chen.jpg",
-      "testimonial": "Rohan's contributions to our platform were instrumental in our success. His innovative solutions and dedication to quality set a high standard for the team.",
-      "linkedin": "https://linkedin.com/in/michaelchen"
+      "id": 6,
+      "name": "Hemachandsai Atluri",
+      "role": "Sr. Principal Engineer",
+      "company": "McGraw Hill",
+      "testimonial": "I had the pleasure of working closely with Rohan Dave, and I can confidently say that he is one of the most passionate, self-driven, and innovative professionals I have encountered. He is technically very sound and has good knowledge over various technologies. Throughout our time working together, Rohan played a crucial role in shaping our product, consistently bringing fresh ideas and solutions to the table. His technical skills are exceptional, particularly in backend and iOS development, as well as sound knowledge over cloud services(AWS). He's attentive to even the minutest detail in turn shaping towards a well structure and maintainable codebase. Rohan's ability to think outside the box and his relentless drive to improve and innovate were instrumental in the success of our project. His dedication to his work and his proactive approach ensured that we always stayed ahead of the curve. He is not just a team player but a potential future leader. His enthusiasm and commitment are truly infectious, making him an invaluable asset to any team. I highly recommend Rohan for any role that demands creativity, dedication, and a forward-thinking mindset combined with technical excellency!",
+      "linkedin": "https://www.linkedin.com/in/hemachandsai-atluri-37449282/",
+      "experience": "mcgraw-hill-education"
+    },
+    {
+      "id": 7,
+      "name": "Matt Abraham",
+      "role": "Director of Customer Success",
+      "company": "Silverchair",
+      "testimonial": "Rohan has been critical to the success we've had in building out app functionality. Beyond the major task of picking up an app that was built by someone else, he showed great leadership when it mattered. His contributions have been invaluable to our team's success.",
+      "linkedin": "https://www.linkedin.com/in/matthew-abraham-a508b1132/",
+      "experience": "silverchair"
     }
   ]
 }
