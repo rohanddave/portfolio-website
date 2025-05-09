@@ -8,7 +8,6 @@ import LearningSection from "@/components/LearningSection";
 import HobbiesSection from "@/components/HobbiesSection";
 import ChatBot from "@/components/ChatBot";
 import Hero from "@/components/Hero";
-import FoundingExperience from "@/components/FoundingExperience";
 
 export default function Home() {
   return (
@@ -16,7 +15,6 @@ export default function Home() {
       <Navigation />
       <ChatBot />
       <Hero />
-      <FoundingExperience />
 
       {/* Experience Section */}
       <section

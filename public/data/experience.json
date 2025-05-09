@@ -44,19 +44,22 @@
     },
     {
       "company": "TheFridayCompany",
-      "role": "Software Engineer",
+      "role": "Founder & Founding Engineer",
       "period": "Sept 2022 - Aug 2023",
       "location": "Mumbai, India",
       "description": "Full-stack and mobile development focusing on turf booking system",
       "logo": "/images/experience/tfc.png",
       "relevant_achievements": [
+        "Led a team of 12, architecting 6+ software products while ensuring scalability and quality standards",
+        "Drove Agile/Scrum processes using Jira and Confluence, increasing team productivity by 40%",
         "Automated turf booking and recording with 2 Flutter apps and ReactJS admin panel, ranking top 25 in sports apps",
         "Enhanced data protection via Firebase authentication with Google and OTP OAuth logins, increasing user acquisition by 25%",
-        "Increased user engagement by 40% through real-time notification delivery via Firebase Cloud Messaging",
-        "Optimized turf discovery by 30% through search and filtering via Google/Apple Maps API",
-        "Enhanced transaction flow by integrating with Stripe API, increasing revenue by 25%"
+        "Increased user engagement by 40% through real-time notification delivery via Firebase Cloud Messaging"
       ],
       "all_achievements": [
+        "Led a team of 12, architecting 6+ software products while ensuring scalability and quality standards",
+        "Drove Agile/Scrum processes using Jira and Confluence, increasing team productivity by 40%",
+        "Reviewed code quality, adhering to best practices and performance standards",
         "Automated turf booking and recording with 2 Flutter apps and ReactJS admin panel, ranking top 25 in sports apps",
         "Enhanced data protection via Firebase authentication with Google and OTP OAuth logins, increasing user acquisition by 25%",
         "Increased user engagement by 40% through real-time notification delivery via Firebase Cloud Messaging",
