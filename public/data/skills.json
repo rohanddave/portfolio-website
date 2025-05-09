@@ -1,34 +1,184 @@
 {
   "skills": [
     {
-      "name": "Full-Stack Development",
+      "name": "Backend Development",
       "level": 90,
-      "description": "Proficient in modern web technologies and frameworks"
+      "description": "Expert in server-side development and distributed systems",
+      "subSkills": [
+        {
+          "name": "TypeScript",
+          "level": 92,
+          "description": "Strong typing, advanced type system, and enterprise-scale applications"
+        },
+        {
+          "name": "Java",
+          "level": 88,
+          "description": "Spring Boot, microservices, and enterprise application development"
+        },
+        {
+          "name": "Golang",
+          "level": 85,
+          "description": "High-performance systems, concurrent programming, and microservices"
+        },
+        {
+          "name": "Node.js",
+          "level": 90,
+          "description": "Express.js, NestJS, and scalable backend services"
+        },
+        {
+          "name": "System Design",
+          "level": 88,
+          "description": "Distributed systems, microservices architecture, and scalability patterns"
+        },
+        {
+          "name": "Database Systems",
+          "level": 90,
+          "description": "PostgreSQL, MongoDB, Redis, and database optimization"
+        }
+      ]
     },
     {
-      "name": "Cloud Architecture",
+      "name": "Frontend Development",
+      "level": 92,
+      "description": "Expert in modern web development and user interface design",
+      "subSkills": [
+        {
+          "name": "React",
+          "level": 95,
+          "description": "Advanced hooks, state management, and performance optimization"
+        },
+        {
+          "name": "Next.js",
+          "level": 92,
+          "description": "Server-side rendering, static generation, and full-stack applications"
+        },
+        {
+          "name": "TypeScript",
+          "level": 90,
+          "description": "Type safety, interfaces, and advanced type system implementation"
+        },
+        {
+          "name": "HTML5 & CSS3",
+          "level": 88,
+          "description": "Semantic markup, responsive design, and modern CSS features"
+        },
+        {
+          "name": "JavaScript",
+          "level": 90,
+          "description": "ES6+, functional programming, and modern JavaScript patterns"
+        },
+        {
+          "name": "State Management",
+          "level": 88,
+          "description": "Redux, Context API, and complex state handling"
+        }
+      ]
+    },
+    {
+      "name": "AI & Machine Learning",
       "level": 85,
-      "description": "Experience with AWS, Azure, and cloud-native solutions"
+      "description": "Implementation of AI solutions and machine learning models",
+      "subSkills": [
+        {
+          "name": "LLMs & Transformers",
+          "level": 88,
+          "description": "Fine-tuning, prompt engineering, and transformer architecture"
+        },
+        {
+          "name": "RAG Systems",
+          "level": 85,
+          "description": "Retrieval-augmented generation and knowledge base integration"
+        },
+        {
+          "name": "Agentic AI",
+          "level": 82,
+          "description": "Autonomous agents, task planning, and decision-making systems"
+        },
+        {
+          "name": "Deep Learning",
+          "level": 85,
+          "description": "Neural networks, CNN, RNN, and advanced architectures"
+        },
+        {
+          "name": "Python ML Stack",
+          "level": 90,
+          "description": "TensorFlow, PyTorch, scikit-learn, and pandas"
+        },
+        {
+          "name": "NLP & Computer Vision",
+          "level": 85,
+          "description": "Text processing, image recognition, and multimodal AI"
+        }
+      ]
     },
     {
-      "name": "System Design",
+      "name": "Cloud & Infrastructure",
       "level": 88,
-      "description": "Skilled in designing scalable and maintainable systems"
+      "description": "Cloud architecture and infrastructure management",
+      "subSkills": [
+        {
+          "name": "AWS Core Services",
+          "level": 90,
+          "description": "EC2, S3, Lambda, and core infrastructure services"
+        },
+        {
+          "name": "AWS Advanced Services",
+          "level": 85,
+          "description": "ECS, ECR, RDS, OpenSearch, and load balancers"
+        },
+        {
+          "name": "Serverless Architecture",
+          "level": 88,
+          "description": "Lambda functions, API Gateway, and event-driven systems"
+        },
+        {
+          "name": "Containerization",
+          "level": 90,
+          "description": "Docker, Kubernetes, and container orchestration"
+        },
+        {
+          "name": "Infrastructure as Code",
+          "level": 85,
+          "description": "Terraform, CloudFormation, and infrastructure automation"
+        },
+        {
+          "name": "DevOps & CI/CD",
+          "level": 88,
+          "description": "GitHub Actions, Jenkins, and automated deployment"
+        }
+      ]
     },
     {
-      "name": "DevOps",
-      "level": 82,
-      "description": "CI/CD, containerization, and infrastructure as code"
-    },
-    {
-      "name": "Database Design",
+      "name": "Mobile Development",
       "level": 85,
-      "description": "SQL and NoSQL database architecture and optimization"
-    },
-    {
-      "name": "API Development",
-      "level": 90,
-      "description": "RESTful and GraphQL API design and implementation"
+      "description": "Cross-platform and native mobile application development",
+      "subSkills": [
+        {
+          "name": "React Native",
+          "level": 88,
+          "description": "Cross-platform mobile development and native modules"
+        },
+        {
+          "name": "Swift",
+          "level": 85,
+          "description": "iOS development, SwiftUI, and native iOS features"
+        },
+        {
+          "name": "Flutter",
+          "level": 82,
+          "description": "Dart programming and cross-platform UI development"
+        },
+        {
+          "name": "Mobile Architecture",
+          "level": 85,
+          "description": "Clean architecture, state management, and performance optimization"
+        },
+        {
+          "name": "Mobile Testing",
+          "level": 80,
+          "description": "Unit testing, integration testing, and UI automation"
+        }
+      ]
     }
   ]
 }

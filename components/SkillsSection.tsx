@@ -57,6 +57,29 @@ export default function SkillsSection() {
           <div className="mt-2 text-right">
             <span className="text-sm text-blue-400">{skill.level}%</span>
           </div>
+
+          {/* Sub-skills section */}
+          {skill.subSkills && (
+            <div className="mt-6 space-y-4 pt-4 border-t border-gray-800">
+              {skill.subSkills.map((subSkill) => (
+                <div key={subSkill.name} className="space-y-2">
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm font-medium text-gray-300">
+                      {subSkill.name}
+                    </span>
+                    <span className="text-xs text-blue-400">{subSkill.level}%</span>
+                  </div>
+                  <p className="text-xs text-gray-400">{subSkill.description}</p>
+                  <div className="h-1.5 bg-gray-800 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 ease-out"
+                      style={{ width: `${subSkill.level}%` }}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       ))}
     </div>

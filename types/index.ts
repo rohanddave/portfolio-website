@@ -2,6 +2,11 @@ export interface Skill {
   name: string;
   level: number;
   description: string;
+  subSkills?: {
+    name: string;
+    level: number;
+    description: string;
+  }[];
 }
 
 export interface SkillsData {
