@@ -32,19 +32,6 @@
           "isCurrent": false,
           "startDate": "2024-09-01",
           "endDate": "2024-12-15",
-          "projects": [
-            {
-              "title": "Advanced Image Processing Suite",
-              "description": "Developed a comprehensive image processing application with both GUI and CLI interfaces, featuring color channel analysis, image transformations, advanced filters, histogram visualization, and batch processing capabilities. Implemented using MVC architecture for clean separation of concerns.",
-              "tech": [
-                "Java",
-                "Swing",
-                "MVC Pattern",
-                "Object-Oriented Programming"
-              ],
-              "link": "https://github.com/rohanddave/PdpImageManipulatorAndEnhancer"
-            }
-          ],
           "topics": [
             "Object Oriented Programming",
             "Design Patterns",
@@ -73,46 +60,6 @@
           "isCurrent": false,
           "startDate": "2024-09-01",
           "endDate": "2024-12-15",
-          "projects": [
-            {
-              "title": "Sound Sage: A Smart Music Recommendation System",
-              "description": "Developed an advanced music recommendation system using Spotify's 12M-song dataset. Implemented K-Nearest Neighbors algorithm for personalized music suggestions based on detailed audio features including valence, tempo, danceability, and energy. Created a dynamic user profile modeling system that adapts recommendations based on user feedback ratings.",
-              "tech": [
-                "Python",
-                "Machine Learning",
-                "KNN Algorithm",
-                "Recommender Systems",
-                "Data Analysis"
-              ],
-              "link": "https://github.com/rohanddave/sound-sage"
-            },
-            {
-              "title": "Escape The Castle: Intelligent Agents with Monte Carlo Methods",
-              "description": "Developed intelligent agents for the 'Escape The Castle' game using both model-based and model-free Monte Carlo methods. Implemented a two-phase approach: first using Model-Based Monte Carlo (MCMC) for environment learning and state transition modeling, then transitioning to Model-Free Monte Carlo for improved performance and faster convergence. The project demonstrated enhanced learning efficiency and flexible adaptation to dynamic environments.",
-              "tech": [
-                "Python",
-                "Reinforcement Learning",
-                "Monte Carlo Methods",
-                "Game AI",
-                "Model-Based Learning",
-                "Model-Free Learning"
-              ],
-              "link": "https://github.com/rohanddave/escape-the-castle"
-            },
-            {
-              "title": "AI-Powered Grid Coloring: Intelligent Optimization in Action",
-              "description": "Built an AI agent to solve complex grid coloring problems using the Hill Climbing algorithm. Implemented an interactive system that optimizes grid coloring while minimizing both color usage and brush shape variety. The agent uses adaptive brush strategies and constraint satisfaction techniques to achieve optimal solutions, demonstrating the application of AI in creative problem-solving.",
-              "tech": [
-                "Python",
-                "Pygame",
-                "Artificial Intelligence",
-                "Hill Climbing Algorithm",
-                "Constraint Satisfaction",
-                "Optimization"
-              ],
-              "link": "https://github.com/rohanddave/grid-coloring-ai"
-            }
-          ],
           "topics": [
             "Knowledge Representation",
             "Search Algorithms",
@@ -149,22 +96,6 @@
           "isCurrent": false,
           "startDate": "2025-01-15",
           "endDate": "2025-05-01",
-          "projects": [
-            {
-              "title": "PlaySync: Cross-Platform Collaborative Playlist",
-              "description": "Developed a universal music sharing platform that enables cross-platform playlist collaboration across Spotify, Apple Music, and YouTube Music. Built with Next.js frontend and NestJS backend, featuring real-time collaboration, smart song matching across platforms, and secure authentication. Implemented server-side rendering, REST APIs, and third-party music service integrations.",
-              "tech": [
-                "Next.js",
-                "NestJS",
-                "TypeScript",
-                "MongoDB",
-                "REST APIs",
-                "Authentication",
-                "Real-time Collaboration"
-              ],
-              "link": "https://playsync-web-app.vercel.app"
-            }
-          ],
           "topics": [
             "Frontend Development",
             "Backend Development",

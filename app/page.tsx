@@ -9,7 +9,6 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import LearningSection from "@/components/LearningSection";
 import HobbiesSection from "@/components/HobbiesSection";
 import ChatBot from "@/components/ChatBot";
-import GitHubActivity from "@/components/GitHubActivity";
 
 export default function Home() {
   return (

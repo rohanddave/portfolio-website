@@ -3,7 +3,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { Education, Course } from "@/types";
+import { Education, Course, Project } from "@/types";
 import ProjectCard from "@/components/ProjectCard";
 import CourseCard from "@/components/CourseCard";
 
@@ -15,6 +15,7 @@ export default function EducationDetail() {
   const [expandedSemesters, setExpandedSemesters] = useState<Set<string>>(
     new Set()
   );
+  const [projects, setProjects] = useState<Project[]>([]);
 
   // Group courses by semester
   const coursesBySemester = useMemo(() => {
@@ -49,8 +50,16 @@ export default function EducationDetail() {
           (e: Education) => e.institution === institution
         );
         setEducation(edu);
+
+        // Fetch projects after education is loaded
+        const projectsResponse = await fetch("/data/projects.json");
+        const projectsData = await projectsResponse.json();
+        const filteredProjects = projectsData.projects.filter(
+          (project: Project) => project.education === institution
+        );
+        setProjects(filteredProjects);
       } catch (error) {
-        console.error("Error loading education:", error);
+        console.error("Error loading data:", error);
       } finally {
         setLoading(false);
       }
@@ -235,6 +244,20 @@ export default function EducationDetail() {
           </div>
         </div>
 
+        {/* Projects Section */}
+        <div className="space-y-8 mt-12">
+          <h2 className="text-2xl font-bold text-white mb-6">Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={`${project.title}-${index}`}
+                project={project}
+                variant="detailed"
+              />
+            ))}
+          </div>
+        </div>
+
         {/* Course Detail Modal */}
         {selectedCourse && (
           <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50">
@@ -326,25 +349,6 @@ export default function EducationDetail() {
                     </div>
                   </div>
 
-                  {/* Projects */}
-                  {selectedCourse.projects.length > 0 && (
-                    <div>
-                      <h4 className="text-sm font-medium text-gray-400 mb-2">
-                        Projects
-                      </h4>
-                      <div className="space-y-4">
-                        {selectedCourse.projects.map((project) => (
-                          <ProjectCard
-                            key={project.title}
-                            project={project}
-                            variant="compact"
-                            showImage={false}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
                   {/* Key Learnings */}
                   <div>
                     <h4 className="text-sm font-medium text-gray-400 mb-2">
@@ -371,6 +375,28 @@ export default function EducationDetail() {
                       ))}
                     </ul>
                   </div>
+
+                  {/* Course Projects */}
+                  {projects.filter((p) => p.course == selectedCourse.name)
+                    .length > 0 && (
+                    <div>
+                      <h4 className="text-sm font-medium text-gray-400 mb-4">
+                        Course Projects
+                      </h4>
+                      <div className="space-y-4">
+                        {projects
+                          .filter((p) => p.course === selectedCourse.name)
+                          .map((project, index) => (
+                            <ProjectCard
+                              key={`${project.title}-${index}`}
+                              project={project}
+                              variant="compact"
+                              className="!p-4"
+                            />
+                          ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

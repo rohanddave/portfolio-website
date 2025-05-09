@@ -24,6 +24,11 @@ export interface Project {
   tech: string[];
   link?: string;
   image?: string;
+  education?: string;
+  course?: string;
+  experience?: string;
+  categories: string[];
+  isFeatured: boolean;
 }
 
 export interface ProjectsData {
@@ -79,7 +84,6 @@ export interface Course {
   grade: string;
   credits: number;
   description: string;
-  projects: Project[];
   topics: string[];
   learnings: string[];
   isCurrent: boolean;

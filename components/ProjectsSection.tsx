@@ -13,7 +13,7 @@ export default function ProjectsSection() {
       try {
         const response = await fetch("/data/projects.json");
         const data: ProjectsData = await response.json();
-        setProjects(data.projects);
+        setProjects(data.projects.filter((project) => project.isFeatured));
         setIsLoading(false);
       } catch (error) {
         console.error("Error loading projects:", error);
