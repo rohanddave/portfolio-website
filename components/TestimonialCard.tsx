@@ -3,36 +3,19 @@
 import { useState } from "react";
 import Link from "next/link";
 import TestimonialModal from "./TestimonialModal";
+import { Testimonial } from "@/types";
 
 interface TestimonialCardProps {
-  name: string;
-  role: string;
-  company: string;
-  testimonial: string;
-  linkedin: string;
-  experience: string;
+  testimonial: Testimonial;
 }
 
-export default function TestimonialCard({
-  name,
-  role,
-  company,
-  testimonial,
-  linkedin,
-  experience,
-}: TestimonialCardProps) {
+export function TestimonialCard({ testimonial }: TestimonialCardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const maxLength = 200;
-  const shouldTruncate = testimonial.length > maxLength;
+  const shouldTruncate = testimonial.testimonial.length > maxLength;
   const displayText = shouldTruncate
-    ? testimonial.slice(0, maxLength) + "..."
-    : testimonial;
-
-  // Format role to remove redundant company name if it exists
-  const formattedRole = role.replace(company, "").trim();
-  const roleDisplay = formattedRole
-    ? `${formattedRole} at ${company}`
-    : company;
+    ? testimonial.testimonial.slice(0, maxLength) + "..."
+    : testimonial.testimonial;
 
   const handleCardClick = (e: React.MouseEvent) => {
     // Don't open modal if clicking on the LinkedIn link
@@ -52,8 +35,12 @@ export default function TestimonialCard({
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
             <div className="space-y-1">
-              <h3 className="text-xl font-semibold text-white">{name}</h3>
-              <p className="text-sm text-gray-400">{roleDisplay}</p>
+              <h3 className="text-xl font-semibold text-white">
+                {testimonial.name}
+              </h3>
+              <p className="text-sm text-gray-400">
+                {testimonial.role} at {testimonial.company}
+              </p>
             </div>
           </div>
 
@@ -73,7 +60,7 @@ export default function TestimonialCard({
           {/* LinkedIn Link */}
           <div className="pt-2" onClick={(e) => e.stopPropagation()}>
             <Link
-              href={linkedin}
+              href={testimonial.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-sm text-blue-400 hover:text-blue-300 transition-colors"
@@ -94,12 +81,12 @@ export default function TestimonialCard({
       <TestimonialModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        name={name}
-        role={role}
-        company={company}
-        testimonial={testimonial}
-        linkedin={linkedin}
-        experience={experience}
+        name={testimonial.name}
+        role={testimonial.role}
+        company={testimonial.company}
+        testimonial={testimonial.testimonial}
+        linkedin={testimonial.linkedin}
+        experience={testimonial.experience}
       />
     </>
   );

@@ -30,6 +30,16 @@ export interface ProjectsData {
   projects: Project[];
 }
 
+export interface Testimonial {
+  id: number;
+  name: string;
+  role: string;
+  company: string;
+  testimonial: string;
+  linkedin: string;
+  experience: string;
+}
+
 export interface Experience {
   company: string;
   role: string;
@@ -40,6 +50,7 @@ export interface Experience {
   all_achievements: string[];
   technologies: string[];
   logo: string;
+  testimonials?: Testimonial[];
 }
 
 export interface ExperiencesData {
@@ -78,30 +89,6 @@ export interface Course {
 
 export interface EducationData {
   education: Education[];
-}
-
-export interface Testimonial {
-  id: number;
-  name: string;
-  role: string;
-  company: string;
-  image: string;
-  testimonial: string;
-  linkedin: string;
-}
-
-export interface TestimonialsData {
-  testimonials: Testimonial[];
-}
-
-export interface Testimonial {
-  id: number;
-  name: string;
-  role: string;
-  company: string;
-  image: string;
-  testimonial: string;
-  linkedin: string;
 }
 
 export interface TestimonialsData {

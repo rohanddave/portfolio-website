@@ -1,10 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { Testimonial, TestimonialsData } from "../types";
 import testimonialsData from "@/public/data/testimonials.json";
-import TestimonialCard from "./TestimonialCard";
+import { TestimonialCard } from "./TestimonialCard";
 
 export default function TestimonialsSection() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
@@ -64,15 +63,7 @@ export default function TestimonialsSection() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
       {testimonialsData.testimonials.map((testimonial) => (
-        <TestimonialCard
-          key={testimonial.id}
-          name={testimonial.name}
-          role={testimonial.role}
-          company={testimonial.company}
-          testimonial={testimonial.testimonial}
-          linkedin={testimonial.linkedin}
-          experience={testimonial.experience}
-        />
+        <TestimonialCard key={testimonial.id} testimonial={testimonial} />
       ))}
     </div>
   );

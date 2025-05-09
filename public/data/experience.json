@@ -48,6 +48,7 @@
       "period": "Sept 2022 - Aug 2023",
       "location": "Mumbai, India",
       "description": "Full-stack and mobile development focusing on turf booking system",
+      "logo": "/images/experience/tfc.png",
       "relevant_achievements": [
         "Automated turf booking and recording with 2 Flutter apps and ReactJS admin panel, ranking top 25 in sports apps",
         "Enhanced data protection via Firebase authentication with Google and OTP OAuth logins, increasing user acquisition by 25%",
