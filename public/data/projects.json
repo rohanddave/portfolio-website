@@ -36,7 +36,7 @@
       "isFeatured": true,
       "education": null,
       "course": null,
-      "experience": null
+      "experience": "TheFridayCompany"
     },
     {
       "title": "TokenSale Platform",
@@ -77,9 +77,9 @@
       "image": "/images/projects/tfc-turf.png",
       "categories": ["mobile", "web", "payment", "maps"],
       "isFeatured": true,
-      "education": "TheFridayCompany",
+      "education": null,
       "course": null,
-      "experience": null
+      "experience": "TheFridayCompany"
     },
     {
       "title": "Advanced Image Processing Suite",

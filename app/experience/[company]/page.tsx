@@ -1,16 +1,18 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Experience, Testimonial } from "@/types";
+import { Experience, Testimonial, Project } from "@/types";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { TestimonialCard } from "@/components/TestimonialCard";
+import ProjectCard from "@/components/ProjectCard";
 
 export default function ExperienceDetailsPage() {
   const params = useParams();
   const [experience, setExperience] = useState<Experience | null>(null);
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+  const [projects, setProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -33,6 +35,14 @@ export default function ExperienceDetailsPage() {
             testimonial.experience === params.company
         );
         setTestimonials(filteredTestimonials);
+
+        // Fetch projects data
+        const projectsResponse = await fetch("/data/projects.json");
+        const projectsData = await projectsResponse.json();
+        const filteredProjects = projectsData.projects.filter(
+          (project: Project) => project.experience === foundExperience?.company
+        );
+        setProjects(filteredProjects);
 
         setIsLoading(false);
       } catch (error) {
@@ -200,6 +210,22 @@ export default function ExperienceDetailsPage() {
             ))}
           </div>
         </div>
+
+        {/* Projects */}
+        {projects.length > 0 && (
+          <div className="bg-gray-900/50 backdrop-blur-sm rounded-lg p-6 border border-gray-800 mb-8">
+            <h2 className="text-xl font-semibold text-white mb-6">Projects</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {projects.map((project) => (
+                <ProjectCard
+                  key={project.title}
+                  project={project}
+                  variant="detailed"
+                />
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Testimonials */}
         {testimonials.length > 0 && (
