@@ -1,0 +1,24 @@
+{
+  "achievements": [
+    {
+      "title": "Scalable Microservices",
+      "description": "Built scalable microservices handling 1M+ requests/day",
+      "impact": "Improved system reliability and performance"
+    },
+    {
+      "title": "Performance Optimization",
+      "description": "Reduced system latency by 40% through optimization",
+      "impact": "Enhanced user experience and reduced costs"
+    },
+    {
+      "title": "Team Leadership",
+      "description": "Led team of 5 developers in major project delivery",
+      "impact": "Successfully delivered project ahead of schedule"
+    },
+    {
+      "title": "CI/CD Implementation",
+      "description": "Implemented CI/CD pipeline reducing deployment time by 60%",
+      "impact": "Streamlined development workflow and reduced errors"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "skills": [
+    {
+      "name": "Full-Stack Development",
+      "level": 90,
+      "description": "Proficient in modern web technologies and frameworks"
+    },
+    {
+      "name": "Cloud Architecture",
+      "level": 85,
+      "description": "Experience with AWS, Azure, and cloud-native solutions"
+    },
+    {
+      "name": "System Design",
+      "level": 88,
+      "description": "Skilled in designing scalable and maintainable systems"
+    },
+    {
+      "name": "DevOps",
+      "level": 82,
+      "description": "CI/CD, containerization, and infrastructure as code"
+    },
+    {
+      "name": "Database Design",
+      "level": 85,
+      "description": "SQL and NoSQL database architecture and optimization"
+    },
+    {
+      "name": "API Development",
+      "level": 90,
+      "description": "RESTful and GraphQL API design and implementation"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "title": "Project One",
+      "description": "A full-stack application built with Next.js and Node.js",
+      "tech": ["Next.js", "Node.js", "PostgreSQL"],
+      "link": "https://github.com/yourusername/project-one",
+      "image": "/images/project-one.png"
+    },
+    {
+      "title": "Project Two",
+      "description": "Cloud-native microservices architecture",
+      "tech": ["AWS", "Docker", "Kubernetes"],
+      "link": "https://github.com/yourusername/project-two",
+      "image": "/images/project-two.png"
+    }
+  ]
+}

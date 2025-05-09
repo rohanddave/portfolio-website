@@ -1,0 +1,76 @@
+{
+  "learning": [
+    {
+      "id": 1,
+      "topic": "Machine Learning & AI",
+      "description": "Deep diving into practical ML applications and neural networks",
+      "progress": 65,
+      "resources": [
+        {
+          "name": "Deep Learning Specialization",
+          "platform": "Coursera",
+          "url": "https://coursera.org/specializations/deep-learning"
+        },
+        {
+          "name": "Practical Deep Learning for Coders",
+          "platform": "fast.ai",
+          "url": "https://course.fast.ai"
+        }
+      ],
+      "goals": [
+        "Build and deploy a production ML model",
+        "Master PyTorch and TensorFlow",
+        "Implement advanced NLP techniques"
+      ],
+      "icon": "🤖"
+    },
+    {
+      "id": 2,
+      "topic": "Cloud Architecture",
+      "description": "Mastering cloud-native development and microservices",
+      "progress": 80,
+      "resources": [
+        {
+          "name": "AWS Solutions Architect",
+          "platform": "AWS",
+          "url": "https://aws.amazon.com/certification/solutions-architect-associate"
+        },
+        {
+          "name": "Cloud Native Patterns",
+          "platform": "O'Reilly",
+          "url": "https://learning.oreilly.com/library/view/cloud-native-patterns"
+        }
+      ],
+      "goals": [
+        "Design scalable cloud architectures",
+        "Implement serverless solutions",
+        "Master container orchestration"
+      ],
+      "icon": "☁️"
+    },
+    {
+      "id": 3,
+      "topic": "Web3 Development",
+      "description": "Exploring blockchain technology and smart contracts",
+      "progress": 45,
+      "resources": [
+        {
+          "name": "Solidity Development",
+          "platform": "Udemy",
+          "url": "https://udemy.com/course/solidity-development"
+        },
+        {
+          "name": "Ethereum Developer Portal",
+          "platform": "Ethereum",
+          "url": "https://ethereum.org/developers"
+        }
+      ],
+      "goals": [
+        "Build and deploy smart contracts",
+        "Create DApps with React",
+        "Understand DeFi protocols"
+      ],
+      "icon": "⛓️"
+    }
+  ]
+}

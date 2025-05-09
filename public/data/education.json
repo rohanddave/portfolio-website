@@ -1,0 +1,42 @@
+{
+  "education": [
+    {
+      "institution": "University of Technology",
+      "degree": "Master of Science in Computer Science",
+      "period": "2016 - 2018",
+      "location": "San Francisco, CA",
+      "description": "Specialized in Artificial Intelligence and Machine Learning",
+      "achievements": [
+        "Graduated with Distinction (GPA: 3.9/4.0)",
+        "Published 2 research papers in top-tier conferences",
+        "Led the AI Research Student Group"
+      ],
+      "courses": [
+        "Advanced Machine Learning",
+        "Deep Learning Systems",
+        "Natural Language Processing",
+        "Computer Vision",
+        "Distributed Systems"
+      ]
+    },
+    {
+      "institution": "State University",
+      "degree": "Bachelor of Science in Computer Science",
+      "period": "2012 - 2016",
+      "location": "New York, NY",
+      "description": "Focused on Software Engineering and Web Development",
+      "achievements": [
+        "Dean's List for Academic Excellence",
+        "Won 3 hackathons",
+        "Teaching Assistant for Data Structures course"
+      ],
+      "courses": [
+        "Data Structures & Algorithms",
+        "Software Engineering",
+        "Database Systems",
+        "Web Development",
+        "Operating Systems"
+      ]
+    }
+  ]
+}

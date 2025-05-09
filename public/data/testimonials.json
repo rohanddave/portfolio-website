@@ -1,0 +1,31 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "John Smith",
+      "role": "Senior Engineering Manager",
+      "company": "Tech Corp",
+      "image": "/images/testimonials/john-smith.jpg",
+      "testimonial": "Rohan is an exceptional developer who consistently delivers high-quality work. His attention to detail and problem-solving skills have been invaluable to our team.",
+      "linkedin": "https://linkedin.com/in/johnsmith"
+    },
+    {
+      "id": 2,
+      "name": "Sarah Johnson",
+      "role": "Product Director",
+      "company": "Innovate Inc",
+      "image": "/images/testimonials/sarah-johnson.jpg",
+      "testimonial": "Working with Rohan was a pleasure. His technical expertise and ability to communicate complex ideas clearly made him an invaluable asset to our project.",
+      "linkedin": "https://linkedin.com/in/sarahjohnson"
+    },
+    {
+      "id": 3,
+      "name": "Michael Chen",
+      "role": "CTO",
+      "company": "StartupX",
+      "image": "/images/testimonials/michael-chen.jpg",
+      "testimonial": "Rohan's contributions to our platform were instrumental in our success. His innovative solutions and dedication to quality set a high standard for the team.",
+      "linkedin": "https://linkedin.com/in/michaelchen"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "experiences": [
+    {
+      "company": "Tech Company A",
+      "role": "Senior Software Engineer",
+      "period": "Jan 2022 - Present",
+      "location": "San Francisco, CA",
+      "description": "Leading the development of cloud-native microservices architecture",
+      "achievements": [
+        "Architected and implemented a scalable microservices platform serving 1M+ users",
+        "Reduced system latency by 40% through optimization and caching strategies",
+        "Mentored 5 junior developers and established best practices"
+      ],
+      "technologies": ["Node.js", "AWS", "Docker", "Kubernetes", "TypeScript"]
+    },
+    {
+      "company": "Tech Company B",
+      "role": "Software Engineer",
+      "period": "Mar 2020 - Dec 2021",
+      "location": "Remote",
+      "description": "Full-stack development of enterprise web applications",
+      "achievements": [
+        "Developed and maintained 3 major client-facing applications",
+        "Implemented CI/CD pipelines reducing deployment time by 60%",
+        "Collaborated with UX team to improve user engagement by 35%"
+      ],
+      "technologies": ["React", "Python", "PostgreSQL", "Redis", "Docker"]
+    },
+    {
+      "company": "Tech Company C",
+      "role": "Junior Developer",
+      "period": "Jun 2018 - Feb 2020",
+      "location": "New York, NY",
+      "description": "Frontend development and UI/UX implementation",
+      "achievements": [
+        "Built responsive web applications using modern JavaScript frameworks",
+        "Reduced page load time by 50% through code optimization",
+        "Contributed to open-source projects with 1000+ GitHub stars"
+      ],
+      "technologies": ["JavaScript", "React", "HTML5", "CSS3", "Git"]
+    }
+  ]
+}
