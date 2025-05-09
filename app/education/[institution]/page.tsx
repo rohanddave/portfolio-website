@@ -82,7 +82,7 @@ export default function EducationDetail() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-black p-8">
+      <div className="min-h-screen p-8">
         <div className="max-w-6xl mx-auto animate-pulse">
           <div className="h-8 bg-gray-800 rounded w-1/3 mb-4"></div>
           <div className="h-4 bg-gray-800 rounded w-1/4 mb-8"></div>
@@ -98,7 +98,7 @@ export default function EducationDetail() {
 
   if (!education) {
     return (
-      <div className="min-h-screen bg-black p-8">
+      <div className="min-h-screen p-8">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-2xl text-red-500 mb-4">Education not found</h1>
           <Link
@@ -113,7 +113,7 @@ export default function EducationDetail() {
   }
 
   return (
-    <div className="min-h-screen bg-black p-8">
+    <div className="min-h-screen p-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-8">
