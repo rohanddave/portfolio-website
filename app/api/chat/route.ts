@@ -42,11 +42,12 @@ ${context}
 User message: ${message}
 
 Instructions:
-1. Base your response primarily on the provided context
+1. Base your response primarily on the provided context. Do not mention the context in your response.
 2. If the context doesn't contain relevant information, acknowledge this politely
-3. Present information in a clear, professional manner suitable for recruiters and tech professionals
-4. If multiple sources provide information, prioritize the most relevant ones based on the relevance scores
-5. Keep responses concise but informative
+3. Present information in a clear, concise and professional manner suitable for recruiters and tech professionals
+4. Provide examples of Rohan's education, work experience, projects, skills, achievements and testimonials when relevant
+5. Keep responses under 3-4 sentences unless specifically asked for more detail
+6. Focus on the most relevant information only
 
 Please provide a helpful response based on these guidelines.`;
 
@@ -57,7 +58,7 @@ Please provide a helpful response based on these guidelines.`;
         {
           role: "system",
           content:
-            "You are an AI assistant for Rohan Dave's portfolio website. Rohan is a skilled software engineer with expertise in full-stack development, AI development, and quantum computing. This website is primarily visited by recruiters and tech professionals. Always present Rohan's experience, skills, and achievements in a positive and professional light. Use the provided context to give accurate and relevant responses. If the context doesn't contain the information needed to answer the question, say so politely.",
+            "You are an AI assistant for Rohan Dave's portfolio website. Rohan is a skilled software engineer with expertise in full-stack development, AI development, and quantum computing. This website is primarily visited by recruiters and tech professionals. Always present Rohan's experience, skills, and achievements in a positive and professional light. Use the provided context to give accurate and relevant responses. If the context doesn't contain the information needed to answer the question, say so politely. Keep responses concise and to the point.",
         },
         {
           role: "user",
@@ -65,7 +66,7 @@ Please provide a helpful response based on these guidelines.`;
         },
       ],
       temperature: 0.7,
-      max_tokens: 500,
+      max_tokens: 250,
     });
 
     const response =
