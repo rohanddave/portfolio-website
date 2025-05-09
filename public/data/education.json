@@ -124,20 +124,6 @@
           "description": "Comprehensive study of database systems, including design, implementation, and optimization. Covers both relational and NoSQL databases, with emphasis on practical applications and performance tuning.",
           "isCurrent": true,
           "startDate": "2025-05-15",
-          "projects": [
-            {
-              "title": "Distributed Database System",
-              "description": "Designed and implemented a distributed database system with replication and sharding capabilities. Implemented ACID compliance and optimized query performance across distributed nodes.",
-              "tech": [
-                "PostgreSQL",
-                "MongoDB",
-                "Redis",
-                "Docker",
-                "Kubernetes"
-              ],
-              "link": "https://github.com/rohanddave/distributed-db-system"
-            }
-          ],
           "topics": [
             "R",
             "Database Design",
@@ -169,19 +155,6 @@
           "isCurrent": false,
           "startDate": "2025-01-15",
           "endDate": "2025-05-01",
-          "projects": [
-            {
-              "title": "Algorithm Analysis Framework",
-              "description": "Developed a framework for analyzing and comparing different algorithmic approaches to complex problems",
-              "tech": [
-                "Python",
-                "Algorithm Analysis",
-                "Performance Testing",
-                "Data Visualization"
-              ],
-              "link": "https://github.com/rohanddave/algorithm-analysis"
-            }
-          ],
           "topics": [
             "Algorithm Design Paradigms",
             "Complexity Analysis",
@@ -498,14 +471,6 @@
           "isCurrent": false,
           "startDate": "2019-01-15",
           "endDate": "2019-05-01",
-          "projects": [
-            {
-              "title": "Student Management System",
-              "description": "Developed a console-based student management system using C programming",
-              "tech": ["C", "Data Structures", "File Handling"],
-              "link": "https://github.com/rohanddave/student-management-system"
-            }
-          ],
           "topics": [
             "C Programming",
             "Data Types and Operators",
@@ -610,14 +575,6 @@
           "isCurrent": false,
           "startDate": "2019-08-01",
           "endDate": "2019-12-15",
-          "projects": [
-            {
-              "title": "Algorithm Visualization Tool",
-              "description": "Developed an interactive tool to visualize sorting and searching algorithms",
-              "tech": ["Java", "JavaFX", "Data Structures"],
-              "link": "https://github.com/rohanddave/algorithm-visualizer"
-            }
-          ],
           "topics": [
             "Arrays and Linked Lists",
             "Stacks and Queues",
@@ -644,14 +601,6 @@
           "isCurrent": false,
           "startDate": "2019-08-01",
           "endDate": "2019-12-15",
-          "projects": [
-            {
-              "title": "Library Management System",
-              "description": "Designed and implemented a database system for library management",
-              "tech": ["MySQL", "ERD", "Normalization"],
-              "link": "https://github.com/rohanddave/library-management"
-            }
-          ],
           "topics": [
             "Database Design",
             "SQL",
@@ -704,20 +653,6 @@
           "isCurrent": false,
           "startDate": "2020-08-01",
           "endDate": "2020-12-15",
-          "projects": [
-            {
-              "title": "Industrial IoT Monitoring System",
-              "description": "Developed a comprehensive IoT system for industrial monitoring using multiple microcontrollers and sensors",
-              "tech": [
-                "ARM Cortex",
-                "RTOS",
-                "MQTT",
-                "Python",
-                "Cloud Integration"
-              ],
-              "link": "https://github.com/rohanddave/industrial-iot-monitoring"
-            }
-          ],
           "topics": [
             "Real-Time Operating Systems",
             "Advanced Microcontroller Architecture",
@@ -744,14 +679,6 @@
           "isCurrent": false,
           "startDate": "2020-08-01",
           "endDate": "2020-12-15",
-          "projects": [
-            {
-              "title": "Cloud-Native Microservices Platform",
-              "description": "Developed a scalable microservices platform with containerization and orchestration",
-              "tech": ["Docker", "Kubernetes", "Node.js", "React", "AWS"],
-              "link": "https://github.com/rohanddave/cloud-native-platform"
-            }
-          ],
           "topics": [
             "Microservices Architecture",
             "Cloud Computing",
@@ -778,20 +705,6 @@
           "isCurrent": false,
           "startDate": "2020-08-01",
           "endDate": "2020-12-15",
-          "projects": [
-            {
-              "title": "Predictive Analytics Platform",
-              "description": "Developed a machine learning platform for predictive analytics and data insights",
-              "tech": [
-                "Python",
-                "TensorFlow",
-                "Apache Spark",
-                "MongoDB",
-                "Docker"
-              ],
-              "link": "https://github.com/rohanddave/predictive-analytics"
-            }
-          ],
           "topics": [
             "Machine Learning",
             "Predictive Analytics",
@@ -818,19 +731,6 @@
           "isCurrent": false,
           "startDate": "2020-08-01",
           "endDate": "2020-12-15",
-          "projects": [
-            {
-              "title": "Advanced Security Framework",
-              "description": "Developed a comprehensive security framework with advanced encryption and threat detection",
-              "tech": [
-                "Python",
-                "Cryptography",
-                "Machine Learning",
-                "Network Security"
-              ],
-              "link": "https://github.com/rohanddave/security-framework"
-            }
-          ],
           "topics": [
             "Advanced Cryptography",
             "Security Protocols",
@@ -883,14 +783,6 @@
           "isCurrent": false,
           "startDate": "2021-01-15",
           "endDate": "2021-05-01",
-          "projects": [
-            {
-              "title": "Enterprise Project Management System",
-              "description": "Developed a comprehensive project management system with agile methodologies and CI/CD integration",
-              "tech": ["Spring Boot", "React", "Docker", "Jenkins", "Jira API"],
-              "link": "https://github.com/rohanddave/enterprise-pms"
-            }
-          ],
           "topics": [
             "Software Development Lifecycle",
             "Agile Methodologies",
@@ -917,20 +809,6 @@
           "isCurrent": false,
           "startDate": "2021-01-15",
           "endDate": "2021-05-01",
-          "projects": [
-            {
-              "title": "Business Intelligence Dashboard",
-              "description": "Developed an interactive BI dashboard for business analytics and reporting",
-              "tech": [
-                "Python",
-                "Tableau",
-                "Power BI",
-                "SQL",
-                "Machine Learning"
-              ],
-              "link": "https://github.com/rohanddave/bi-dashboard"
-            }
-          ],
           "topics": [
             "Data Mining Algorithms",
             "Business Intelligence Tools",
@@ -957,14 +835,6 @@
           "isCurrent": false,
           "startDate": "2021-01-15",
           "endDate": "2021-05-01",
-          "projects": [
-            {
-              "title": "Multi-Cloud Application Platform",
-              "description": "Developed a platform supporting deployment across multiple cloud providers",
-              "tech": ["AWS", "Azure", "GCP", "Terraform", "Kubernetes"],
-              "link": "https://github.com/rohanddave/multi-cloud-platform"
-            }
-          ],
           "topics": [
             "Cloud Architecture",
             "Cloud Services (IaaS, PaaS, SaaS)",
@@ -991,19 +861,6 @@
           "isCurrent": false,
           "startDate": "2021-01-15",
           "endDate": "2021-05-01",
-          "projects": [
-            {
-              "title": "Wireless Network Simulator",
-              "description": "Developed a simulator for analyzing wireless network performance and protocols",
-              "tech": [
-                "Python",
-                "NS3",
-                "Wireless Protocols",
-                "Network Analysis"
-              ],
-              "link": "https://github.com/rohanddave/wireless-simulator"
-            }
-          ],
           "topics": [
             "Wireless Protocols",
             "Mobile Computing",
@@ -1030,19 +887,6 @@
           "isCurrent": false,
           "startDate": "2021-01-15",
           "endDate": "2021-05-01",
-          "projects": [
-            {
-              "title": "Digital Forensics Toolkit",
-              "description": "Developed a comprehensive toolkit for digital evidence collection and analysis",
-              "tech": [
-                "Python",
-                "Forensics Tools",
-                "Data Recovery",
-                "Evidence Analysis"
-              ],
-              "link": "https://github.com/rohanddave/forensics-toolkit"
-            }
-          ],
           "topics": [
             "Digital Evidence Collection",
             "Cybercrime Investigation",
@@ -1069,14 +913,6 @@
           "isCurrent": false,
           "startDate": "2021-08-01",
           "endDate": "2021-12-15",
-          "projects": [
-            {
-              "title": "Enterprise Network Infrastructure",
-              "description": "Designed and implemented a scalable enterprise network with advanced routing and security features",
-              "tech": ["Cisco", "SDN", "VLAN", "BGP", "OSPF"],
-              "link": "https://github.com/rohanddave/enterprise-network"
-            }
-          ],
           "topics": [
             "Network Architecture",
             "Software-Defined Networking",
@@ -1103,20 +939,6 @@
           "isCurrent": false,
           "startDate": "2021-08-01",
           "endDate": "2021-12-15",
-          "projects": [
-            {
-              "title": "Security Operations Center",
-              "description": "Developed a comprehensive security monitoring and incident response system",
-              "tech": [
-                "SIEM",
-                "IDS/IPS",
-                "Firewall",
-                "Threat Intelligence",
-                "Python"
-              ],
-              "link": "https://github.com/rohanddave/security-operations"
-            }
-          ],
           "topics": [
             "Security Architecture",
             "Threat Management",
@@ -1143,20 +965,6 @@
           "isCurrent": false,
           "startDate": "2021-08-01",
           "endDate": "2021-12-15",
-          "projects": [
-            {
-              "title": "Intelligent Recommendation System",
-              "description": "Developed an AI-powered recommendation system using deep learning and NLP",
-              "tech": [
-                "Python",
-                "TensorFlow",
-                "PyTorch",
-                "NLP",
-                "Deep Learning"
-              ],
-              "link": "https://github.com/rohanddave/ai-recommendation"
-            }
-          ],
           "topics": [
             "Machine Learning",
             "Deep Learning",
@@ -1183,20 +991,6 @@
           "isCurrent": false,
           "startDate": "2021-08-01",
           "endDate": "2021-12-15",
-          "projects": [
-            {
-              "title": "Smart Health Monitoring App",
-              "description": "Developed a comprehensive health monitoring application with real-time tracking and analytics",
-              "tech": [
-                "Kotlin",
-                "Android SDK",
-                "Firebase",
-                "Material Design",
-                "MVVM"
-              ],
-              "link": "https://github.com/rohanddave/health-monitor-app"
-            }
-          ],
           "topics": [
             "Android Architecture",
             "Mobile UI/UX Design",
@@ -1223,14 +1017,6 @@
           "isCurrent": false,
           "startDate": "2022-01-15",
           "endDate": "2022-05-01",
-          "projects": [
-            {
-              "title": "Real-time Analytics Platform",
-              "description": "Developed a scalable platform for processing and analyzing large-scale streaming data",
-              "tech": ["Apache Spark", "Kafka", "Hadoop", "Python", "Tableau"],
-              "link": "https://github.com/rohanddave/big-data-platform"
-            }
-          ],
           "topics": [
             "Big Data Processing",
             "Stream Processing",
@@ -1257,20 +1043,6 @@
           "isCurrent": false,
           "startDate": "2022-01-15",
           "endDate": "2022-05-01",
-          "projects": [
-            {
-              "title": "Smart City Infrastructure",
-              "description": "Developed an integrated IoT system for smart city management and monitoring",
-              "tech": [
-                "IoT",
-                "Cloud Computing",
-                "Edge Computing",
-                "MQTT",
-                "Raspberry Pi"
-              ],
-              "link": "https://github.com/rohanddave/smart-city-iot"
-            }
-          ],
           "topics": [
             "IoT Architecture",
             "Edge Computing",
@@ -1297,20 +1069,6 @@
           "isCurrent": false,
           "startDate": "2022-01-15",
           "endDate": "2022-05-01",
-          "projects": [
-            {
-              "title": "Interactive Design System",
-              "description": "Developed a comprehensive design system with interactive components and user testing",
-              "tech": [
-                "Figma",
-                "React",
-                "User Research",
-                "Prototyping",
-                "Accessibility"
-              ],
-              "link": "https://github.com/rohanddave/design-system"
-            }
-          ],
           "topics": [
             "UX Design Principles",
             "Interaction Design",
@@ -1337,14 +1095,6 @@
           "isCurrent": false,
           "startDate": "2022-01-15",
           "endDate": "2022-05-01",
-          "projects": [
-            {
-              "title": "Enterprise Project Management Platform",
-              "description": "Developed a comprehensive project management platform with agile methodologies",
-              "tech": ["Agile", "Scrum", "Jira", "CI/CD", "DevOps"],
-              "link": "https://github.com/rohanddave/project-management-platform"
-            }
-          ],
           "topics": [
             "Agile Methodologies",
             "Project Planning",
@@ -1397,19 +1147,6 @@
           "isCurrent": false,
           "startDate": "2020-01-15",
           "endDate": "2020-05-01",
-          "projects": [
-            {
-              "title": "Network Protocol Analyzer",
-              "description": "Developed a network protocol analyzer to monitor and analyze network traffic",
-              "tech": [
-                "Python",
-                "Wireshark",
-                "Socket Programming",
-                "Network Protocols"
-              ],
-              "link": "https://github.com/rohanddave/network-analyzer"
-            }
-          ],
           "topics": [
             "Network Architecture",
             "TCP/IP Protocol Suite",
@@ -1436,14 +1173,6 @@
           "isCurrent": false,
           "startDate": "2020-01-15",
           "endDate": "2020-05-01",
-          "projects": [
-            {
-              "title": "Custom Shell Implementation",
-              "description": "Developed a custom shell with process management and job control",
-              "tech": ["C", "Linux", "System Calls", "Process Management"],
-              "link": "https://github.com/rohanddave/custom-shell"
-            }
-          ],
           "topics": [
             "Process Management",
             "Memory Management",
@@ -1470,14 +1199,6 @@
           "isCurrent": false,
           "startDate": "2020-01-15",
           "endDate": "2020-05-01",
-          "projects": [
-            {
-              "title": "MIPS Processor Implementation",
-              "description": "Implemented a MIPS processor with pipelining and hazard detection",
-              "tech": ["Verilog", "Digital Logic", "Computer Architecture"],
-              "link": "https://github.com/rohanddave/mips-processor"
-            }
-          ],
           "topics": [
             "Instruction Set Architecture",
             "Processor Design",
@@ -1504,14 +1225,6 @@
           "isCurrent": false,
           "startDate": "2020-01-15",
           "endDate": "2020-05-01",
-          "projects": [
-            {
-              "title": "Regular Expression Engine",
-              "description": "Developed a regular expression engine using finite automata",
-              "tech": ["Python", "Finite Automata", "Regular Expressions"],
-              "link": "https://github.com/rohanddave/regex-engine"
-            }
-          ],
           "topics": [
             "Finite Automata",
             "Regular Languages",
