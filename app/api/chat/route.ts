@@ -34,7 +34,7 @@ export async function POST(req: Request) {
     const context = await searchRelevantContent(message);
 
     // Create the prompt with context
-    const prompt = `Context from portfolio data:\n${context}\n\nUser message: ${message}\n\nPlease provide a helpful response based on the context provided. If the context doesn't contain the information needed to answer the question, say so politely.`;
+    const prompt = `Context from portfolio data:\n${context}\n\nUser message: ${message}\n\nPlease provide a helpful response based on the context provided.`;
 
     // Call OpenAI API
     const completion = await openai.chat.completions.create({
