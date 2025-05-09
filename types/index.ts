@@ -131,14 +131,6 @@ export interface Hobby {
   name: string;
   description: string;
   icon: string;
-  activities: string[];
-  equipment?: string[];
-  gallery?: string[];
-  achievements?: string[];
-  specialties?: string[];
-  favorite_recipes?: string[];
-  current_books?: string[];
-  favorite_authors?: string[];
 }
 
 export interface HobbiesData {

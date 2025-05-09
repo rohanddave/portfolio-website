@@ -88,17 +88,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section
-        id="skills"
-        className="py-12 sm:py-20 px-4 sm:px-6 md:px-8 lg:px-12 max-w-6xl mx-auto"
-      >
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-          Skills
-        </h2>
-        <SkillsSection />
-      </section>
-
       {/* Experience Section */}
       <section
         id="experience"
@@ -110,6 +99,28 @@ export default function Home() {
         <ExperienceSection />
       </section>
 
+      {/* Projects Section */}
+      <section
+        id="projects"
+        className="py-12 sm:py-20 px-4 sm:px-6 md:px-8 lg:px-12 max-w-6xl mx-auto"
+      >
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+          Featured Projects
+        </h2>
+        <ProjectsSection />
+      </section>
+
+      {/* Skills Section */}
+      <section
+        id="skills"
+        className="py-12 sm:py-20 px-4 sm:px-6 md:px-8 lg:px-12 max-w-6xl mx-auto"
+      >
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+          Skills
+        </h2>
+        <SkillsSection />
+      </section>
+
       {/* Education Section */}
       <section
         id="education"
@@ -119,6 +130,17 @@ export default function Home() {
           Education
         </h2>
         <EducationSection />
+      </section>
+
+      {/* Testimonials Section */}
+      <section
+        id="testimonials"
+        className="py-12 sm:py-20 px-4 sm:px-6 md:px-8 lg:px-12 max-w-6xl mx-auto"
+      >
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+          Testimonials
+        </h2>
+        <TestimonialsSection />
       </section>
 
       {/* Learning Section */}
@@ -141,28 +163,6 @@ export default function Home() {
           Hobbies & Interests
         </h2>
         <HobbiesSection />
-      </section>
-
-      {/* Testimonials Section */}
-      <section
-        id="testimonials"
-        className="py-12 sm:py-20 px-4 sm:px-6 md:px-8 lg:px-12 max-w-6xl mx-auto"
-      >
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-          Testimonials
-        </h2>
-        <TestimonialsSection />
-      </section>
-
-      {/* Projects Section */}
-      <section
-        id="projects"
-        className="py-12 sm:py-20 px-4 sm:px-6 md:px-8 lg:px-12 max-w-6xl mx-auto"
-      >
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-          Featured Projects
-        </h2>
-        <ProjectsSection />
       </section>
 
       {/* Contact Section */}

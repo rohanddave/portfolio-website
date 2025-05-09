@@ -2,54 +2,39 @@
   "hobbies": [
     {
       "id": 1,
-      "name": "Photography",
-      "description": "Capturing moments and landscapes through the lens",
-      "icon": "📸",
-      "activities": [
-        "Street photography",
-        "Landscape photography",
-        "Photo editing"
-      ],
-      "equipment": ["Sony A7III", "24-70mm f/2.8", "Adobe Lightroom"],
-      "gallery": [
-        "/images/hobbies/photography/photo1.jpg",
-        "/images/hobbies/photography/photo2.jpg",
-        "/images/hobbies/photography/photo3.jpg"
-      ]
+      "name": "Fitness",
+      "description": "Maintaining physical health and strength through regular exercise",
+      "icon": "💪"
     },
     {
       "id": 2,
-      "name": "Hiking",
-      "description": "Exploring nature trails and mountain paths",
-      "icon": "🏃",
-      "activities": ["Weekend treks", "Mountain climbing", "Trail running"],
-      "equipment": ["Hiking boots", "Backpack", "GPS tracker"],
-      "achievements": [
-        "Completed 10+ mountain trails",
-        "Personal best: 15km in 3 hours"
-      ]
+      "name": "Space",
+      "description": "Exploring the cosmos and staying updated with space exploration",
+      "icon": "🚀"
     },
     {
       "id": 3,
-      "name": "Cooking",
-      "description": "Experimenting with different cuisines and techniques",
-      "icon": "👨‍🍳",
-      "activities": ["Italian cuisine", "Asian fusion", "Baking"],
-      "specialties": ["Homemade pasta", "Sourdough bread", "Thai curries"],
-      "favorite_recipes": ["Pasta Carbonara", "Pad Thai", "Sourdough Pizza"]
+      "name": "Music",
+      "description": "Creating and appreciating various forms of musical expression",
+      "icon": "🎵"
     },
     {
       "id": 4,
-      "name": "Reading",
-      "description": "Exploring different genres and expanding knowledge",
-      "icon": "📚",
-      "activities": ["Tech books", "Science fiction", "Biographies"],
-      "current_books": [
-        "The Pragmatic Programmer",
-        "Project Hail Mary",
-        "Elon Musk Biography"
-      ],
-      "favorite_authors": ["Andy Weir", "Walter Isaacson", "Martin Fowler"]
+      "name": "Tech",
+      "description": "Exploring and experimenting with cutting-edge technology",
+      "icon": "💻"
+    },
+    {
+      "id": 5,
+      "name": "Soccer",
+      "description": "Playing and following the beautiful game",
+      "icon": "⚽"
+    },
+    {
+      "id": 6,
+      "name": "Coffee",
+      "description": "Exploring the art and science of coffee brewing and tasting",
+      "icon": "☕"
     }
   ]
 }
