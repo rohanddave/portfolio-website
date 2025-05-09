@@ -1,8 +1,7 @@
-import { Education, Course } from "@/types";
+import { Education } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo } from "react";
-import CourseCard from "./CourseCard";
 
 interface EducationCardProps {
   education: Education;

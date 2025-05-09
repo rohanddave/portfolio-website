@@ -36,8 +36,10 @@ export interface Experience {
   period: string;
   location: string;
   description: string;
-  achievements: string[];
+  relevant_achievements: string[];
+  all_achievements: string[];
   technologies: string[];
+  logo: string;
 }
 
 export interface ExperiencesData {

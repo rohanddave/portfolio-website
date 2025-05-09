@@ -1,43 +1,93 @@
 {
   "experiences": [
     {
-      "company": "Tech Company A",
-      "role": "Senior Software Engineer",
-      "period": "Jan 2022 - Present",
-      "location": "San Francisco, CA",
-      "description": "Leading the development of cloud-native microservices architecture",
-      "achievements": [
-        "Architected and implemented a scalable microservices platform serving 1M+ users",
-        "Reduced system latency by 40% through optimization and caching strategies",
-        "Mentored 5 junior developers and established best practices"
-      ],
-      "technologies": ["Node.js", "AWS", "Docker", "Kubernetes", "TypeScript"]
-    },
-    {
-      "company": "Tech Company B",
+      "company": "McGraw Hill Education",
       "role": "Software Engineer",
-      "period": "Mar 2020 - Dec 2021",
-      "location": "Remote",
-      "description": "Full-stack development of enterprise web applications",
-      "achievements": [
-        "Developed and maintained 3 major client-facing applications",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-        "Collaborated with UX team to improve user engagement by 35%"
+      "period": "Aug 2023 - Aug 2024",
+      "location": "Mumbai, India",
+      "description": "Full-stack and mobile development focusing on educational platforms",
+      "logo": "/images/experience/mgh.png",
+      "relevant_achievements": [
+        "Developed text-to-speech feature in iOS using native engine and JS bridge, serving 10K+ DAUs across educational resources",
+        "Enhanced user engagement by 75% through implementing data synchronization across web and mobile platforms",
+        "Reduced API response times by 40% by optimizing Redis-based caching for user content",
+        "Enabled real-time language switching through localization, expanding audience by 30% through multi-region support",
+        "Architected a flashcards feature with Swift UI, enabling users to search, favorite, share and download"
       ],
-      "technologies": ["React", "Python", "PostgreSQL", "Redis", "Docker"]
+      "all_achievements": [
+        "Developed text-to-speech feature in iOS using native engine and JS bridge, serving 10K+ DAUs across educational resources",
+        "Enhanced user engagement by 75% through implementing data synchronization across web and mobile platforms",
+        "Reduced API response times by 40% by optimizing Redis-based caching for user content",
+        "Enabled real-time language switching through localization, expanding audience by 30% through multi-region support",
+        "Architected a flashcards feature with Swift UI, enabling users to search, favorite, share and download",
+        "Increased test coverage from 40% to 75% using Jest, significantly improving code reliability",
+        "Cut deployment time by 50% by reducing lambda bundle size and improving CI/CD speed",
+        "Maintained backward compatibility while adding new content through API versioning",
+        "Integrated a differential diagnosis API with search, filter and sort functionality, reducing diagnosis search time by 40%"
+      ],
+      "technologies": [
+        "TypeScript",
+        "NodeJS",
+        "NestJS",
+        "GitHub Actions",
+        "Docker",
+        "AWS Lambda",
+        "S3",
+        "CloudWatch",
+        "iOS",
+        "Swift",
+        "Android",
+        "Kotlin",
+        "Flutter",
+        "Dart"
+      ]
     },
     {
-      "company": "Tech Company C",
-      "role": "Junior Developer",
-      "period": "Jun 2018 - Feb 2020",
-      "location": "New York, NY",
-      "description": "Frontend development and UI/UX implementation",
-      "achievements": [
-        "Built responsive web applications using modern JavaScript frameworks",
-        "Reduced page load time by 50% through code optimization",
-        "Contributed to open-source projects with 1000+ GitHub stars"
+      "company": "TheFridayCompany",
+      "role": "Software Engineer",
+      "period": "Sept 2022 - Aug 2023",
+      "location": "Mumbai, India",
+      "description": "Full-stack and mobile development focusing on turf booking system",
+      "relevant_achievements": [
+        "Automated turf booking and recording with 2 Flutter apps and ReactJS admin panel, ranking top 25 in sports apps",
+        "Enhanced data protection via Firebase authentication with Google and OTP OAuth logins, increasing user acquisition by 25%",
+        "Increased user engagement by 40% through real-time notification delivery via Firebase Cloud Messaging",
+        "Optimized turf discovery by 30% through search and filtering via Google/Apple Maps API",
+        "Enhanced transaction flow by integrating with Stripe API, increasing revenue by 25%"
       ],
-      "technologies": ["JavaScript", "React", "HTML5", "CSS3", "Git"]
+      "all_achievements": [
+        "Automated turf booking and recording with 2 Flutter apps and ReactJS admin panel, ranking top 25 in sports apps",
+        "Enhanced data protection via Firebase authentication with Google and OTP OAuth logins, increasing user acquisition by 25%",
+        "Increased user engagement by 40% through real-time notification delivery via Firebase Cloud Messaging",
+        "Optimized turf discovery by 30% through search and filtering via Google/Apple Maps API",
+        "Enhanced transaction flow by integrating with Stripe API, increasing revenue by 25%",
+        "Developed high-performance turf booking system with <200ms response time using OpenAPI REST API",
+        "Implemented JWT authentication & role-based authorization, increasing secure access by 70%",
+        "Enabled users to share turfs by implementing universal links and deep linking, increasing user acquisition by 25%",
+        "Enabled users to stream videos by developing a network video viewer module, enhancing user engagement",
+        "Optimized video delivery using Cloudflare CDN & AWS S3, reducing load times by 40%"
+      ],
+      "technologies": [
+        "NestJS",
+        "TypeScript",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Elasticsearch",
+        "Stripe API",
+        "Cloudflare CDN",
+        "AWS",
+        "Docker",
+        "iOS",
+        "Swift",
+        "Android",
+        "Kotlin",
+        "Flutter",
+        "Dart",
+        "ReactJS",
+        "HTML",
+        "CSS"
+      ]
     }
   ]
 }
