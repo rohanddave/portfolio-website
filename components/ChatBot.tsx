@@ -12,7 +12,7 @@ export default function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
-      text: "Hi! I'm your AI assistant. How can I help you today?",
+      text: "Hi! I'm Aria, your AI assistant. I'm here to help answer any questions you have about Rohan Dave's portfolio, projects, and experience. What would you like to know?",
       sender: "bot",
       timestamp: new Date(),
     },
@@ -132,7 +132,9 @@ export default function ChatBot() {
         >
           {/* Chat Header */}
           <div className="p-4 border-b border-gray-800 flex justify-between items-center">
-            <h3 className="text-lg font-semibold text-white">Chat Assistant</h3>
+            <h3 className="text-lg font-semibold text-white">
+              Aria - AI Assistant
+            </h3>
             <button
               onClick={() => setIsOpen(false)}
               className="text-gray-400 hover:text-white transition-colors"
@@ -205,7 +207,8 @@ export default function ChatBot() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type your message..."
-              className="flex-1 bg-gray-800 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              disabled={isTyping}
+              className="flex-1 bg-gray-800 text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
             />
             <button
               type="submit"

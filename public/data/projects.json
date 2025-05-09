@@ -8,7 +8,9 @@
         "TypeScript",
         "Twitter API",
         "OpenAI",
-        "MCP Server",
+        "AI Model Context Protocol Server",
+        "AI Agentic Systems",
+        "AI RAG Systems",
         "TailwindCSS"
       ],
       "link": "https://tessa-web-app.vercel.app",
