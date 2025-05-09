@@ -179,13 +179,13 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap gap-3 sm:gap-4">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:dave.ro@northeastern.edu"
               className="px-4 sm:px-6 py-2 sm:py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors text-sm sm:text-base"
             >
               Email Me
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/rohanddave"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 sm:px-6 py-2 sm:py-3 border border-gray-600 hover:border-gray-500 rounded-lg transition-colors text-sm sm:text-base"
@@ -193,7 +193,7 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://linkedin.com/in/rohandewangdave"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 sm:px-6 py-2 sm:py-3 border border-gray-600 hover:border-gray-500 rounded-lg transition-colors text-sm sm:text-base"
