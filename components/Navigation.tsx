@@ -5,13 +5,13 @@ import Link from "next/link";
 
 const sections = [
   { id: "home", label: "Home" },
-  { id: "skills", label: "Skills" },
   { id: "experience", label: "Experience" },
+  { id: "projects", label: "Projects" },
+  { id: "skills", label: "Skills" },
   { id: "education", label: "Education" },
+  { id: "testimonials", label: "Testimonials" },
   { id: "learning", label: "Learning" },
   { id: "hobbies", label: "Hobbies" },
-  { id: "testimonials", label: "Testimonials" },
-  { id: "projects", label: "Projects" },
   { id: "contact", label: "Contact" },
 ];
 
