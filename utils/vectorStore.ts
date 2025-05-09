@@ -11,23 +11,44 @@ const embeddings = new OpenAIEmbeddings({
 // Create a singleton instance of MemoryVectorStore
 const vectorStore = new MemoryVectorStore(embeddings);
 
-// Function to chunk text into smaller pieces
-function chunkText(text: string, chunkSize: number = 1000): string[] {
+// Function to chunk text into smaller pieces with overlap
+function chunkText(
+  text: string,
+  chunkSize: number = 1000,
+  overlap: number = 200
+): string[] {
   const chunks: string[] = [];
   let currentChunk = "";
+  let currentLength = 0;
 
-  const sentences = text.split(/[.!?]+/);
+  // Split into sentences while preserving sentence boundaries
+  const sentences = text.split(/(?<=[.!?])\s+/);
 
   for (const sentence of sentences) {
-    if ((currentChunk + sentence).length > chunkSize) {
-      if (currentChunk) chunks.push(currentChunk.trim());
-      currentChunk = sentence;
+    const sentenceLength = sentence.length;
+
+    if (currentLength + sentenceLength > chunkSize) {
+      if (currentChunk) {
+        chunks.push(currentChunk.trim());
+        // Keep the last part of the chunk for overlap
+        const words = currentChunk.split(/\s+/);
+        const overlapWords = words.slice(-Math.floor(overlap / 5)).join(" ");
+        currentChunk = overlapWords + " " + sentence;
+        currentLength = currentChunk.length;
+      } else {
+        currentChunk = sentence;
+        currentLength = sentenceLength;
+      }
     } else {
       currentChunk += (currentChunk ? " " : "") + sentence;
+      currentLength += sentenceLength;
     }
   }
 
-  if (currentChunk) chunks.push(currentChunk.trim());
+  if (currentChunk) {
+    chunks.push(currentChunk.trim());
+  }
+
   return chunks;
 }
 
@@ -38,17 +59,18 @@ export async function processAndStoreJsonFiles() {
 
   for (const file of files) {
     if (file.endsWith(".json")) {
+      console.log(`Processing ${file}`);
       const filePath = path.join(dataDir, file);
       const content = fs.readFileSync(filePath, "utf-8");
       const data = JSON.parse(content);
 
-      // Convert the data to a string representation
+      // Convert the data to a string representation with better formatting
       const textContent = JSON.stringify(data, null, 2);
 
-      // Split the content into chunks
+      // Split the content into chunks with overlap
       const chunks = chunkText(textContent);
 
-      // Create documents for each chunk
+      // Create documents for each chunk with enhanced metadata
       const documents = chunks.map(
         (chunk, i) =>
           new Document({
@@ -56,6 +78,8 @@ export async function processAndStoreJsonFiles() {
             metadata: {
               source: file,
               chunkIndex: i,
+              totalChunks: chunks.length,
+              fileType: path.basename(file, ".json"),
             },
           })
       );
@@ -66,14 +90,35 @@ export async function processAndStoreJsonFiles() {
   }
 }
 
-// Function to search for relevant content
-export async function searchRelevantContent(query: string, topK: number = 3) {
-  // Search in memory
-  const searchResults = await vectorStore.similaritySearch(query, topK);
+// Function to search for relevant content with improved relevance scoring
+export async function searchRelevantContent(query: string, topK: number = 5) {
+  // Search in memory with similarity scores
+  const searchResults = await vectorStore.similaritySearchWithScore(
+    query,
+    topK
+  );
 
-  // Combine the results into a single context string
-  const context = searchResults
-    .map((result) => result.pageContent)
+  // Filter and format results based on relevance threshold
+  const relevanceThreshold = 0.7;
+  const relevantResults = searchResults
+    .filter(([_, score]) => score > relevanceThreshold)
+    .map(([doc, score]) => ({
+      content: doc.pageContent,
+      score,
+      metadata: doc.metadata,
+    }));
+
+  // Sort results by score and format context
+  const sortedResults = relevantResults.sort((a, b) => b.score - a.score);
+
+  // Format context with source information and relevance scores
+  const context = sortedResults
+    .map(
+      (result) =>
+        `[Source: ${result.metadata.fileType}, Relevance: ${(
+          result.score * 100
+        ).toFixed(1)}%]\n${result.content}`
+    )
     .join("\n\n");
 
   return context;
