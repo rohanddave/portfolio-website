@@ -134,3 +134,14 @@ export interface Hobby {
 export interface HobbiesData {
   hobbies: Hobby[];
 }
+
+export interface Profile {
+  name: string;
+  title: string;
+  openToRoles: string[];
+  summary: string;
+  links: {
+    resume: string;
+    projects: string;
+  };
+}

@@ -1,5 +1,5 @@
+"use client";
 import Link from "next/link";
-import SkillAnimation from "@/components/SkillAnimation";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ExperienceSection from "@/components/ExperienceSection";
@@ -9,8 +9,23 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import LearningSection from "@/components/LearningSection";
 import HobbiesSection from "@/components/HobbiesSection";
 import ChatBot from "@/components/ChatBot";
+import { useEffect, useState } from "react";
+import { Profile } from "@/types";
+import TypeWriter from "@/components/TypeWriter";
 
 export default function Home() {
+  const [profile, setProfile] = useState<Profile | null>(null);
+
+  useEffect(() => {
+    getProfileData();
+  }, []);
+
+  const getProfileData = async () => {
+    const response = await fetch("/data/profile.json");
+    const data = await response.json();
+    setProfile(data);
+  };
+
   return (
     <div className="min-h-screen bg-black">
       <Navigation />
@@ -19,72 +34,41 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="home"
-        className="min-h-[90vh] flex flex-col justify-center px-4 sm:px-6 md:px-8 lg:px-12 max-w-6xl mx-auto py-12 sm:py-20"
+        className="min-h-[80vh] flex items-center px-4 sm:px-6 md:px-8 lg:px-12 max-w-4xl mx-auto"
       >
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          {/* Left Column - Text Content */}
-          <div className="space-y-6 md:space-y-8">
-            <div className="space-y-3 md:space-y-4">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+        {profile && (
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-5xl sm:text-6xl font-bold">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                  Rohan Dave
+                  {profile.name}
                 </span>
               </h1>
-              <h2 className="text-xl sm:text-2xl md:text-3xl text-gray-300">
-                Software Engineer | Full-Stack Developer
-              </h2>
+              <div className="space-y-2">
+                <h2 className="text-xl sm:text-2xl text-gray-300">
+                  <TypeWriter text={profile.openToRoles} />
+                </h2>
+              </div>
             </div>
 
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-300">
-              I specialize in building scalable web applications and
-              microservices. With a focus on clean code and user experience, I
-              transform complex problems into elegant solutions.
-            </p>
+            <p className="text-lg text-gray-300 max-w-2xl">{profile.summary}</p>
 
-            <div className="flex flex-wrap gap-3 sm:gap-4 pt-4 sm:pt-6">
+            <div className="flex gap-4">
               <Link
-                href="/resume.pdf"
-                className="px-4 sm:px-6 py-2 sm:py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors flex items-center gap-2 text-sm sm:text-base"
+                href={profile.links.resume}
+                className="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 sm:h-5 sm:w-5"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                Download Resume
+                Resume
               </Link>
               <Link
-                href="#projects"
-                className="px-4 sm:px-6 py-2 sm:py-3 border border-gray-600 hover:border-gray-500 rounded-lg transition-colors text-sm sm:text-base"
+                href={profile.links.projects}
+                className="px-6 py-2 border border-gray-600 hover:border-gray-500 rounded-lg transition-colors"
               >
-                View Projects
-              </Link>
-              <Link
-                href="#contact"
-                className="px-4 sm:px-6 py-2 sm:py-3 border border-gray-600 hover:border-gray-500 rounded-lg transition-colors text-sm sm:text-base"
-              >
-                Get in Touch
+                Projects
               </Link>
             </div>
-
-            {/* TODO: Add GitHub Activity */}
-            {/* <div className="pt-4">
-              <GitHubActivity username="rohanddave" />
-            </div> */}
           </div>
-
-          {/* Right Column - Animations */}
-          <div className="space-y-8">
-            <SkillAnimation />
-          </div>
-        </div>
+        )}
       </section>
 
       {/* Experience Section */}
