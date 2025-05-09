@@ -62,28 +62,37 @@ export default function ChatBot() {
 
     // Simulate bot response
     setTimeout(() => {
-      const botResponse: Message = {
-        text: getBotResponse(input),
-        sender: "bot",
-        timestamp: new Date(),
-      };
-      setMessages((prev) => [...prev, botResponse]);
-      setIsTyping(false);
+      getBotResponse(input).then((response) => {
+        const botResponse: Message = {
+          text: response,
+          sender: "bot",
+          timestamp: new Date(),
+        };
+        setMessages((prev) => [...prev, botResponse]);
+        setIsTyping(false);
+      });
     }, 1000);
   };
 
-  const getBotResponse = (userInput: string): string => {
-    const input = userInput.toLowerCase();
-    if (input.includes("hello") || input.includes("hi")) {
-      return "Hello! How can I help you today?";
-    } else if (input.includes("experience")) {
-      return "I have experience in full-stack development, focusing on React, Node.js, and cloud technologies. Would you like to know more about any specific area?";
-    } else if (input.includes("project")) {
-      return "I've worked on various projects including web applications, mobile apps, and cloud infrastructure. You can find more details in the Projects section.";
-    } else if (input.includes("contact")) {
-      return "You can reach me through email or connect with me on LinkedIn. The contact information is available in the Contact section.";
-    } else {
-      return "I'm here to help! Feel free to ask me about my experience, projects, or skills.";
+  const getBotResponse = async (userInput: string): Promise<string> => {
+    try {
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ message: userInput }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to get response from API");
+      }
+
+      const data = await response.json();
+      return data.response;
+    } catch (error) {
+      console.error("Error getting bot response:", error);
+      return "I apologize, but I'm having trouble connecting to my knowledge base. Please try again later.";
     }
   };
 
