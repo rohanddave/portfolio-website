@@ -6,7 +6,6 @@ import { Learning, LearningData } from "../types";
 export default function LearningSection() {
   const [learning, setLearning] = useState<Learning[]>([]);
   const [loading, setLoading] = useState(true);
-  const [expandedId, setExpandedId] = useState<number | null>(null);
 
   useEffect(() => {
     const fetchLearning = async () => {
@@ -27,9 +26,9 @@ export default function LearningSection() {
   if (loading) {
     return (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {[1, 2, 3].map((i) => (
+        {learning.map((item) => (
           <div
-            key={i}
+            key={item.id}
             className="bg-gray-900/50 backdrop-blur-sm rounded-lg p-6 border border-gray-800 animate-pulse"
           >
             <div className="flex items-center space-x-4 mb-4">

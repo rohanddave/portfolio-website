@@ -12,7 +12,7 @@ import ChatBot from "@/components/ChatBot";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black to-gray-900">
+    <div className="min-h-screen bg-black">
       <Navigation />
       <ChatBot />
 

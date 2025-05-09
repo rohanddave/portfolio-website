@@ -19,7 +19,7 @@ export default function CourseCard({
   const [expanded, setExpanded] = useState(false);
 
   const baseClasses =
-    "relative bg-gray-900/50 backdrop-blur-sm rounded-lg p-6 border border-gray-800 hover:border-gray-700 transition-all duration-300";
+    "relative bg-white/5 backdrop-blur-sm rounded-lg p-6 border border-white/10 hover:border-white/20 transition-all duration-300";
   const isClickable = onClick !== undefined && !course.isCurrent;
 
   return (
@@ -31,11 +31,11 @@ export default function CourseCard({
     >
       {/* Timeline connector */}
       {!isLast && (
-        <div className="absolute left-8 top-full h-6 w-0.5 bg-gray-800"></div>
+        <div className="absolute left-8 top-full h-6 w-0.5 bg-white/10"></div>
       )}
 
       <div className="flex items-start gap-4">
-        <div className="w-16 h-16 bg-blue-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+        <div className="w-16 h-16 bg-white/5 rounded-lg flex items-center justify-center flex-shrink-0 border border-white/10">
           <span className="text-blue-400 font-semibold">{course.code}</span>
         </div>
         <div className="flex-grow">
@@ -47,11 +47,11 @@ export default function CourseCard({
                   Current
                 </span>
               )}
-              <span className="text-sm text-gray-400">{course.semester}</span>
+              <span className="text-sm text-gray-300">{course.semester}</span>
             </div>
           </div>
-          <p className="text-gray-400 mb-2">{course.description}</p>
-          <div className="flex items-center gap-4 text-sm text-gray-500">
+          <p className="text-gray-300 mb-2">{course.description}</p>
+          <div className="flex items-center gap-4 text-sm text-gray-300">
             <span>{course.professor}</span>
             <span>•</span>
             <span>{course.credits} Credits</span>
@@ -69,7 +69,7 @@ export default function CourseCard({
                 {course.topics.map((topic) => (
                   <span
                     key={topic}
-                    className="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300"
+                    className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm border border-white/10"
                   >
                     {topic}
                   </span>

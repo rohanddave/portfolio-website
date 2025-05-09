@@ -94,11 +94,11 @@ export default function GitHubActivity({ username }: GitHubActivityProps) {
   }
 
   return (
-    <div className="bg-gray-900/50 backdrop-blur-sm rounded-lg p-2 border border-gray-800">
+    <div className="bg-white/5 backdrop-blur-sm rounded-lg p-2 border border-white/10">
       <div className="flex items-center justify-between mb-1.5">
         <div className="flex items-center gap-1.5">
           <svg
-            className="w-3.5 h-3.5 text-gray-400"
+            className="w-3.5 h-3.5 text-gray-300"
             fill="currentColor"
             viewBox="0 0 24 24"
           >
@@ -124,7 +124,9 @@ export default function GitHubActivity({ username }: GitHubActivityProps) {
               className="w-3 h-3 rounded-[1px] transition-transform hover:scale-110 cursor-pointer"
               style={{
                 backgroundColor:
-                  day.contributionCount > 0 ? day.color : "#1f2937",
+                  day.contributionCount > 0
+                    ? day.color
+                    : "rgba(255, 255, 255, 0.1)",
               }}
               onMouseEnter={() => setHoveredDay(day)}
               onMouseLeave={() => setHoveredDay(null)}
@@ -134,26 +136,30 @@ export default function GitHubActivity({ username }: GitHubActivityProps) {
 
         {/* Tooltip */}
         {hoveredDay && (
-          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-[10px] px-1.5 py-0.5 rounded whitespace-nowrap z-10">
+          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-white/5 backdrop-blur-sm text-white text-[10px] px-1.5 py-0.5 rounded whitespace-nowrap z-10 border border-white/10">
             {new Date(hoveredDay.date).toLocaleDateString()}:{" "}
             {hoveredDay.contributionCount} contributions
           </div>
         )}
       </div>
 
-      <div className="flex items-center justify-between mt-1.5 text-[10px] text-gray-400">
+      <div className="flex items-center justify-between mt-1.5 text-[10px] text-gray-300">
         <div className="flex items-center gap-1">
           <span>Less</span>
           <div className="flex gap-0.5">
-            {["#1f2937", "#0e4429", "#006d32", "#26a641", "#39d353"].map(
-              (color, i) => (
-                <div
-                  key={i}
-                  className="w-1.5 h-1.5 rounded-[1px]"
-                  style={{ backgroundColor: color }}
-                />
-              )
-            )}
+            {[
+              "rgba(255, 255, 255, 0.1)",
+              "#0e4429",
+              "#006d32",
+              "#26a641",
+              "#39d353",
+            ].map((color, i) => (
+              <div
+                key={i}
+                className="w-1.5 h-1.5 rounded-[1px]"
+                style={{ backgroundColor: color }}
+              />
+            ))}
           </div>
           <span>More</span>
         </div>

@@ -82,7 +82,7 @@ export default function EducationDetail() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 p-8">
+      <div className="min-h-screen bg-black p-8">
         <div className="max-w-6xl mx-auto animate-pulse">
           <div className="h-8 bg-gray-800 rounded w-1/3 mb-4"></div>
           <div className="h-4 bg-gray-800 rounded w-1/4 mb-8"></div>
@@ -98,7 +98,7 @@ export default function EducationDetail() {
 
   if (!education) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 p-8">
+      <div className="min-h-screen bg-black p-8">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-2xl text-red-500 mb-4">Education not found</h1>
           <Link
@@ -113,7 +113,7 @@ export default function EducationDetail() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 p-8">
+    <div className="min-h-screen bg-black p-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-8">
@@ -261,7 +261,7 @@ export default function EducationDetail() {
         {/* Course Detail Modal */}
         {selectedCourse && (
           <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4 z-50">
-            <div className="bg-gray-900 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="bg-white/5 backdrop-blur-sm rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-white/10">
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-semibold text-white">
@@ -269,7 +269,7 @@ export default function EducationDetail() {
                   </h3>
                   <button
                     onClick={() => setSelectedCourse(null)}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-300 hover:text-white transition-colors"
                   >
                     <svg
                       className="w-6 h-6"
@@ -291,31 +291,31 @@ export default function EducationDetail() {
                   {/* Course Info */}
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div>
-                      <span className="text-gray-400">Course Code:</span>
+                      <span className="text-gray-300">Course Code:</span>
                       <span className="text-white ml-2">
                         {selectedCourse.code}
                       </span>
                     </div>
                     <div>
-                      <span className="text-gray-400">Semester:</span>
+                      <span className="text-gray-300">Semester:</span>
                       <span className="text-white ml-2">
                         {selectedCourse.semester}
                       </span>
                     </div>
                     <div>
-                      <span className="text-gray-400">Professor:</span>
+                      <span className="text-gray-300">Professor:</span>
                       <span className="text-white ml-2">
                         {selectedCourse.professor}
                       </span>
                     </div>
                     <div>
-                      <span className="text-gray-400">Credits:</span>
+                      <span className="text-gray-300">Credits:</span>
                       <span className="text-white ml-2">
                         {selectedCourse.credits}
                       </span>
                     </div>
                     <div>
-                      <span className="text-gray-400">Grade:</span>
+                      <span className="text-gray-300">Grade:</span>
                       <span className="text-green-400 ml-2">
                         {selectedCourse.grade}
                       </span>
@@ -324,7 +324,7 @@ export default function EducationDetail() {
 
                   {/* Description */}
                   <div>
-                    <h4 className="text-sm font-medium text-gray-400 mb-2">
+                    <h4 className="text-sm font-medium text-gray-300 mb-2">
                       Description
                     </h4>
                     <p className="text-gray-300">
@@ -334,14 +334,14 @@ export default function EducationDetail() {
 
                   {/* Topics */}
                   <div>
-                    <h4 className="text-sm font-medium text-gray-400 mb-2">
+                    <h4 className="text-sm font-medium text-gray-300 mb-2">
                       Topics Covered
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {selectedCourse.topics.map((topic) => (
                         <span
                           key={topic}
-                          className="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300"
+                          className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm border border-white/10"
                         >
                           {topic}
                         </span>
@@ -351,14 +351,14 @@ export default function EducationDetail() {
 
                   {/* Key Learnings */}
                   <div>
-                    <h4 className="text-sm font-medium text-gray-400 mb-2">
+                    <h4 className="text-sm font-medium text-gray-300 mb-2">
                       Key Learnings & Takeaways
                     </h4>
                     <ul className="space-y-2">
                       {selectedCourse.learnings.map((learning, index) => (
                         <li key={index} className="flex items-start gap-2">
                           <svg
-                            className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0"
+                            className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -380,7 +380,7 @@ export default function EducationDetail() {
                   {projects.filter((p) => p.course == selectedCourse.name)
                     .length > 0 && (
                     <div>
-                      <h4 className="text-sm font-medium text-gray-400 mb-4">
+                      <h4 className="text-sm font-medium text-gray-300 mb-4">
                         Course Projects
                       </h4>
                       <div className="space-y-4">

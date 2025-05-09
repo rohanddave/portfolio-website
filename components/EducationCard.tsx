@@ -33,11 +33,11 @@ export default function EducationCard({
 
   return (
     <div
-      className={`relative bg-gray-900/50 backdrop-blur-sm rounded-lg p-8 border border-gray-800 hover:border-gray-700 transition-all duration-300 ${className}`}
+      className={`relative bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-white/10 hover:border-white/20 transition-all duration-300 ${className}`}
     >
       {/* Timeline connector */}
       {!isLast && (
-        <div className="absolute left-8 top-full h-8 w-0.5 bg-gray-800"></div>
+        <div className="absolute left-8 top-full h-8 w-0.5 bg-white/10"></div>
       )}
 
       <div className="flex flex-col md:flex-row md:items-start gap-6">
@@ -48,7 +48,7 @@ export default function EducationCard({
               src={edu.image}
               alt={edu.institution}
               fill
-              className="object-contain bg-gray-800/50"
+              className="object-contain bg-white/5"
               sizes="(max-width: 768px) 100vw, 33vw"
             />
           </div>
@@ -60,8 +60,8 @@ export default function EducationCard({
               {edu.institution}
             </h3>
           </Link>
-          <p className="text-gray-400 mt-1">{edu.period}</p>
-          <p className="text-gray-500 text-sm mt-1">{edu.location}</p>
+          <p className="text-gray-300 mt-1">{edu.period}</p>
+          <p className="text-gray-400 text-sm mt-1">{edu.location}</p>
           <div className="mt-2 flex items-center gap-2">
             <span className="text-gray-300">GPA: {edu.gpa}</span>
             {edu.isCurrent && (
@@ -74,8 +74,8 @@ export default function EducationCard({
 
         {/* Right column - Degree, Description, and Details */}
         <div className="md:w-2/3">
-          <h4 className="text-lg font-medium text-gray-200">{edu.degree}</h4>
-          <p className="text-gray-400 mt-2">{edu.description}</p>
+          <h4 className="text-lg font-medium text-white">{edu.degree}</h4>
+          <p className="text-gray-300 mt-2">{edu.description}</p>
 
           {/* Achievements */}
           <div className="mt-4">
@@ -113,7 +113,7 @@ export default function EducationCard({
               {edu.relevantCourses.map((course) => (
                 <span
                   key={course}
-                  className="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-300"
+                  className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm border border-white/10"
                 >
                   {course}
                 </span>

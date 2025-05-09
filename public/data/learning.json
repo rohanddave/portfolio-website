@@ -2,30 +2,60 @@
   "learning": [
     {
       "id": 1,
-      "topic": "Machine Learning & AI",
-      "description": "Deep diving into practical ML applications and neural networks",
-      "progress": 65,
+      "topic": "AI",
+      "description": "Mastering modern AI architectures including agentic systems, RAGs, and transformer models",
+      "progress": 15,
       "resources": [
         {
-          "name": "Deep Learning Specialization",
-          "platform": "Coursera",
-          "url": "https://coursera.org/specializations/deep-learning"
+          "name": "Building LLM Applications",
+          "platform": "LangChain",
+          "url": "https://python.langchain.com/docs/get_started/introduction"
         },
         {
-          "name": "Practical Deep Learning for Coders",
-          "platform": "fast.ai",
-          "url": "https://course.fast.ai"
+          "name": "Transformer Architecture Deep Dive",
+          "platform": "Hugging Face",
+          "url": "https://huggingface.co/course"
+        },
+        {
+          "name": "Advanced RAG Systems",
+          "platform": "Weaviate",
+          "url": "https://weaviate.io/blog"
         }
       ],
       "goals": [
-        "Build and deploy a production ML model",
-        "Master PyTorch and TensorFlow",
-        "Implement advanced NLP techniques"
+        "Build and deploy agentic AI systems",
+        "Implement efficient RAG pipelines",
+        "Master transformer architecture and attention mechanisms",
+        "Develop MCP-based model control systems"
       ],
-      "icon": "🤖"
+      "icon": "🔮"
     },
     {
       "id": 2,
+      "topic": "Quantum Computing",
+      "description": "Mastering quantum computing principles and applications",
+      "progress": 20,
+      "resources": [
+        {
+          "name": "Quantum Computing Fundamentals",
+          "platform": "IBM Quantum",
+          "url": "https://www.ibm.com/quantum/learn"
+        },
+        {
+          "name": "Quantum Computing for Computer Scientists",
+          "platform": "edX",
+          "url": "https://www.edx.org/learn/quantum-computing"
+        }
+      ],
+      "goals": [
+        "Master quantum computing fundamentals",
+        "Implement quantum algorithms",
+        "Build quantum circuits and applications"
+      ],
+      "icon": "⚛️"
+    },
+    {
+      "id": 3,
       "topic": "Cloud Architecture",
       "description": "Mastering cloud-native development and microservices",
       "progress": 80,
@@ -47,30 +77,6 @@
         "Master container orchestration"
       ],
       "icon": "☁️"
-    },
-    {
-      "id": 3,
-      "topic": "Web3 Development",
-      "description": "Exploring blockchain technology and smart contracts",
-      "progress": 45,
-      "resources": [
-        {
-          "name": "Solidity Development",
-          "platform": "Udemy",
-          "url": "https://udemy.com/course/solidity-development"
-        },
-        {
-          "name": "Ethereum Developer Portal",
-          "platform": "Ethereum",
-          "url": "https://ethereum.org/developers"
-        }
-      ],
-      "goals": [
-        "Build and deploy smart contracts",
-        "Create DApps with React",
-        "Understand DeFi protocols"
-      ],
-      "icon": "⛓️"
     }
   ]
 }

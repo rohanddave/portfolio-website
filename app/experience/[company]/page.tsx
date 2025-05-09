@@ -56,7 +56,7 @@ export default function ExperienceDetailsPage() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 p-8">
+      <div className="min-h-screen bg-black p-8">
         <div className="max-w-6xl mx-auto animate-pulse">
           <div className="h-8 bg-gray-800 rounded w-1/3 mb-4"></div>
           <div className="h-4 bg-gray-800 rounded w-1/4 mb-8"></div>
@@ -72,7 +72,7 @@ export default function ExperienceDetailsPage() {
 
   if (!experience) {
     return (
-      <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 p-8">
+      <div className="min-h-screen bg-black p-8">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-2xl text-red-500 mb-4">Experience not found</h1>
           <Link
@@ -87,7 +87,7 @@ export default function ExperienceDetailsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 p-8">
+    <div className="min-h-screen bg-black p-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-8">
