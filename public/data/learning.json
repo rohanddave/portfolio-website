@@ -4,7 +4,7 @@
       "id": 1,
       "topic": "AI",
       "description": "Mastering modern AI architectures including agentic systems, RAGs, and transformer models",
-      "progress": 15,
+      "progress": 55,
       "resources": [
         {
           "name": "Building LLM Applications",
@@ -34,7 +34,7 @@
       "id": 2,
       "topic": "Quantum Computing",
       "description": "Mastering quantum computing principles and applications",
-      "progress": 20,
+      "progress": 50,
       "resources": [
         {
           "name": "Quantum Computing Fundamentals",
