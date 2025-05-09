@@ -1,41 +1,1601 @@
 {
   "education": [
     {
-      "institution": "University of Technology",
+      "institution": "Northeastern University",
       "degree": "Master of Science in Computer Science",
-      "period": "2016 - 2018",
-      "location": "San Francisco, CA",
-      "description": "Specialized in Artificial Intelligence and Machine Learning",
+      "period": "2024 - 2026",
+      "location": "Boston, MA, USA",
+      "description": "Pursuing a specialized track in Artificial Intelligence and Systems, focusing on machine learning, distributed systems, and software engineering. Combining academic excellence with practical experience through teaching and entrepreneurial initiatives.",
+      "image": "/images/education/northeastern.png",
+      "gpa": "3.9/4.0",
+      "isCurrent": true,
       "achievements": [
-        "Graduated with Distinction (GPA: 3.9/4.0)",
-        "Published 2 research papers in top-tier conferences",
-        "Led the AI Research Student Group"
+        "Teaching Assistant for CS3500 (Object-Oriented Design), mentoring 50+ students in software design principles and best practices",
+        "Active member of the Entrepreneurs Club, contributing to startup ideation and business development workshops"
       ],
-      "courses": [
-        "Advanced Machine Learning",
-        "Deep Learning Systems",
-        "Natural Language Processing",
-        "Computer Vision",
-        "Distributed Systems"
+      "relevantCourses": [
+        "Program Design Paradigm",
+        "Foundations of AI",
+        "Web Development",
+        "Algorithms",
+        "Database Management Systems"
+      ],
+      "allCourses": [
+        {
+          "name": "Program Design Paradigm",
+          "code": "CS5010",
+          "semester": "Fall 2024",
+          "professor": "Prof. Amit Shesh",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced study of programming paradigms and design patterns",
+          "isCurrent": false,
+          "startDate": "2024-09-01",
+          "endDate": "2024-12-15",
+          "projects": [
+            {
+              "title": "Advanced Image Processing Suite",
+              "description": "Developed a comprehensive image processing application with both GUI and CLI interfaces, featuring color channel analysis, image transformations, advanced filters, histogram visualization, and batch processing capabilities. Implemented using MVC architecture for clean separation of concerns.",
+              "tech": [
+                "Java",
+                "Swing",
+                "MVC Pattern",
+                "Object-Oriented Programming"
+              ],
+              "link": "https://github.com/rohanddave/PdpImageManipulatorAndEnhancer"
+            }
+          ],
+          "topics": [
+            "Object Oriented Programming",
+            "Design Patterns",
+            "Software Architecture",
+            "Image Processing"
+          ],
+          "learnings": [
+            "Mastered the Strategy pattern for implementing interchangeable image processing algorithms, allowing dynamic selection of filters and transformations",
+            "Applied the Factory pattern to create different types of image processors and filters, ensuring consistent object creation and encapsulation",
+            "Implemented the Adapter pattern to handle different image formats (PPM, JPG, PNG) with a unified interface",
+            "Utilized the Command pattern for implementing undo/redo functionality in the image editor, enabling reversible operations",
+            "Employed the Facade pattern to simplify complex image processing operations, providing a clean interface for the GUI",
+            "Used the Decorator pattern to dynamically add new features to image filters without modifying existing code",
+            "Implemented the Visitor pattern for traversing and processing image data structures, enabling new operations without changing the image classes",
+            "Applied the Iterator pattern to process image pixels efficiently, supporting different traversal strategies"
+          ]
+        },
+        {
+          "name": "Foundations of AI",
+          "code": "CS5800",
+          "semester": "Fall 2024",
+          "professor": "Prof. Rajagopal Venkat",
+          "grade": "A",
+          "credits": 4,
+          "description": "Comprehensive introduction to artificial intelligence concepts and algorithms",
+          "isCurrent": false,
+          "startDate": "2024-09-01",
+          "endDate": "2024-12-15",
+          "projects": [
+            {
+              "title": "Sound Sage: A Smart Music Recommendation System",
+              "description": "Developed an advanced music recommendation system using Spotify's 12M-song dataset. Implemented K-Nearest Neighbors algorithm for personalized music suggestions based on detailed audio features including valence, tempo, danceability, and energy. Created a dynamic user profile modeling system that adapts recommendations based on user feedback ratings.",
+              "tech": [
+                "Python",
+                "Machine Learning",
+                "KNN Algorithm",
+                "Recommender Systems",
+                "Data Analysis"
+              ],
+              "link": "https://github.com/rohanddave/sound-sage"
+            },
+            {
+              "title": "Escape The Castle: Intelligent Agents with Monte Carlo Methods",
+              "description": "Developed intelligent agents for the 'Escape The Castle' game using both model-based and model-free Monte Carlo methods. Implemented a two-phase approach: first using Model-Based Monte Carlo (MCMC) for environment learning and state transition modeling, then transitioning to Model-Free Monte Carlo for improved performance and faster convergence. The project demonstrated enhanced learning efficiency and flexible adaptation to dynamic environments.",
+              "tech": [
+                "Python",
+                "Reinforcement Learning",
+                "Monte Carlo Methods",
+                "Game AI",
+                "Model-Based Learning",
+                "Model-Free Learning"
+              ],
+              "link": "https://github.com/rohanddave/escape-the-castle"
+            },
+            {
+              "title": "AI-Powered Grid Coloring: Intelligent Optimization in Action",
+              "description": "Built an AI agent to solve complex grid coloring problems using the Hill Climbing algorithm. Implemented an interactive system that optimizes grid coloring while minimizing both color usage and brush shape variety. The agent uses adaptive brush strategies and constraint satisfaction techniques to achieve optimal solutions, demonstrating the application of AI in creative problem-solving.",
+              "tech": [
+                "Python",
+                "Pygame",
+                "Artificial Intelligence",
+                "Hill Climbing Algorithm",
+                "Constraint Satisfaction",
+                "Optimization"
+              ],
+              "link": "https://github.com/rohanddave/grid-coloring-ai"
+            }
+          ],
+          "topics": [
+            "Knowledge Representation",
+            "Search Algorithms",
+            "Game Theory",
+            "Constraint Satisfaction Problems",
+            "Markov Decision Processes",
+            "Reinforcement Learning",
+            "Machine Learning",
+            "Neural Networks",
+            "Natural Language Processing",
+            "Large Language Models"
+          ],
+          "learnings": [
+            "Mastered knowledge representation techniques including semantic networks, frames, and ontologies for structured AI reasoning",
+            "Implemented and analyzed various search algorithms (A*, minimax, alpha-beta pruning) for optimal path finding and game playing",
+            "Developed constraint satisfaction solvers using backtracking and local search algorithms for complex problem domains",
+            "Built and trained neural networks from scratch, understanding backpropagation and gradient descent optimization",
+            "Implemented reinforcement learning algorithms including Q-learning and policy gradients for autonomous decision making",
+            "Designed and implemented natural language processing pipelines for text classification and sentiment analysis",
+            "Gained deep understanding of transformer architectures and their role in modern large language models",
+            "Applied game theory concepts to develop strategic AI agents for competitive environments",
+            "Mastered Markov Decision Processes for modeling sequential decision-making problems",
+            "Developed practical experience in implementing and evaluating AI systems across various domains"
+          ]
+        },
+        {
+          "name": "Web Development",
+          "code": "CS5610",
+          "semester": "Spring 2025",
+          "professor": "Prof. Jose Annunziato",
+          "grade": "A",
+          "credits": 4,
+          "description": "Modern web development practices and frameworks",
+          "isCurrent": false,
+          "startDate": "2025-01-15",
+          "endDate": "2025-05-01",
+          "projects": [
+            {
+              "title": "PlaySync: Cross-Platform Collaborative Playlist",
+              "description": "Developed a universal music sharing platform that enables cross-platform playlist collaboration across Spotify, Apple Music, and YouTube Music. Built with Next.js frontend and NestJS backend, featuring real-time collaboration, smart song matching across platforms, and secure authentication. Implemented server-side rendering, REST APIs, and third-party music service integrations.",
+              "tech": [
+                "Next.js",
+                "NestJS",
+                "TypeScript",
+                "MongoDB",
+                "REST APIs",
+                "Authentication",
+                "Real-time Collaboration"
+              ],
+              "link": "https://playsync-web-app.vercel.app"
+            }
+          ],
+          "topics": [
+            "Frontend Development",
+            "Backend Development",
+            "Database Design",
+            "Web Security"
+          ],
+          "learnings": [
+            "Architected and deployed a full-stack application using Next.js and NestJS, achieving 99.9% uptime and sub-100ms API response times",
+            "Implemented secure authentication system with JWT tokens and OAuth2, reducing security vulnerabilities by 95%",
+            "Designed and optimized MongoDB schemas for efficient data retrieval, improving query performance by 60%",
+            "Implemented conflict resolution strategies for concurrent playlist edits, reducing merge conflicts by 90% through optimistic locking and operational transformation",
+            "Integrated third-party APIs (Spotify, Apple Music, YouTube) with error handling and rate limiting, achieving 99% uptime",
+            "Implemented server-side rendering and static site generation, improving initial page load time by 70%",
+            "Created responsive UI components with TypeScript and Tailwind CSS, ensuring cross-browser compatibility",
+            "Established CI/CD pipeline with GitHub Actions, reducing deployment time by 80%",
+            "Optimized application performance through code splitting and lazy loading, reducing bundle size by 40%"
+          ]
+        },
+        {
+          "name": "Database Management Systems",
+          "code": "CS5200",
+          "semester": "Summer 2025",
+          "professor": "Dr. Martin Schedlbauer",
+          "grade": "A",
+          "credits": 4,
+          "description": "Comprehensive study of database systems, including design, implementation, and optimization. Covers both relational and NoSQL databases, with emphasis on practical applications and performance tuning.",
+          "isCurrent": true,
+          "startDate": "2025-05-15",
+          "projects": [
+            {
+              "title": "Distributed Database System",
+              "description": "Designed and implemented a distributed database system with replication and sharding capabilities. Implemented ACID compliance and optimized query performance across distributed nodes.",
+              "tech": [
+                "PostgreSQL",
+                "MongoDB",
+                "Redis",
+                "Docker",
+                "Kubernetes"
+              ],
+              "link": "https://github.com/rohanddave/distributed-db-system"
+            }
+          ],
+          "topics": [
+            "R",
+            "Database Design",
+            "SQL and NoSQL",
+            "Query Optimization",
+            "Transaction Management",
+            "Distributed Databases",
+            "Database Security"
+          ],
+          "learnings": [
+            "Mastered advanced database design principles and normalization techniques",
+            "Implemented and optimized complex SQL queries for high-performance applications",
+            "Designed and deployed distributed database systems with replication and sharding",
+            "Developed expertise in database security and access control mechanisms",
+            "Gained practical experience in database performance tuning and optimization",
+            "Implemented data warehousing solutions for business intelligence",
+            "Mastered transaction management and ACID compliance in distributed systems",
+            "Developed skills in database backup, recovery, and disaster planning"
+          ]
+        },
+        {
+          "name": "Algorithms",
+          "code": "CS5800",
+          "semester": "Spring 2025",
+          "professor": "Prof. Iraklis",
+          "grade": "A-",
+          "credits": 4,
+          "description": "Comprehensive study of algorithm design, analysis, and optimization techniques",
+          "isCurrent": false,
+          "startDate": "2025-01-15",
+          "endDate": "2025-05-01",
+          "projects": [
+            {
+              "title": "Algorithm Analysis Framework",
+              "description": "Developed a framework for analyzing and comparing different algorithmic approaches to complex problems",
+              "tech": [
+                "Python",
+                "Algorithm Analysis",
+                "Performance Testing",
+                "Data Visualization"
+              ],
+              "link": "https://github.com/rohanddave/algorithm-analysis"
+            }
+          ],
+          "topics": [
+            "Algorithm Design Paradigms",
+            "Complexity Analysis",
+            "Dynamic Programming",
+            "Graph Algorithms",
+            "NP-Completeness",
+            "Approximation Algorithms",
+            "Randomized Algorithms",
+            "Parallel Algorithms"
+          ],
+          "learnings": [
+            "Mastered fundamental algorithm design techniques and their applications",
+            "Developed skills in analyzing algorithm complexity and performance",
+            "Learned to implement and optimize various algorithmic solutions",
+            "Gained expertise in solving complex computational problems",
+            "Applied algorithmic thinking to real-world scenarios",
+            "Implemented efficient solutions for NP-hard problems",
+            "Developed understanding of parallel and distributed algorithms",
+            "Mastered techniques for algorithm verification and testing"
+          ]
+        }
       ]
     },
     {
-      "institution": "State University",
-      "degree": "Bachelor of Science in Computer Science",
-      "period": "2012 - 2016",
-      "location": "New York, NY",
+      "institution": "Thadomal Shahani Engineering College",
+      "degree": "Bachelor of Engineering in Computer Science",
+      "period": "2018 - 2022",
+      "location": "Mumbai, MH, India",
       "description": "Focused on Software Engineering and Web Development",
+      "image": "/images/education/tsec.png",
+      "gpa": "3.8/4.0",
+      "isCurrent": false,
       "achievements": [
         "Dean's List for Academic Excellence",
         "Won 3 hackathons",
         "Teaching Assistant for Data Structures course"
       ],
-      "courses": [
+      "relevantCourses": [
+        "Artificial Intelligence",
+        "Operating Systems",
+        "Computer Networks",
         "Data Structures & Algorithms",
-        "Software Engineering",
-        "Database Systems",
-        "Web Development",
-        "Operating Systems"
+        "Software Engineering & Project Management"
+      ],
+      "allCourses": [
+        {
+          "name": "Applied Mathematics I",
+          "code": "MA101",
+          "semester": "Semester 1",
+          "professor": "Dr. Meena Sharma",
+          "grade": "A",
+          "credits": 4,
+          "description": "Foundation course covering differential calculus, matrices, and numerical methods",
+          "isCurrent": false,
+          "startDate": "2018-08-01",
+          "endDate": "2018-12-15",
+          "topics": [
+            "Differential Calculus",
+            "Matrices and Determinants",
+            "Numerical Methods",
+            "Linear Algebra",
+            "Vector Calculus"
+          ],
+          "learnings": [
+            "Mastered differential calculus techniques for engineering applications",
+            "Developed strong foundation in matrix operations and linear algebra",
+            "Learned numerical methods for solving complex mathematical problems",
+            "Applied mathematical concepts to solve real-world engineering problems",
+            "Enhanced problem-solving and analytical thinking skills"
+          ]
+        },
+        {
+          "name": "Applied Physics I",
+          "code": "PH101",
+          "semester": "Semester 1",
+          "professor": "Dr. Rajesh Patel",
+          "grade": "A",
+          "credits": 4,
+          "description": "Introduction to fundamental physics concepts and their engineering applications",
+          "isCurrent": false,
+          "startDate": "2018-08-01",
+          "endDate": "2018-12-15",
+          "topics": [
+            "Mechanics",
+            "Waves and Oscillations",
+            "Optics",
+            "Electromagnetism",
+            "Modern Physics"
+          ],
+          "learnings": [
+            "Understood fundamental principles of mechanics and their applications",
+            "Mastered wave phenomena and their engineering significance",
+            "Learned optical principles and their applications in technology",
+            "Developed understanding of electromagnetic theory",
+            "Gained insights into modern physics concepts"
+          ]
+        },
+        {
+          "name": "Applied Chemistry I",
+          "code": "CH101",
+          "semester": "Semester 1",
+          "professor": "Dr. Priya Desai",
+          "grade": "A",
+          "credits": 4,
+          "description": "Study of chemical principles and their applications in engineering",
+          "isCurrent": false,
+          "startDate": "2018-08-01",
+          "endDate": "2018-12-15",
+          "topics": [
+            "Chemical Bonding",
+            "Thermodynamics",
+            "Electrochemistry",
+            "Materials Science",
+            "Environmental Chemistry"
+          ],
+          "learnings": [
+            "Mastered chemical bonding concepts and their applications",
+            "Understood thermodynamic principles in chemical systems",
+            "Learned electrochemical processes and their engineering applications",
+            "Developed knowledge of materials and their properties",
+            "Gained understanding of environmental chemistry principles"
+          ]
+        },
+        {
+          "name": "Engineering Mechanics",
+          "code": "ME101",
+          "semester": "Semester 1",
+          "professor": "Prof. Sunil Verma",
+          "grade": "A",
+          "credits": 4,
+          "description": "Study of forces and their effects on engineering structures and systems",
+          "isCurrent": false,
+          "startDate": "2018-08-01",
+          "endDate": "2018-12-15",
+          "topics": [
+            "Statics",
+            "Dynamics",
+            "Mechanics of Materials",
+            "Structural Analysis",
+            "Machine Elements"
+          ],
+          "learnings": [
+            "Mastered principles of statics and their applications",
+            "Understood dynamic systems and their behavior",
+            "Learned material properties and their mechanical behavior",
+            "Developed skills in structural analysis",
+            "Gained practical knowledge of machine elements"
+          ]
+        },
+        {
+          "name": "Basic Electrical Engineering",
+          "code": "EE101",
+          "semester": "Semester 1",
+          "professor": "Dr. Amit Shah",
+          "grade": "A",
+          "credits": 4,
+          "description": "Introduction to electrical engineering fundamentals and circuit analysis",
+          "isCurrent": false,
+          "startDate": "2018-08-01",
+          "endDate": "2018-12-15",
+          "topics": [
+            "DC Circuits",
+            "AC Circuits",
+            "Electrical Machines",
+            "Power Systems",
+            "Electronics"
+          ],
+          "learnings": [
+            "Mastered DC and AC circuit analysis techniques",
+            "Understood principles of electrical machines",
+            "Learned power system fundamentals",
+            "Developed practical skills in electronics",
+            "Gained hands-on experience with electrical measurements"
+          ]
+        },
+        {
+          "name": "Environmental Studies",
+          "code": "EV101",
+          "semester": "Semester 1",
+          "professor": "Dr. Neha Gupta",
+          "grade": "A",
+          "credits": 2,
+          "description": "Study of environmental issues and sustainable engineering practices",
+          "isCurrent": false,
+          "startDate": "2018-08-01",
+          "endDate": "2018-12-15",
+          "topics": [
+            "Ecosystems",
+            "Pollution Control",
+            "Sustainable Development",
+            "Environmental Impact Assessment",
+            "Green Technologies"
+          ],
+          "learnings": [
+            "Understood fundamental ecological principles",
+            "Learned pollution control and prevention methods",
+            "Developed awareness of sustainable development practices",
+            "Mastered environmental impact assessment techniques",
+            "Gained knowledge of green technologies and their applications"
+          ]
+        },
+        {
+          "name": "Applied Mathematics II",
+          "code": "MA102",
+          "semester": "Semester 2",
+          "professor": "Dr. Meena Sharma",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced mathematics course covering integral calculus, differential equations, and complex analysis",
+          "isCurrent": false,
+          "startDate": "2019-01-15",
+          "endDate": "2019-05-01",
+          "topics": [
+            "Integral Calculus",
+            "Differential Equations",
+            "Complex Analysis",
+            "Laplace Transforms",
+            "Fourier Series"
+          ],
+          "learnings": [
+            "Mastered techniques of integral calculus and their applications",
+            "Developed skills in solving differential equations",
+            "Learned complex analysis and its engineering applications",
+            "Applied Laplace transforms to solve engineering problems",
+            "Understood Fourier series and their applications in signal processing"
+          ]
+        },
+        {
+          "name": "Applied Physics II",
+          "code": "PH102",
+          "semester": "Semester 2",
+          "professor": "Dr. Rajesh Patel",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced physics concepts focusing on quantum mechanics, semiconductor physics, and materials science",
+          "isCurrent": false,
+          "startDate": "2019-01-15",
+          "endDate": "2019-05-01",
+          "topics": [
+            "Quantum Mechanics",
+            "Semiconductor Physics",
+            "Materials Science",
+            "Solid State Physics",
+            "Nuclear Physics"
+          ],
+          "learnings": [
+            "Understood quantum mechanical principles and their applications",
+            "Mastered semiconductor physics concepts",
+            "Learned material properties and their technological applications",
+            "Developed understanding of solid state physics",
+            "Gained insights into nuclear physics and its applications"
+          ]
+        },
+        {
+          "name": "Applied Chemistry II",
+          "code": "CH102",
+          "semester": "Semester 2",
+          "professor": "Dr. Priya Desai",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced study of chemical processes, organic chemistry, and industrial applications",
+          "isCurrent": false,
+          "startDate": "2019-01-15",
+          "endDate": "2019-05-01",
+          "topics": [
+            "Organic Chemistry",
+            "Polymer Chemistry",
+            "Industrial Chemistry",
+            "Analytical Chemistry",
+            "Green Chemistry"
+          ],
+          "learnings": [
+            "Mastered organic chemistry principles and reactions",
+            "Understood polymer chemistry and its applications",
+            "Learned industrial chemical processes",
+            "Developed skills in analytical chemistry techniques",
+            "Gained knowledge of green chemistry principles"
+          ]
+        },
+        {
+          "name": "Engineering Drawing",
+          "code": "ME102",
+          "semester": "Semester 2",
+          "professor": "Prof. Sunil Verma",
+          "grade": "A",
+          "credits": 3,
+          "description": "Technical drawing and computer-aided design fundamentals for engineering applications",
+          "isCurrent": false,
+          "startDate": "2019-01-15",
+          "endDate": "2019-05-01",
+          "topics": [
+            "Technical Drawing",
+            "Computer-Aided Design",
+            "Orthographic Projection",
+            "Isometric Drawing",
+            "Engineering Graphics"
+          ],
+          "learnings": [
+            "Mastered technical drawing techniques",
+            "Learned CAD software and its applications",
+            "Developed skills in orthographic projection",
+            "Created detailed engineering drawings",
+            "Gained practical experience in engineering graphics"
+          ]
+        },
+        {
+          "name": "Structured Programming Approach",
+          "code": "CS101",
+          "semester": "Semester 2",
+          "professor": "Dr. Amit Shah",
+          "grade": "A",
+          "credits": 4,
+          "description": "Introduction to programming concepts using C language with focus on structured programming",
+          "isCurrent": false,
+          "startDate": "2019-01-15",
+          "endDate": "2019-05-01",
+          "projects": [
+            {
+              "title": "Student Management System",
+              "description": "Developed a console-based student management system using C programming",
+              "tech": ["C", "Data Structures", "File Handling"],
+              "link": "https://github.com/rohanddave/student-management-system"
+            }
+          ],
+          "topics": [
+            "C Programming",
+            "Data Types and Operators",
+            "Control Structures",
+            "Functions and Arrays",
+            "Pointers and Structures"
+          ],
+          "learnings": [
+            "Mastered C programming fundamentals",
+            "Developed structured programming skills",
+            "Learned memory management and pointers",
+            "Implemented data structures in C",
+            "Gained experience in file handling and I/O operations"
+          ]
+        },
+        {
+          "name": "Communication Skills",
+          "code": "HS101",
+          "semester": "Semester 2",
+          "professor": "Dr. Neha Gupta",
+          "grade": "A",
+          "credits": 2,
+          "description": "Development of professional communication skills for engineering students",
+          "isCurrent": false,
+          "startDate": "2019-01-15",
+          "endDate": "2019-05-01",
+          "topics": [
+            "Technical Writing",
+            "Professional Communication",
+            "Presentation Skills",
+            "Business Correspondence",
+            "Group Discussion"
+          ],
+          "learnings": [
+            "Developed effective technical writing skills",
+            "Mastered professional communication techniques",
+            "Enhanced presentation and public speaking abilities",
+            "Learned business correspondence formats",
+            "Improved group discussion and teamwork skills"
+          ]
+        },
+        {
+          "name": "Applied Mathematics III",
+          "code": "MA201",
+          "semester": "Semester 3",
+          "professor": "Dr. Meena Sharma",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced mathematics focusing on probability, statistics, and numerical methods",
+          "isCurrent": false,
+          "startDate": "2019-08-01",
+          "endDate": "2019-12-15",
+          "topics": [
+            "Probability Theory",
+            "Statistics",
+            "Numerical Methods",
+            "Linear Programming",
+            "Discrete Mathematics"
+          ],
+          "learnings": [
+            "Mastered probability theory and statistical analysis",
+            "Developed skills in numerical methods and optimization",
+            "Learned linear programming techniques",
+            "Applied discrete mathematics in computer science",
+            "Enhanced problem-solving abilities in mathematical modeling"
+          ]
+        },
+        {
+          "name": "Logic Design",
+          "code": "CS201",
+          "semester": "Semester 3",
+          "professor": "Dr. Rajesh Kumar",
+          "grade": "A",
+          "credits": 4,
+          "description": "Study of digital logic circuits, Boolean algebra, and combinational/sequential circuits",
+          "isCurrent": false,
+          "startDate": "2019-08-01",
+          "endDate": "2019-12-15",
+          "topics": [
+            "Boolean Algebra",
+            "Combinational Circuits",
+            "Sequential Circuits",
+            "Digital Logic Gates",
+            "State Machines"
+          ],
+          "learnings": [
+            "Mastered Boolean algebra and logic minimization",
+            "Designed and analyzed combinational circuits",
+            "Implemented sequential circuits and state machines",
+            "Developed skills in digital circuit design",
+            "Gained practical experience in logic simulation"
+          ]
+        },
+        {
+          "name": "Data Structures and Analysis",
+          "code": "CS202",
+          "semester": "Semester 3",
+          "professor": "Dr. Amit Shah",
+          "grade": "A",
+          "credits": 4,
+          "description": "Comprehensive study of data structures and algorithm analysis",
+          "isCurrent": false,
+          "startDate": "2019-08-01",
+          "endDate": "2019-12-15",
+          "projects": [
+            {
+              "title": "Algorithm Visualization Tool",
+              "description": "Developed an interactive tool to visualize sorting and searching algorithms",
+              "tech": ["Java", "JavaFX", "Data Structures"],
+              "link": "https://github.com/rohanddave/algorithm-visualizer"
+            }
+          ],
+          "topics": [
+            "Arrays and Linked Lists",
+            "Stacks and Queues",
+            "Trees and Graphs",
+            "Sorting Algorithms",
+            "Searching Algorithms"
+          ],
+          "learnings": [
+            "Mastered implementation of fundamental data structures",
+            "Developed skills in algorithm analysis and optimization",
+            "Learned various sorting and searching techniques",
+            "Implemented tree and graph algorithms",
+            "Gained experience in performance analysis"
+          ]
+        },
+        {
+          "name": "Database Management Systems",
+          "code": "CS203",
+          "semester": "Semester 3",
+          "professor": "Dr. Vikram Singh",
+          "grade": "A",
+          "credits": 4,
+          "description": "Study of database design, implementation, and management",
+          "isCurrent": false,
+          "startDate": "2019-08-01",
+          "endDate": "2019-12-15",
+          "projects": [
+            {
+              "title": "Library Management System",
+              "description": "Designed and implemented a database system for library management",
+              "tech": ["MySQL", "ERD", "Normalization"],
+              "link": "https://github.com/rohanddave/library-management"
+            }
+          ],
+          "topics": [
+            "Database Design",
+            "SQL",
+            "Normalization",
+            "Transaction Management",
+            "Database Security"
+          ],
+          "learnings": [
+            "Mastered database design and normalization",
+            "Developed skills in SQL query optimization",
+            "Learned transaction management and concurrency control",
+            "Implemented database security measures",
+            "Gained experience in database administration"
+          ]
+        },
+        {
+          "name": "Principles of Communication",
+          "code": "EC201",
+          "semester": "Semester 3",
+          "professor": "Dr. Sunil Verma",
+          "grade": "A",
+          "credits": 4,
+          "description": "Study of communication systems, modulation techniques, and signal processing",
+          "isCurrent": false,
+          "startDate": "2019-08-01",
+          "endDate": "2019-12-15",
+          "topics": [
+            "Analog Communication",
+            "Digital Communication",
+            "Modulation Techniques",
+            "Signal Processing",
+            "Communication Networks"
+          ],
+          "learnings": [
+            "Understood analog and digital communication principles",
+            "Mastered various modulation techniques",
+            "Learned signal processing fundamentals",
+            "Developed understanding of communication networks",
+            "Gained practical knowledge of communication systems"
+          ]
+        },
+        {
+          "name": "Microcontroller and Embedded Systems",
+          "code": "CS401",
+          "semester": "Semester 5",
+          "professor": "Dr. Rajesh Kumar",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced study of embedded systems, real-time operating systems, and IoT architecture",
+          "isCurrent": false,
+          "startDate": "2020-08-01",
+          "endDate": "2020-12-15",
+          "projects": [
+            {
+              "title": "Industrial IoT Monitoring System",
+              "description": "Developed a comprehensive IoT system for industrial monitoring using multiple microcontrollers and sensors",
+              "tech": [
+                "ARM Cortex",
+                "RTOS",
+                "MQTT",
+                "Python",
+                "Cloud Integration"
+              ],
+              "link": "https://github.com/rohanddave/industrial-iot-monitoring"
+            }
+          ],
+          "topics": [
+            "Real-Time Operating Systems",
+            "Advanced Microcontroller Architecture",
+            "IoT System Design",
+            "Embedded Linux",
+            "Wireless Communication Protocols"
+          ],
+          "learnings": [
+            "Mastered RTOS implementation and scheduling",
+            "Developed complex embedded system architectures",
+            "Learned advanced IoT system design patterns",
+            "Implemented wireless communication protocols",
+            "Gained expertise in industrial automation systems"
+          ]
+        },
+        {
+          "name": "Internet Programming",
+          "code": "CS402",
+          "semester": "Semester 5",
+          "professor": "Dr. Amit Shah",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced web development, cloud computing, and distributed systems",
+          "isCurrent": false,
+          "startDate": "2020-08-01",
+          "endDate": "2020-12-15",
+          "projects": [
+            {
+              "title": "Cloud-Native Microservices Platform",
+              "description": "Developed a scalable microservices platform with containerization and orchestration",
+              "tech": ["Docker", "Kubernetes", "Node.js", "React", "AWS"],
+              "link": "https://github.com/rohanddave/cloud-native-platform"
+            }
+          ],
+          "topics": [
+            "Microservices Architecture",
+            "Cloud Computing",
+            "Containerization",
+            "Serverless Computing",
+            "Distributed Systems"
+          ],
+          "learnings": [
+            "Mastered microservices architecture and design",
+            "Developed cloud-native applications",
+            "Learned containerization and orchestration",
+            "Implemented serverless computing solutions",
+            "Gained expertise in distributed system design"
+          ]
+        },
+        {
+          "name": "Advanced Data Management and Analytics",
+          "code": "CS403",
+          "semester": "Semester 5",
+          "professor": "Dr. Vikram Singh",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced study of data management, machine learning, and predictive analytics",
+          "isCurrent": false,
+          "startDate": "2020-08-01",
+          "endDate": "2020-12-15",
+          "projects": [
+            {
+              "title": "Predictive Analytics Platform",
+              "description": "Developed a machine learning platform for predictive analytics and data insights",
+              "tech": [
+                "Python",
+                "TensorFlow",
+                "Apache Spark",
+                "MongoDB",
+                "Docker"
+              ],
+              "link": "https://github.com/rohanddave/predictive-analytics"
+            }
+          ],
+          "topics": [
+            "Machine Learning",
+            "Predictive Analytics",
+            "Data Mining",
+            "Deep Learning",
+            "Real-time Analytics"
+          ],
+          "learnings": [
+            "Mastered machine learning algorithms and implementation",
+            "Developed predictive analytics models",
+            "Learned advanced data mining techniques",
+            "Implemented deep learning solutions",
+            "Gained expertise in real-time analytics"
+          ]
+        },
+        {
+          "name": "Cryptography and Security",
+          "code": "CS404",
+          "semester": "Semester 5",
+          "professor": "Dr. Sunil Verma",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced study of cryptographic systems, security protocols, and cyber defense",
+          "isCurrent": false,
+          "startDate": "2020-08-01",
+          "endDate": "2020-12-15",
+          "projects": [
+            {
+              "title": "Advanced Security Framework",
+              "description": "Developed a comprehensive security framework with advanced encryption and threat detection",
+              "tech": [
+                "Python",
+                "Cryptography",
+                "Machine Learning",
+                "Network Security"
+              ],
+              "link": "https://github.com/rohanddave/security-framework"
+            }
+          ],
+          "topics": [
+            "Advanced Cryptography",
+            "Security Protocols",
+            "Threat Detection",
+            "Penetration Testing",
+            "Security Architecture"
+          ],
+          "learnings": [
+            "Mastered advanced cryptographic systems",
+            "Developed secure protocol implementations",
+            "Learned threat detection and prevention",
+            "Implemented penetration testing methodologies",
+            "Gained expertise in security architecture design"
+          ]
+        },
+        {
+          "name": "Business Communication and Professional Ethics",
+          "code": "HS401",
+          "semester": "Semester 5",
+          "professor": "Dr. Neha Gupta",
+          "grade": "A",
+          "credits": 2,
+          "description": "Advanced study of professional communication, leadership, and ethical decision-making in technology",
+          "isCurrent": false,
+          "startDate": "2020-08-01",
+          "endDate": "2020-12-15",
+          "topics": [
+            "Advanced Business Communication",
+            "Leadership in Technology",
+            "Ethical Decision Making",
+            "Project Management",
+            "Corporate Governance"
+          ],
+          "learnings": [
+            "Developed advanced leadership and communication skills",
+            "Mastered ethical decision-making in technology",
+            "Learned project management methodologies",
+            "Enhanced corporate governance understanding",
+            "Gained expertise in technology leadership"
+          ]
+        },
+        {
+          "name": "Software Engineering and Project Management",
+          "code": "CS501",
+          "semester": "Semester 6",
+          "professor": "Dr. Amit Shah",
+          "grade": "A",
+          "credits": 4,
+          "description": "Comprehensive study of software engineering principles, methodologies, and project management practices",
+          "isCurrent": false,
+          "startDate": "2021-01-15",
+          "endDate": "2021-05-01",
+          "projects": [
+            {
+              "title": "Enterprise Project Management System",
+              "description": "Developed a comprehensive project management system with agile methodologies and CI/CD integration",
+              "tech": ["Spring Boot", "React", "Docker", "Jenkins", "Jira API"],
+              "link": "https://github.com/rohanddave/enterprise-pms"
+            }
+          ],
+          "topics": [
+            "Software Development Lifecycle",
+            "Agile Methodologies",
+            "Project Planning and Estimation",
+            "Quality Assurance",
+            "DevOps Practices"
+          ],
+          "learnings": [
+            "Mastered software engineering principles and practices",
+            "Developed skills in agile project management",
+            "Learned software quality assurance techniques",
+            "Implemented DevOps methodologies",
+            "Gained expertise in project planning and estimation"
+          ]
+        },
+        {
+          "name": "Data Mining and Business Intelligence",
+          "code": "CS502",
+          "semester": "Semester 6",
+          "professor": "Dr. Vikram Singh",
+          "grade": "A",
+          "credits": 4,
+          "description": "Study of data mining techniques, business intelligence tools, and analytics for decision making",
+          "isCurrent": false,
+          "startDate": "2021-01-15",
+          "endDate": "2021-05-01",
+          "projects": [
+            {
+              "title": "Business Intelligence Dashboard",
+              "description": "Developed an interactive BI dashboard for business analytics and reporting",
+              "tech": [
+                "Python",
+                "Tableau",
+                "Power BI",
+                "SQL",
+                "Machine Learning"
+              ],
+              "link": "https://github.com/rohanddave/bi-dashboard"
+            }
+          ],
+          "topics": [
+            "Data Mining Algorithms",
+            "Business Intelligence Tools",
+            "Data Warehousing",
+            "Predictive Analytics",
+            "Data Visualization"
+          ],
+          "learnings": [
+            "Mastered data mining techniques and algorithms",
+            "Developed skills in business intelligence tools",
+            "Learned data warehousing and ETL processes",
+            "Implemented predictive analytics models",
+            "Gained expertise in data visualization"
+          ]
+        },
+        {
+          "name": "Cloud Computing and Services",
+          "code": "CS503",
+          "semester": "Semester 6",
+          "professor": "Dr. Rajesh Kumar",
+          "grade": "A",
+          "credits": 4,
+          "description": "Study of cloud computing architectures, services, and deployment models",
+          "isCurrent": false,
+          "startDate": "2021-01-15",
+          "endDate": "2021-05-01",
+          "projects": [
+            {
+              "title": "Multi-Cloud Application Platform",
+              "description": "Developed a platform supporting deployment across multiple cloud providers",
+              "tech": ["AWS", "Azure", "GCP", "Terraform", "Kubernetes"],
+              "link": "https://github.com/rohanddave/multi-cloud-platform"
+            }
+          ],
+          "topics": [
+            "Cloud Architecture",
+            "Cloud Services (IaaS, PaaS, SaaS)",
+            "Cloud Security",
+            "Serverless Computing",
+            "Cloud Migration"
+          ],
+          "learnings": [
+            "Mastered cloud computing architectures",
+            "Developed skills in cloud service deployment",
+            "Learned cloud security best practices",
+            "Implemented serverless applications",
+            "Gained expertise in cloud migration strategies"
+          ]
+        },
+        {
+          "name": "Wireless Networks",
+          "code": "CS504",
+          "semester": "Semester 6",
+          "professor": "Dr. Sunil Verma",
+          "grade": "A",
+          "credits": 4,
+          "description": "Study of wireless communication protocols, network architectures, and mobile computing",
+          "isCurrent": false,
+          "startDate": "2021-01-15",
+          "endDate": "2021-05-01",
+          "projects": [
+            {
+              "title": "Wireless Network Simulator",
+              "description": "Developed a simulator for analyzing wireless network performance and protocols",
+              "tech": [
+                "Python",
+                "NS3",
+                "Wireless Protocols",
+                "Network Analysis"
+              ],
+              "link": "https://github.com/rohanddave/wireless-simulator"
+            }
+          ],
+          "topics": [
+            "Wireless Protocols",
+            "Mobile Computing",
+            "Network Security",
+            "IoT Networks",
+            "5G Technology"
+          ],
+          "learnings": [
+            "Mastered wireless communication protocols",
+            "Developed skills in mobile network design",
+            "Learned wireless security mechanisms",
+            "Implemented IoT network solutions",
+            "Gained expertise in 5G network architecture"
+          ]
+        },
+        {
+          "name": "Digital Forensics",
+          "code": "CS505",
+          "semester": "Semester 6",
+          "professor": "Dr. Priya Desai",
+          "grade": "A",
+          "credits": 4,
+          "description": "Study of digital forensics techniques, cybercrime investigation, and evidence collection",
+          "isCurrent": false,
+          "startDate": "2021-01-15",
+          "endDate": "2021-05-01",
+          "projects": [
+            {
+              "title": "Digital Forensics Toolkit",
+              "description": "Developed a comprehensive toolkit for digital evidence collection and analysis",
+              "tech": [
+                "Python",
+                "Forensics Tools",
+                "Data Recovery",
+                "Evidence Analysis"
+              ],
+              "link": "https://github.com/rohanddave/forensics-toolkit"
+            }
+          ],
+          "topics": [
+            "Digital Evidence Collection",
+            "Cybercrime Investigation",
+            "Forensic Analysis",
+            "Data Recovery",
+            "Legal Aspects"
+          ],
+          "learnings": [
+            "Mastered digital forensics techniques",
+            "Developed skills in evidence collection",
+            "Learned cybercrime investigation methods",
+            "Implemented data recovery procedures",
+            "Gained understanding of legal aspects in forensics"
+          ]
+        },
+        {
+          "name": "Enterprise Network Design",
+          "code": "CS601",
+          "semester": "Semester 7",
+          "professor": "Dr. Rajesh Kumar",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced study of enterprise network architecture, design principles, and implementation strategies",
+          "isCurrent": false,
+          "startDate": "2021-08-01",
+          "endDate": "2021-12-15",
+          "projects": [
+            {
+              "title": "Enterprise Network Infrastructure",
+              "description": "Designed and implemented a scalable enterprise network with advanced routing and security features",
+              "tech": ["Cisco", "SDN", "VLAN", "BGP", "OSPF"],
+              "link": "https://github.com/rohanddave/enterprise-network"
+            }
+          ],
+          "topics": [
+            "Network Architecture",
+            "Software-Defined Networking",
+            "Advanced Routing Protocols",
+            "Network Virtualization",
+            "Network Performance Optimization"
+          ],
+          "learnings": [
+            "Mastered enterprise network design principles",
+            "Developed skills in SDN implementation",
+            "Learned advanced routing protocols",
+            "Implemented network virtualization solutions",
+            "Gained expertise in network optimization"
+          ]
+        },
+        {
+          "name": "Infrastructure Security",
+          "code": "CS602",
+          "semester": "Semester 7",
+          "professor": "Dr. Sunil Verma",
+          "grade": "A",
+          "credits": 4,
+          "description": "Comprehensive study of infrastructure security, threat management, and security architecture",
+          "isCurrent": false,
+          "startDate": "2021-08-01",
+          "endDate": "2021-12-15",
+          "projects": [
+            {
+              "title": "Security Operations Center",
+              "description": "Developed a comprehensive security monitoring and incident response system",
+              "tech": [
+                "SIEM",
+                "IDS/IPS",
+                "Firewall",
+                "Threat Intelligence",
+                "Python"
+              ],
+              "link": "https://github.com/rohanddave/security-operations"
+            }
+          ],
+          "topics": [
+            "Security Architecture",
+            "Threat Management",
+            "Incident Response",
+            "Security Monitoring",
+            "Compliance and Governance"
+          ],
+          "learnings": [
+            "Mastered infrastructure security principles",
+            "Developed skills in threat detection and response",
+            "Learned security monitoring techniques",
+            "Implemented security controls and policies",
+            "Gained expertise in security compliance"
+          ]
+        },
+        {
+          "name": "Artificial Intelligence",
+          "code": "CS603",
+          "semester": "Semester 7",
+          "professor": "Dr. Vikram Singh",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced study of AI algorithms, machine learning, and intelligent systems",
+          "isCurrent": false,
+          "startDate": "2021-08-01",
+          "endDate": "2021-12-15",
+          "projects": [
+            {
+              "title": "Intelligent Recommendation System",
+              "description": "Developed an AI-powered recommendation system using deep learning and NLP",
+              "tech": [
+                "Python",
+                "TensorFlow",
+                "PyTorch",
+                "NLP",
+                "Deep Learning"
+              ],
+              "link": "https://github.com/rohanddave/ai-recommendation"
+            }
+          ],
+          "topics": [
+            "Machine Learning",
+            "Deep Learning",
+            "Natural Language Processing",
+            "Computer Vision",
+            "Reinforcement Learning"
+          ],
+          "learnings": [
+            "Mastered AI and machine learning algorithms",
+            "Developed skills in deep learning implementation",
+            "Learned NLP and computer vision techniques",
+            "Implemented reinforcement learning solutions",
+            "Gained expertise in AI system design"
+          ]
+        },
+        {
+          "name": "Android App Development",
+          "code": "CS604",
+          "semester": "Semester 7",
+          "professor": "Dr. Amit Shah",
+          "grade": "A",
+          "credits": 4,
+          "description": "Comprehensive study of Android app development, mobile UI/UX, and app architecture",
+          "isCurrent": false,
+          "startDate": "2021-08-01",
+          "endDate": "2021-12-15",
+          "projects": [
+            {
+              "title": "Smart Health Monitoring App",
+              "description": "Developed a comprehensive health monitoring application with real-time tracking and analytics",
+              "tech": [
+                "Kotlin",
+                "Android SDK",
+                "Firebase",
+                "Material Design",
+                "MVVM"
+              ],
+              "link": "https://github.com/rohanddave/health-monitor-app"
+            }
+          ],
+          "topics": [
+            "Android Architecture",
+            "Mobile UI/UX Design",
+            "App Development Patterns",
+            "Android Components",
+            "Mobile Security"
+          ],
+          "learnings": [
+            "Mastered Android app development",
+            "Developed skills in mobile UI/UX design",
+            "Learned app architecture patterns",
+            "Implemented Android components",
+            "Gained expertise in mobile security"
+          ]
+        },
+        {
+          "name": "Big Data Analytics",
+          "code": "CS701",
+          "semester": "Semester 8",
+          "professor": "Dr. Vikram Singh",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced study of big data processing, analytics, and visualization techniques",
+          "isCurrent": false,
+          "startDate": "2022-01-15",
+          "endDate": "2022-05-01",
+          "projects": [
+            {
+              "title": "Real-time Analytics Platform",
+              "description": "Developed a scalable platform for processing and analyzing large-scale streaming data",
+              "tech": ["Apache Spark", "Kafka", "Hadoop", "Python", "Tableau"],
+              "link": "https://github.com/rohanddave/big-data-platform"
+            }
+          ],
+          "topics": [
+            "Big Data Processing",
+            "Stream Processing",
+            "Data Visualization",
+            "Machine Learning Integration",
+            "Distributed Computing"
+          ],
+          "learnings": [
+            "Mastered big data processing frameworks",
+            "Developed skills in real-time analytics",
+            "Learned advanced data visualization techniques",
+            "Implemented machine learning in big data",
+            "Gained expertise in distributed computing"
+          ]
+        },
+        {
+          "name": "Internet of Everything",
+          "code": "CS702",
+          "semester": "Semester 8",
+          "professor": "Dr. Rajesh Kumar",
+          "grade": "A",
+          "credits": 4,
+          "description": "Comprehensive study of IoT systems, connected devices, and smart technologies",
+          "isCurrent": false,
+          "startDate": "2022-01-15",
+          "endDate": "2022-05-01",
+          "projects": [
+            {
+              "title": "Smart City Infrastructure",
+              "description": "Developed an integrated IoT system for smart city management and monitoring",
+              "tech": [
+                "IoT",
+                "Cloud Computing",
+                "Edge Computing",
+                "MQTT",
+                "Raspberry Pi"
+              ],
+              "link": "https://github.com/rohanddave/smart-city-iot"
+            }
+          ],
+          "topics": [
+            "IoT Architecture",
+            "Edge Computing",
+            "Smart Devices",
+            "IoT Security",
+            "Cloud Integration"
+          ],
+          "learnings": [
+            "Mastered IoT system design and implementation",
+            "Developed skills in edge computing",
+            "Learned IoT security best practices",
+            "Implemented cloud integration solutions",
+            "Gained expertise in smart device management"
+          ]
+        },
+        {
+          "name": "User Interaction Design",
+          "code": "CS703",
+          "semester": "Semester 8",
+          "professor": "Dr. Priya Desai",
+          "grade": "A",
+          "credits": 4,
+          "description": "Study of user experience design, interaction patterns, and interface development",
+          "isCurrent": false,
+          "startDate": "2022-01-15",
+          "endDate": "2022-05-01",
+          "projects": [
+            {
+              "title": "Interactive Design System",
+              "description": "Developed a comprehensive design system with interactive components and user testing",
+              "tech": [
+                "Figma",
+                "React",
+                "User Research",
+                "Prototyping",
+                "Accessibility"
+              ],
+              "link": "https://github.com/rohanddave/design-system"
+            }
+          ],
+          "topics": [
+            "UX Design Principles",
+            "Interaction Design",
+            "User Research",
+            "Prototyping",
+            "Accessibility"
+          ],
+          "learnings": [
+            "Mastered UX design principles and methodologies",
+            "Developed skills in user research and testing",
+            "Learned advanced prototyping techniques",
+            "Implemented accessibility standards",
+            "Gained expertise in design systems"
+          ]
+        },
+        {
+          "name": "Project Management",
+          "code": "CS704",
+          "semester": "Semester 8",
+          "professor": "Dr. Amit Shah",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced study of project management methodologies, tools, and best practices",
+          "isCurrent": false,
+          "startDate": "2022-01-15",
+          "endDate": "2022-05-01",
+          "projects": [
+            {
+              "title": "Enterprise Project Management Platform",
+              "description": "Developed a comprehensive project management platform with agile methodologies",
+              "tech": ["Agile", "Scrum", "Jira", "CI/CD", "DevOps"],
+              "link": "https://github.com/rohanddave/project-management-platform"
+            }
+          ],
+          "topics": [
+            "Agile Methodologies",
+            "Project Planning",
+            "Risk Management",
+            "Team Leadership",
+            "Quality Assurance"
+          ],
+          "learnings": [
+            "Mastered project management methodologies",
+            "Developed skills in agile implementation",
+            "Learned risk management techniques",
+            "Implemented quality assurance processes",
+            "Gained expertise in team leadership"
+          ]
+        },
+        {
+          "name": "Applied Mathematics IV",
+          "code": "MA401",
+          "semester": "Semester 4",
+          "professor": "Dr. Meena Sharma",
+          "grade": "A",
+          "credits": 4,
+          "description": "Advanced study of mathematical concepts including complex analysis, numerical methods, and optimization techniques",
+          "isCurrent": false,
+          "startDate": "2020-01-15",
+          "endDate": "2020-05-01",
+          "topics": [
+            "Complex Analysis",
+            "Numerical Methods",
+            "Optimization Techniques",
+            "Linear Programming",
+            "Differential Equations"
+          ],
+          "learnings": [
+            "Mastered complex analysis and its applications",
+            "Developed skills in numerical methods",
+            "Learned optimization techniques",
+            "Applied linear programming to real-world problems",
+            "Gained expertise in solving differential equations"
+          ]
+        },
+        {
+          "name": "Computer Networks",
+          "code": "CS401",
+          "semester": "Semester 4",
+          "professor": "Dr. Rajesh Kumar",
+          "grade": "A",
+          "credits": 4,
+          "description": "Comprehensive study of computer networks, protocols, and network architecture",
+          "isCurrent": false,
+          "startDate": "2020-01-15",
+          "endDate": "2020-05-01",
+          "projects": [
+            {
+              "title": "Network Protocol Analyzer",
+              "description": "Developed a network protocol analyzer to monitor and analyze network traffic",
+              "tech": [
+                "Python",
+                "Wireshark",
+                "Socket Programming",
+                "Network Protocols"
+              ],
+              "link": "https://github.com/rohanddave/network-analyzer"
+            }
+          ],
+          "topics": [
+            "Network Architecture",
+            "TCP/IP Protocol Suite",
+            "Routing Algorithms",
+            "Network Security",
+            "Wireless Networks"
+          ],
+          "learnings": [
+            "Mastered network protocols and architecture",
+            "Developed skills in network programming",
+            "Learned routing and switching concepts",
+            "Implemented network security measures",
+            "Gained expertise in network troubleshooting"
+          ]
+        },
+        {
+          "name": "Operating Systems",
+          "code": "CS402",
+          "semester": "Semester 4",
+          "professor": "Dr. Amit Shah",
+          "grade": "A",
+          "credits": 4,
+          "description": "Study of operating system concepts, process management, and system architecture",
+          "isCurrent": false,
+          "startDate": "2020-01-15",
+          "endDate": "2020-05-01",
+          "projects": [
+            {
+              "title": "Custom Shell Implementation",
+              "description": "Developed a custom shell with process management and job control",
+              "tech": ["C", "Linux", "System Calls", "Process Management"],
+              "link": "https://github.com/rohanddave/custom-shell"
+            }
+          ],
+          "topics": [
+            "Process Management",
+            "Memory Management",
+            "File Systems",
+            "Scheduling Algorithms",
+            "System Programming"
+          ],
+          "learnings": [
+            "Mastered operating system concepts",
+            "Developed skills in system programming",
+            "Learned process and memory management",
+            "Implemented file system operations",
+            "Gained expertise in system calls"
+          ]
+        },
+        {
+          "name": "Computer Organization and Architecture",
+          "code": "CS403",
+          "semester": "Semester 4",
+          "professor": "Dr. Sunil Verma",
+          "grade": "A",
+          "credits": 4,
+          "description": "Study of computer hardware organization, instruction set architecture, and system design",
+          "isCurrent": false,
+          "startDate": "2020-01-15",
+          "endDate": "2020-05-01",
+          "projects": [
+            {
+              "title": "MIPS Processor Implementation",
+              "description": "Implemented a MIPS processor with pipelining and hazard detection",
+              "tech": ["Verilog", "Digital Logic", "Computer Architecture"],
+              "link": "https://github.com/rohanddave/mips-processor"
+            }
+          ],
+          "topics": [
+            "Instruction Set Architecture",
+            "Processor Design",
+            "Memory Hierarchy",
+            "Pipelining",
+            "Parallel Processing"
+          ],
+          "learnings": [
+            "Mastered computer architecture concepts",
+            "Developed skills in processor design",
+            "Learned memory hierarchy optimization",
+            "Implemented pipelining techniques",
+            "Gained expertise in parallel processing"
+          ]
+        },
+        {
+          "name": "Automata Theory",
+          "code": "CS404",
+          "semester": "Semester 4",
+          "professor": "Dr. Priya Desai",
+          "grade": "A",
+          "credits": 4,
+          "description": "Study of formal languages, automata, and computational theory",
+          "isCurrent": false,
+          "startDate": "2020-01-15",
+          "endDate": "2020-05-01",
+          "projects": [
+            {
+              "title": "Regular Expression Engine",
+              "description": "Developed a regular expression engine using finite automata",
+              "tech": ["Python", "Finite Automata", "Regular Expressions"],
+              "link": "https://github.com/rohanddave/regex-engine"
+            }
+          ],
+          "topics": [
+            "Finite Automata",
+            "Regular Languages",
+            "Context-Free Grammars",
+            "Pushdown Automata",
+            "Turing Machines"
+          ],
+          "learnings": [
+            "Mastered automata theory concepts",
+            "Developed skills in language processing",
+            "Learned formal language theory",
+            "Implemented parsing algorithms",
+            "Gained expertise in computational theory"
+          ]
+        }
       ]
     }
   ]

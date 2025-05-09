@@ -49,9 +49,29 @@ export interface Education {
   degree: string;
   period: string;
   location: string;
+  image: string;
   description: string;
+  gpa: string;
+  isCurrent: boolean;
   achievements: string[];
-  courses: string[];
+  relevantCourses: string[];
+  allCourses: Course[];
+}
+
+export interface Course {
+  name: string;
+  code: string;
+  semester: string;
+  professor: string;
+  grade: string;
+  credits: number;
+  description: string;
+  projects: Project[];
+  topics: string[];
+  learnings: string[];
+  isCurrent: boolean;
+  startDate: string;
+  endDate?: string;
 }
 
 export interface EducationData {

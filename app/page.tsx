@@ -9,6 +9,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import LearningSection from "@/components/LearningSection";
 import HobbiesSection from "@/components/HobbiesSection";
 import ChatBot from "@/components/ChatBot";
+import GitHubActivity from "@/components/GitHubActivity";
 
 export default function Home() {
   return (
@@ -73,6 +74,11 @@ export default function Home() {
                 Get in Touch
               </Link>
             </div>
+
+            {/* TODO: Add GitHub Activity */}
+            {/* <div className="pt-4">
+              <GitHubActivity username="rohanddave" />
+            </div> */}
           </div>
 
           {/* Right Column - Animations */}
