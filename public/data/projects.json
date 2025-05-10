@@ -14,7 +14,7 @@
         "TailwindCSS"
       ],
       "link": "https://tessa-web-app.vercel.app",
-      "image": "/images/projects/tessa.png",
+      "image": "/images/projects/tessa.jpeg",
       "categories": [
         "AI",
         "web development",
@@ -180,7 +180,7 @@
         "Real-time Collaboration"
       ],
       "link": "https://playsync-web-app.vercel.app",
-      "image": "/images/projects/playsync.png",
+      "image": "/images/projects/playsync.jpeg",
       "categories": [
         "Web Development",
         "Music",
