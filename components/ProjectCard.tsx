@@ -9,6 +9,33 @@ interface ProjectCardProps {
   variant?: "default" | "compact" | "detailed";
 }
 
+const getStatusColor = (status?: string) => {
+  switch (status) {
+    case "in_development":
+      return "bg-yellow-500/20 text-yellow-400";
+    case "live_maintained":
+      return "bg-green-500/20 text-green-400";
+    case "completed_archived":
+      return "bg-gray-500/20 text-gray-400";
+    case "concept":
+      return "bg-purple-500/20 text-purple-400";
+    case "beta":
+      return "bg-orange-500/20 text-orange-400";
+    case "deprecated":
+      return "bg-red-500/20 text-red-400";
+    default:
+      return "bg-gray-500/20 text-gray-400";
+  }
+};
+
+const formatStatus = (status?: string) => {
+  if (!status) return "";
+  return status
+    .split("_")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+};
+
 export default function ProjectCard({
   project,
   className = "",
@@ -39,10 +66,23 @@ export default function ProjectCard({
       <h3
         className={`font-semibold text-white ${
           variant === "compact" ? "text-lg" : "text-xl"
-        } mb-3`}
+        } mb-2`}
       >
         {project.title}
       </h3>
+
+      {project.projectStatus && (
+        <div className="mb-4">
+          <span
+            className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium ${getStatusColor(
+              project.projectStatus
+            )}`}
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-current mr-2"></span>
+            {formatStatus(project.projectStatus)}
+          </span>
+        </div>
+      )}
 
       <p
         className={`text-gray-300 ${

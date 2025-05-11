@@ -34,6 +34,13 @@ export interface Project {
   experience?: string;
   categories: string[];
   isFeatured: boolean;
+  projectStatus?:
+    | "live_maintained"
+    | "in_development"
+    | "completed_archived"
+    | "concept"
+    | "beta"
+    | "deprecated";
 }
 
 export interface ProjectsData {

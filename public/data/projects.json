@@ -25,6 +25,7 @@
         "AI Agentic Systems"
       ],
       "isFeatured": true,
+      "projectStatus": "live_maintained",
       "education": null,
       "course": null,
       "experience": null
@@ -48,29 +49,64 @@
         "Full Stack Development"
       ],
       "isFeatured": true,
+      "projectStatus": "beta",
       "education": null,
       "course": null,
       "experience": "TheFridayCompany"
     },
     {
-      "title": "TokenSale Platform",
-      "description": "A decentralized token sale platform that facilitated over 500 secure user transactions through MetaMask integration. Implemented a custom ERC-20 token smart contract on Ethereum for asset tokenization and management, providing a seamless experience for token holders.",
+      "title": "Juno: AI-Powered Job Application Assistant",
+      "description": "Developed an intelligent job application platform that automates and streamlines the job search process. Features include automated job scraping from career pages, smart resume tailoring using AI, and application tracking. The system uses natural language processing to analyze job descriptions and automatically customize resumes to match specific requirements, significantly improving application success rates.",
       "tech": [
-        "ReactJS",
-        "Solidity",
-        "Ethereum",
-        "MetaMask",
-        "Web3.js",
-        "HTML",
-        "CSS",
-        "JavaScript"
+        "Next.js",
+        "TypeScript",
+        "Python",
+        "OpenAI GPT-4",
+        "Web Scraping",
+        "NLP",
+        "PDF Processing",
+        "Vector Databases",
+        "TailwindCSS"
       ],
-      "link": "https://github.com/rohanddave/ERC-20",
-      "image": "/images/projects/token-sale.png",
-      "categories": ["BlockChain", "Web3", "DeFi", "Smart Contracts"],
-      "isFeatured": false,
-      "education": "Thadomal Shahani Engineering College",
+      "link": "https://juno-app.vercel.app",
+      "image": "/images/projects/juno.png",
+      "categories": [
+        "AI",
+        "Web Development",
+        "Automation",
+        "NLP",
+        "Full Stack Development"
+      ],
+      "isFeatured": true,
+      "projectStatus": "in_development",
+      "education": null,
       "course": null,
+      "experience": null
+    },
+    {
+      "title": "PlaySync: Cross-Platform Collaborative Playlist",
+      "description": "Developed a universal music sharing platform that enables cross-platform playlist collaboration across Spotify, Apple Music, and YouTube Music. Built with Next.js frontend and NestJS backend, featuring real-time collaboration, smart song matching across platforms, and secure authentication. Implemented server-side rendering, REST APIs, and third-party music service integrations.",
+      "tech": [
+        "Next.js",
+        "NestJS",
+        "TypeScript",
+        "MongoDB",
+        "REST APIs",
+        "Authentication",
+        "Real-time Collaboration"
+      ],
+      "link": "https://playsync-web-app.vercel.app",
+      "image": "/images/projects/playsync.jpeg",
+      "categories": [
+        "Web Development",
+        "Music",
+        "Real Time Collaboration",
+        "Full Stack Development"
+      ],
+      "isFeatured": true,
+      "projectStatus": "concept",
+      "education": "Northeastern University",
+      "course": "Web Development",
       "experience": null
     },
     {
@@ -96,6 +132,7 @@
         "Maps"
       ],
       "isFeatured": true,
+      "projectStatus": "live_maintained",
       "education": null,
       "course": null,
       "experience": "TheFridayCompany"
@@ -108,6 +145,7 @@
       "image": "/images/projects/image-processing.png",
       "categories": ["Desktop App", "Image Processing", "Java"],
       "isFeatured": true,
+      "projectStatus": "completed_archived",
       "education": "Northeastern University",
       "course": "Program Design Paradigm",
       "experience": null
@@ -126,6 +164,7 @@
       "image": "/images/projects/sound-sage.png",
       "categories": ["AI", "Machine Learning", "Data Science", "Python"],
       "isFeatured": true,
+      "projectStatus": "completed_archived",
       "education": "Northeastern University",
       "course": "Foundations of AI",
       "experience": null
@@ -145,6 +184,7 @@
       "image": "/images/projects/escape-castle.png",
       "categories": ["AI", "Reinforcement Learning", "Game Theory", "Python"],
       "isFeatured": false,
+      "projectStatus": "completed_archived",
       "education": "Northeastern University",
       "course": "Foundations of AI",
       "experience": null
@@ -163,33 +203,31 @@
       "image": "/images/projects/grid-coloring.png",
       "categories": ["AI", "Optimization", "Game Development", "Python"],
       "isFeatured": false,
+      "projectStatus": "completed_archived",
       "education": "Northeastern University",
       "course": "Foundations of AI",
       "experience": null
     },
     {
-      "title": "PlaySync: Cross-Platform Collaborative Playlist",
-      "description": "Developed a universal music sharing platform that enables cross-platform playlist collaboration across Spotify, Apple Music, and YouTube Music. Built with Next.js frontend and NestJS backend, featuring real-time collaboration, smart song matching across platforms, and secure authentication. Implemented server-side rendering, REST APIs, and third-party music service integrations.",
+      "title": "TokenSale Platform",
+      "description": "A decentralized token sale platform that facilitated over 500 secure user transactions through MetaMask integration. Implemented a custom ERC-20 token smart contract on Ethereum for asset tokenization and management, providing a seamless experience for token holders.",
       "tech": [
-        "Next.js",
-        "NestJS",
-        "TypeScript",
-        "MongoDB",
-        "REST APIs",
-        "Authentication",
-        "Real-time Collaboration"
+        "ReactJS",
+        "Solidity",
+        "Ethereum",
+        "MetaMask",
+        "Web3.js",
+        "HTML",
+        "CSS",
+        "JavaScript"
       ],
-      "link": "https://playsync-web-app.vercel.app",
-      "image": "/images/projects/playsync.jpeg",
-      "categories": [
-        "Web Development",
-        "Music",
-        "Real Time Collaboration",
-        "Full Stack Development"
-      ],
-      "isFeatured": true,
-      "education": "Northeastern University",
-      "course": "Web Development",
+      "link": "https://github.com/rohanddave/ERC-20",
+      "image": "/images/projects/token-sale.png",
+      "categories": ["BlockChain", "Web3", "DeFi", "Smart Contracts"],
+      "isFeatured": false,
+      "projectStatus": "completed_archived",
+      "education": "Thadomal Shahani Engineering College",
+      "course": null,
       "experience": null
     }
   ]
