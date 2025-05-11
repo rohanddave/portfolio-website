@@ -17,7 +17,7 @@
       "image": "/images/projects/tessa.jpeg",
       "categories": [
         "AI",
-        "web development",
+        "Web Development",
         "Social Media",
         "Automation",
         "AI Retrieval-Augmented Generation",
@@ -39,7 +39,8 @@
         "TypeScript",
         "PostgreSQL",
         "Redis",
-        "Firebase"
+        "Firebase",
+        "Elasticsearch"
       ],
       "link": "https://apps.apple.com/app/oneprediction",
       "image": "/images/projects/oneprediction.png",

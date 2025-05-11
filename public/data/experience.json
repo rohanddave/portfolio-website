@@ -1,10 +1,23 @@
 {
   "experiences": [
     {
+      "company": "Rhombus Power, Inc",
+      "role": "Summer Intern (Full Stack)",
+      "start_date": "2025-06-01",
+      "end_date": "2025-09-1",
+      "location": "Palo Alto, CA, USA",
+      "description": "Full-stack development focusing on AI-powered solutions",
+      "logo": "/images/experience/rhombus.jpeg",
+      "relevant_achievements": [],
+      "all_achievements": [],
+      "technologies": []
+    },
+    {
       "company": "McGraw Hill Education",
       "role": "Software Engineer",
-      "period": "Aug 2023 - Aug 2024",
-      "location": "Mumbai, India",
+      "start_date": "2023-08-01",
+      "end_date": "2024-08-31",
+      "location": "Mumbai, MH, India",
       "description": "Full-stack and mobile development focusing on educational platforms",
       "logo": "/images/experience/mgh.png",
       "relevant_achievements": [
@@ -45,8 +58,9 @@
     {
       "company": "TheFridayCompany",
       "role": "Founder & Founding Engineer",
-      "period": "Sept 2022 - Aug 2023",
-      "location": "Mumbai, India",
+      "start_date": "2022-09-01",
+      "end_date": "2023-08-31",
+      "location": "Mumbai, MH, India",
       "description": "Full-stack and mobile development focusing on turf booking system",
       "logo": "/images/experience/tfc.jpeg",
       "relevant_achievements": [

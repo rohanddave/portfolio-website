@@ -60,7 +60,8 @@ export interface Testimonial {
 export interface Experience {
   company: string;
   role: string;
-  period: string;
+  start_date: string;
+  end_date: string;
   location: string;
   description: string;
   relevant_achievements: string[];
