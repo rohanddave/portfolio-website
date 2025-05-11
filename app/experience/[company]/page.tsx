@@ -129,7 +129,13 @@ export default function ExperienceDetailsPage() {
                 {experience.company}
               </h2>
               <div className="flex items-center gap-4 text-gray-400">
-                <span>{experience.period}</span>
+                <span>{`${new Date(experience.start_date).toLocaleDateString(
+                  "en-US",
+                  { month: "short", year: "numeric" }
+                )} - ${new Date(experience.end_date).toLocaleDateString(
+                  "en-US",
+                  { month: "short", year: "numeric" }
+                )}`}</span>
                 <span>•</span>
                 <span>{experience.location}</span>
               </div>
