@@ -33,6 +33,9 @@ export async function POST(req: Request) {
     // Get relevant context from vector store
     const context = await searchRelevantContent(message, 25);
 
+    const contactEmail = "dave.ro@northeastern.edu";
+    const contactLinkedin = "linkedin.com/in/rohandave";
+
     // Create the prompt with context
     const prompt = `You are an AI assistant for Rohan Dave's portfolio website. Use the following context to provide accurate and relevant responses about Rohan's education, experience, projects, skills, and achievements.
 
@@ -43,7 +46,8 @@ User message: ${message}
 
 Instructions:
 1. Base your response primarily on the provided context. Do not mention the context in your response.
-2. If the context doesn't contain relevant information, acknowledge this politely
+2. If the context doesn't contain relevant information, respond with: "I don't have enough information to answer that question. Please contact Rohan directly at ${contactEmail} or connect with him on LinkedIn at ${contactLinkedin}."
+3. If the user asks about Rohan's contact information, respond with: "You can contact Rohan directly at ${contactEmail} or connect with him on LinkedIn at ${contactLinkedin}."
 3. Present information in a clear, concise and professional manner suitable for recruiters and tech professionals
 4. Provide examples of Rohan's education, work experience, projects, skills, achievements and testimonials when relevant
 5. Keep responses under 3-4 sentences unless specifically asked for more detail
