@@ -53,8 +53,19 @@ const subSkillEmojis: { [key: string]: string } = {
   "Mobile Testing": "🧪",
 };
 
+// Proficiency level colors
+const proficiencyColors: { [key: string]: string } = {
+  EXPERT: "from-green-500 to-emerald-500",
+  ADVANCED: "from-blue-500 to-indigo-500",
+  INTERMEDIATE: "from-purple-500 to-pink-500",
+  BASIC: "from-gray-500 to-gray-600",
+};
+
 export default function SkillsSection() {
   const [skills, setSkills] = useState<Skill[]>([]);
+  const [proficiencyScale, setProficiencyScale] = useState<{
+    [key: string]: string;
+  }>({});
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -63,6 +74,7 @@ export default function SkillsSection() {
         const response = await fetch("/data/skills.json");
         const data: SkillsData = await response.json();
         setSkills(data.skills);
+        setProficiencyScale(data.proficiencyScale);
         setIsLoading(false);
       } catch (error) {
         console.error("Error loading skills:", error);
@@ -110,33 +122,14 @@ export default function SkillsSection() {
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-2xl font-bold text-blue-400">
-                {skill.level}%
+              <span
+                className={`px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r ${
+                  proficiencyColors[skill.proficiency]
+                } text-white`}
+              >
+                {skill.proficiency}
               </span>
-              <div className="h-12 w-12 rounded-full bg-blue-500/10 flex items-center justify-center">
-                <svg
-                  className="h-6 w-6 text-blue-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
             </div>
-          </div>
-
-          {/* Main Skill Progress Bar */}
-          <div className="h-3 bg-gray-800 rounded-full overflow-hidden mb-8">
-            <div
-              className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 ease-out"
-              style={{ width: `${skill.level}%` }}
-            />
           </div>
 
           {/* Sub-skills Grid */}
@@ -156,19 +149,17 @@ export default function SkillsSection() {
                         {subSkill.name}
                       </span>
                     </div>
-                    <span className="text-sm text-blue-400">
-                      {subSkill.level}%
+                    <span
+                      className={`px-2 py-0.5 rounded-full text-xs font-medium bg-gradient-to-r ${
+                        proficiencyColors[subSkill.proficiency]
+                      } text-white`}
+                    >
+                      {subSkill.proficiency}
                     </span>
                   </div>
-                  <p className="text-sm text-gray-400 mb-3">
+                  <p className="text-sm text-gray-400">
                     {subSkill.description}
                   </p>
-                  <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
-                    <div
-                      className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-1000 ease-out"
-                      style={{ width: `${subSkill.level}%` }}
-                    />
-                  </div>
                 </div>
               ))}
             </div>

@@ -1,15 +1,18 @@
 export interface Skill {
   name: string;
-  level: number;
+  proficiency: string;
   description: string;
   subSkills?: {
     name: string;
-    level: number;
+    proficiency: string;
     description: string;
   }[];
 }
 
 export interface SkillsData {
+  proficiencyScale: {
+    [key: string]: string;
+  };
   skills: Skill[];
 }
 
