@@ -64,20 +64,6 @@ export default function LearningSection() {
             </div>
           </div>
 
-          {/* Progress Bar */}
-          <div className="mb-4">
-            <div className="flex justify-between text-sm mb-1">
-              <span className="text-gray-400">Progress</span>
-              <span className="text-blue-400">{item.progress}%</span>
-            </div>
-            <div className="h-2 bg-gray-800 rounded-full overflow-hidden">
-              <div
-                className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-500"
-                style={{ width: `${item.progress}%` }}
-              />
-            </div>
-          </div>
-
           {/* Resources */}
           <div className="mb-4">
             <h4 className="text-sm font-medium text-gray-300 mb-2">
@@ -101,11 +87,10 @@ export default function LearningSection() {
           {/* Goals */}
           <div>
             <h4 className="text-sm font-medium text-gray-300 mb-2">Goals</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {item.goals.map((goal, index) => (
-                <li key={index} className="flex items-start space-x-2">
-                  <span className="text-blue-400 mt-1">•</span>
-                  <span className="text-sm text-gray-400">{goal}</span>
+                <li key={index} className="text-sm text-gray-400">
+                  • {goal}
                 </li>
               ))}
             </ul>

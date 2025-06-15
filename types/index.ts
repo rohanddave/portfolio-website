@@ -125,7 +125,6 @@ export interface Learning {
   id: number;
   topic: string;
   description: string;
-  progress: number;
   resources: LearningResource[];
   goals: string[];
   icon: string;
