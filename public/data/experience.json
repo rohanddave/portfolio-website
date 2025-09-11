@@ -8,9 +8,23 @@
       "location": "Palo Alto, CA, USA",
       "description": "Full-stack development focusing on AI-powered solutions",
       "logo": "/images/experience/rhombus.jpeg",
-      "relevant_achievements": [],
-      "all_achievements": [],
-      "technologies": []
+      "relevant_achievements": [
+        "Created and trained an AI model in Python on 25 years of geospatial data, detecting live fires with 95% accuracy",
+        "Spearheaded a team of 5 to build HavenAI in React, Typescript and FastAPI, driving $1M in revenue"
+      ],
+      "all_achievements": [
+        "Created and trained an AI model in Python on 25 years of geospatial data, detecting live fires with 95% accuracy",
+        "Spearheaded a team of 5 to build HavenAI in React, Typescript and FastAPI, driving $1M in revenue"
+      ],
+      "technologies": [
+        "TypeScript",
+        "ReactJS",
+        "Python",
+        "FastAPI",
+        "AWS",
+        "S3",
+        "AI/ML"
+      ]
     },
     {
       "company": "McGraw Hill Education",
