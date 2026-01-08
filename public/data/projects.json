@@ -2,15 +2,19 @@
   "projects": [
     {
       "title": "Tessa",
-      "description": "An AI-powered Twitter agent that helps creators write engaging tweets for building in public. Built with Next.js and integrated with Twitter's API, Tessa uses a MCP server to generate contextually relevant content that resonates with your audience.",
+      "description": "AI powered web app that generates relevant tweets from code commits. Increased user engagement by generating AI tweets with 92% relevance using a Python RAG pipeline. Validated monetization by converting users into 30+ paid customers using Stripe webhook subscriptions.",
       "tech": [
         "Next.js",
         "TypeScript",
+        "Python",
+        "RAG",
+        "LangChain",
+        "Pinecone",
         "Twitter API",
+        "GitHub API",
+        "Stripe",
+        "Webhooks",
         "OpenAI",
-        "AI Model Context Protocol Server",
-        "AI Agentic Systems",
-        "AI RAG Systems",
         "TailwindCSS"
       ],
       "link": "https://tessa-web-app.vercel.app",
@@ -20,40 +24,62 @@
         "Web Development",
         "Social Media",
         "Automation",
-        "AI Retrieval-Augmented Generation",
-        "AI Model Context Protocol Server",
-        "AI Agentic Systems"
+        "RAG Systems",
+        "AI Agents",
+        "SaaS"
       ],
       "isFeatured": true,
       "projectStatus": "live_maintained",
-      "education": null,
+      "education": "Northeastern University",
       "course": null,
-      "experience": null
+      "experience": null,
+      "timeline": "Mar 2025 - Jun 2025",
+      "highlights": [
+        "Increased user engagement by generating AI tweets with 92% relevance using a Python RAG pipeline",
+        "Improved content trust by reducing AI hallucinations 75% through structured code search tool integration",
+        "Scaled automated publishing to 50+ tweets/month via GitHub-to-Twitter API workflows",
+        "Validated monetization by converting users into 30+ paid customers using Stripe webhook subscriptions"
+      ]
     },
     {
       "title": "OnePrediction",
-      "description": "A comprehensive football predictions mobile app for iOS that combines squad building with match predictions. Features include team management, player statistics, and real-time match predictions. Built with a modern tech stack ensuring smooth performance and intuitive user experience.",
+      "description": "iOS app with AI scoring for competing against users on soccer match predictions. Drove engagement for 5K+ users by enabling real-time AI scoring and Redis leaderboards. Shipped features 75% faster by automating AWS deployments with Terraform, Docker and Kubernetes.",
       "tech": [
+        "Swift",
         "SwiftUI",
-        "NestJS",
+        "iOS",
         "TypeScript",
+        "NestJS",
         "PostgreSQL",
         "Redis",
-        "Firebase",
-        "Elasticsearch"
+        "Elasticsearch",
+        "AWS",
+        "Terraform",
+        "Docker",
+        "Kubernetes",
+        "AI/ML"
       ],
-      "link": "https://apps.apple.com/app/oneprediction",
+      "link": "https://testflight.apple.com/join/oneprediction",
       "image": "/images/projects/oneprediction.png",
       "categories": [
         "iOS Mobile Development",
         "Sports",
-        "Full Stack Development"
+        "Full Stack Development",
+        "AI",
+        "DevOps"
       ],
       "isFeatured": true,
-      "projectStatus": "beta",
-      "education": null,
+      "projectStatus": "live_maintained",
+      "education": "Northeastern University",
       "course": null,
-      "experience": "TheFridayCompany"
+      "experience": null,
+      "timeline": "Aug 2024 - Mar 2025",
+      "highlights": [
+        "Improved system stability 30% by leading code reviews and enforcing consistent architecture",
+        "Drove engagement for 5K+ users by enabling real-time AI scoring and Redis leaderboards in TypeScript",
+        "Reduced search time 80% by syncing Postgres to Elasticsearch for fast full-text discovery",
+        "Shipped features 75% faster by automating AWS deployments with Terraform, Docker and Kubernetes"
+      ]
     },
     {
       "title": "Juno: AI-Powered Job Application Assistant",

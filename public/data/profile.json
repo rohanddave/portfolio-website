@@ -1,16 +1,21 @@
 {
   "name": "Rohan Dave",
   "title": "Software Engineer",
+  "location": "Mountain View, CA",
+  "email": "dave.ro@northeastern.edu",
+  "phone": "(617) 691-6918",
   "openToRoles": [
     "Software Engineer",
     "AI/ML Engineer",
-    "Mobile Developer",
     "Full-Stack Developer",
-    "Founder"
+    "Mobile Developer"
   ],
-  "summary": "Passionate about crafting elegant solutions to complex problems. I thrive in collaborative environments where I can leverage my problem-solving skills and attention to detail to create impactful products. Committed to writing clean, maintainable code and continuously learning new technologies to deliver exceptional results.",
+  "summary": "Software Engineer specializing in AI-powered solutions, full-stack web development, and scalable systems. Currently pursuing Master's in Computer Science at Northeastern University with 3.92 GPA. Proven track record of driving revenue impact through innovative AI features, system optimizations, and scalable architectures. Founded and scaled a B2B SaaS generating $30K annual revenue while leading teams of 12+ engineers.",
   "links": {
     "resume": "/resume.pdf",
-    "projects": "#projects"
+    "projects": "#projects",
+    "linkedin": "https://linkedin.com/in/rohandewangdave",
+    "github": "https://github.com/rohanddave",
+    "portfolio": "https://rohandave.com"
   }
 }

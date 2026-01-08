@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,9 +55,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-black`}>
-        <Analytics />
-        <main className="min-h-screen">{children}</main>
+      <body className={`${inter.className} transition-colors duration-300`}>
+        <ThemeProvider>
+          <Analytics />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

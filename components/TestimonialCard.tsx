@@ -29,16 +29,16 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
     <>
       <div
         onClick={handleCardClick}
-        className="w-full bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer"
+        className="w-full bg-neutral-50 dark:bg-neutral-900 backdrop-blur-sm rounded-lg border border-neutral-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 card-hover cursor-pointer"
       >
         <div className="p-6 space-y-6">
           {/* Header */}
           <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
             <div className="space-y-1">
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="text-xl font-medium text-neutral-900 dark:text-neutral-100">
                 {testimonial.name}
               </h3>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-neutral-600 dark:text-neutral-400 font-light">
                 {testimonial.role} at {testimonial.company}
               </p>
             </div>
@@ -46,12 +46,12 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
 
           {/* Testimonial */}
           <div className="space-y-4">
-            <p className="text-gray-300 text-sm leading-relaxed italic">
+            <p className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed italic font-light">
               "{displayText}"
             </p>
 
             {shouldTruncate && (
-              <span className="inline-block text-xs px-2.5 py-1 rounded-full bg-white/5 text-gray-300 border border-white/10">
+              <span className="inline-block text-xs px-2.5 py-1 rounded-md bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 border border-neutral-200 dark:border-neutral-700 font-light">
                 Read More
               </span>
             )}
@@ -63,7 +63,7 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
               href={testimonial.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-sm text-blue-400 hover:text-blue-300 transition-colors"
+              className="inline-flex items-center text-sm text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-100 smooth-transition font-light"
             >
               <svg
                 className="w-4 h-4 mr-1"

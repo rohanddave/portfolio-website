@@ -2,15 +2,16 @@
   "education": [
     {
       "institution": "Northeastern University",
-      "degree": "Master of Science in Computer Science",
-      "period": "2024 - 2026",
-      "location": "Boston, MA, USA",
+      "degree": "Master of Science, Computer Science",
+      "period": "Aug 2024 - May 2026",
+      "location": "San Jose, CA, USA",
       "description": "Pursuing a specialized track in Artificial Intelligence and Systems, focusing on machine learning, distributed systems, and software engineering. Combining academic excellence with practical experience through teaching and entrepreneurial initiatives.",
       "image": "/images/education/northeastern.png",
-      "gpa": "3.9/4.0",
+      "gpa": "3.92/4.0",
       "isCurrent": true,
       "achievements": [
-        "Teaching Assistant for CS3500 (Object-Oriented Design), mentoring 50+ students in software design principles and best practices",
+        "Teaching Assistant for CS4530 Fundamentals of Software Engineering",
+        "Maintained 3.92 GPA while balancing coursework, teaching, and industry internships",
         "Active member of the Entrepreneurs Club, contributing to startup ideation and business development workshops"
       ],
       "relevantCourses": [
@@ -179,18 +180,19 @@
       ]
     },
     {
-      "institution": "Thadomal Shahani Engineering College",
-      "degree": "Bachelor of Engineering in Computer Science",
-      "period": "2018 - 2022",
+      "institution": "Mumbai University - Thadomal Shahani Engineering College",
+      "degree": "Bachelor of Engineering, Information Technology",
+      "period": "Aug 2018 - Aug 2022",
       "location": "Mumbai, MH, India",
-      "description": "Focused on Software Engineering and Web Development",
+      "description": "Focused on Software Engineering, Web Development, and Full-Stack Technologies with strong foundation in algorithms, data structures, and system design",
       "image": "/images/education/tsec.png",
-      "gpa": "3.8/4.0",
+      "gpa": "3.82/4.0",
       "isCurrent": false,
       "achievements": [
-        "Dean's List for Academic Excellence",
-        "Won 3 hackathons",
-        "Teaching Assistant for Data Structures course"
+        "Graduated with 3.82 GPA, Dean's List for Academic Excellence",
+        "Won 3 hackathons focusing on blockchain and web3 technologies",
+        "Teaching Assistant for Data Structures course, mentoring 40+ students",
+        "Completed capstone project on decentralized token sale platform with 500+ transactions"
       ],
       "relevantCourses": [
         "Artificial Intelligence",

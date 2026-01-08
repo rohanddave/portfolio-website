@@ -22,12 +22,12 @@ export default function TestimonialModal({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="relative w-full max-w-2xl bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 dark:bg-black/80 backdrop-blur-sm">
+      <div className="relative w-full max-w-2xl bg-neutral-50 dark:bg-neutral-900 backdrop-blur-sm rounded-xl border border-neutral-200 dark:border-neutral-800">
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
+          className="absolute top-4 right-4 text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 smooth-transition"
         >
           <svg
             className="w-6 h-6"
@@ -47,15 +47,15 @@ export default function TestimonialModal({
         <div className="p-8">
           {/* Header */}
           <div className="mb-6">
-            <h3 className="text-2xl font-semibold text-white mb-2">{name}</h3>
-            <p className="text-gray-400">
+            <h3 className="text-2xl font-medium text-neutral-900 dark:text-neutral-100 mb-2">{name}</h3>
+            <p className="text-neutral-600 dark:text-neutral-400 font-light">
               {role} at {company}
             </p>
           </div>
 
           {/* Testimonial */}
           <div className="mb-8">
-            <p className="text-gray-300 text-lg leading-relaxed italic">
+            <p className="text-neutral-600 dark:text-neutral-400 text-lg leading-relaxed italic font-light">
               "{testimonial}"
             </p>
           </div>
@@ -66,7 +66,7 @@ export default function TestimonialModal({
               href={linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-sm text-blue-400 hover:text-blue-300 transition-colors"
+              className="inline-flex items-center text-sm text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-100 smooth-transition font-light"
             >
               <svg
                 className="w-4 h-4 mr-1.5"
@@ -77,9 +77,21 @@ export default function TestimonialModal({
               </svg>
               View LinkedIn Profile
             </a>
-            <a
-              href={`/experience/${experience}`}
-              className="inline-flex items-center text-sm text-gray-400 hover:text-white transition-colors"
+            <button
+              onClick={() => {
+                onClose();
+                const experienceSection = document.getElementById("experience");
+                if (experienceSection) {
+                  const offset = 80;
+                  const elementPosition = experienceSection.getBoundingClientRect().top;
+                  const offsetPosition = elementPosition + window.pageYOffset - offset;
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+              className="inline-flex items-center text-sm text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-100 smooth-transition font-light"
             >
               <svg
                 className="w-4 h-4 mr-1.5"
@@ -91,11 +103,11 @@ export default function TestimonialModal({
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              View Experience
-            </a>
+              View Experience Section
+            </button>
           </div>
         </div>
       </div>

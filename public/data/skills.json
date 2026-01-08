@@ -7,46 +7,73 @@
   },
   "skills": [
     {
-      "name": "Backend Development",
+      "name": "Programming Languages",
       "proficiency": "EXPERT",
-      "description": "Expert in server-side development and distributed systems",
+      "description": "Proficient in multiple programming languages for diverse application development",
       "subSkills": [
         {
           "name": "TypeScript",
           "proficiency": "EXPERT",
-          "description": "Strong typing, advanced type system, and enterprise-scale applications"
+          "description": "Full-stack development with strong typing and advanced type system"
+        },
+        {
+          "name": "Python",
+          "proficiency": "EXPERT",
+          "description": "AI/ML development, data science, and backend services"
         },
         {
           "name": "Java",
           "proficiency": "ADVANCED",
-          "description": "Spring Boot, microservices, and enterprise application development"
+          "description": "Object-oriented design, Spring Boot, and enterprise applications"
         },
         {
-          "name": "Golang",
-          "proficiency": "ADVANCED",
-          "description": "High-performance systems, concurrent programming, and microservices"
-        },
-        {
-          "name": "Node.js",
+          "name": "JavaScript",
           "proficiency": "EXPERT",
-          "description": "Express.js, NestJS, and scalable backend services"
-        },
-        {
-          "name": "System Design",
-          "proficiency": "ADVANCED",
-          "description": "Distributed systems, microservices architecture, and scalability patterns"
-        },
-        {
-          "name": "Database Systems",
-          "proficiency": "EXPERT",
-          "description": "PostgreSQL, MongoDB, Redis, and database optimization"
+          "description": "ES6+, functional programming, and modern web development"
         }
       ]
     },
     {
-      "name": "Frontend Development",
+      "name": "AI & Machine Learning",
+      "proficiency": "ADVANCED",
+      "description": "Expertise in modern AI technologies and machine learning systems",
+      "subSkills": [
+        {
+          "name": "LangGraph & LangChain",
+          "proficiency": "ADVANCED",
+          "description": "Building AI agents and complex LLM workflows"
+        },
+        {
+          "name": "Pinecone & Vector DBs",
+          "proficiency": "ADVANCED",
+          "description": "Vector databases for semantic search and RAG systems"
+        },
+        {
+          "name": "RAG Systems",
+          "proficiency": "ADVANCED",
+          "description": "Retrieval-augmented generation for context-aware AI"
+        },
+        {
+          "name": "MCP Servers",
+          "proficiency": "ADVANCED",
+          "description": "Model Context Protocol for AI agent communication"
+        },
+        {
+          "name": "Scikit-learn",
+          "proficiency": "INTERMEDIATE",
+          "description": "Traditional ML algorithms and model evaluation"
+        },
+        {
+          "name": "TensorFlow & PyTorch",
+          "proficiency": "INTERMEDIATE",
+          "description": "Deep learning frameworks for neural networks"
+        }
+      ]
+    },
+    {
+      "name": "Web Development",
       "proficiency": "EXPERT",
-      "description": "Expert in modern web development and user interface design",
+      "description": "Full-stack web development with modern frameworks and technologies",
       "subSkills": [
         {
           "name": "React",
@@ -54,135 +81,115 @@
           "description": "Advanced hooks, state management, and performance optimization"
         },
         {
+          "name": "Express & NestJS",
+          "proficiency": "EXPERT",
+          "description": "Node.js frameworks for scalable backend services"
+        },
+        {
           "name": "Next.js",
           "proficiency": "EXPERT",
-          "description": "Server-side rendering, static generation, and full-stack applications"
+          "description": "Server-side rendering and full-stack React applications"
         },
         {
-          "name": "TypeScript",
-          "proficiency": "EXPERT",
-          "description": "Type safety, interfaces, and advanced type system implementation"
-        },
-        {
-          "name": "HTML5 & CSS3",
+          "name": "FastAPI",
           "proficiency": "ADVANCED",
-          "description": "Semantic markup, responsive design, and modern CSS features"
+          "description": "High-performance Python web framework for APIs"
         },
         {
-          "name": "JavaScript",
+          "name": "REST & GraphQL",
           "proficiency": "EXPERT",
-          "description": "ES6+, functional programming, and modern JavaScript patterns"
+          "description": "API design and implementation patterns"
         },
         {
-          "name": "State Management",
+          "name": "Web Sockets & Webhooks",
           "proficiency": "ADVANCED",
-          "description": "Redux, Context API, and complex state handling"
+          "description": "Real-time communication and event-driven architectures"
         }
       ]
     },
     {
-      "name": "AI & Machine Learning",
-      "proficiency": "ADVANCED",
-      "description": "Implementation of AI solutions and machine learning models",
+      "name": "Databases",
+      "proficiency": "EXPERT",
+      "description": "Expertise in both SQL and NoSQL database systems",
       "subSkills": [
         {
-          "name": "LLMs & Transformers",
-          "proficiency": "ADVANCED",
-          "description": "Fine-tuning, prompt engineering, and transformer architecture"
-        },
-        {
-          "name": "RAG Systems",
-          "proficiency": "ADVANCED",
-          "description": "Retrieval-augmented generation and knowledge base integration"
-        },
-        {
-          "name": "Agentic AI",
-          "proficiency": "ADVANCED",
-          "description": "Autonomous agents, task planning, and decision-making systems"
-        },
-        {
-          "name": "Deep Learning",
-          "proficiency": "INTERMEDIATE",
-          "description": "Neural networks, CNN, RNN, and advanced architectures"
-        },
-        {
-          "name": "Python ML Stack",
-          "proficiency": "INTERMEDIATE",
-          "description": "TensorFlow, PyTorch, scikit-learn, and pandas"
-        },
-        {
-          "name": "NLP & Computer Vision",
-          "proficiency": "INTERMEDIATE",
-          "description": "Text processing, image recognition, and multimodal AI"
-        }
-      ]
-    },
-    {
-      "name": "Cloud & Infrastructure",
-      "proficiency": "ADVANCED",
-      "description": "Cloud architecture and infrastructure management",
-      "subSkills": [
-        {
-          "name": "AWS Core Services",
+          "name": "PostgreSQL",
           "proficiency": "EXPERT",
-          "description": "EC2, S3, Lambda, and core infrastructure services"
+          "description": "Advanced queries, optimization, and database design"
         },
         {
-          "name": "AWS Advanced Services",
-          "proficiency": "INTERMEDIATE",
-          "description": "ECS, ECR, RDS, OpenSearch, and load balancers"
-        },
-        {
-          "name": "Serverless Architecture",
+          "name": "MongoDB",
           "proficiency": "ADVANCED",
-          "description": "Lambda functions, API Gateway, and event-driven systems"
+          "description": "NoSQL database design and aggregation pipelines"
         },
         {
-          "name": "Containerization",
+          "name": "Redis",
+          "proficiency": "EXPERT",
+          "description": "Caching, pub/sub, and real-time data structures"
+        },
+        {
+          "name": "Elasticsearch",
           "proficiency": "ADVANCED",
-          "description": "Docker, Kubernetes, and container orchestration"
-        },
-        {
-          "name": "Infrastructure as Code",
-          "proficiency": "INTERMEDIATE",
-          "description": "Terraform, CloudFormation, and infrastructure automation"
-        },
-        {
-          "name": "DevOps & CI/CD",
-          "proficiency": "INTERMEDIATE",
-          "description": "GitHub Actions, Jenkins, and automated deployment"
+          "description": "Full-text search and analytics engine"
         }
       ]
     },
     {
-      "name": "Mobile Development",
+      "name": "Cloud & DevOps",
       "proficiency": "ADVANCED",
-      "description": "Cross-platform and native mobile application development",
+      "description": "Cloud infrastructure and DevOps practices for scalable systems",
       "subSkills": [
         {
-          "name": "Swift",
+          "name": "AWS Services",
+          "proficiency": "EXPERT",
+          "description": "S3, Lambda, EC2, CloudWatch - core infrastructure services"
+        },
+        {
+          "name": "Docker",
           "proficiency": "ADVANCED",
-          "description": "iOS development, SwiftUI, and native iOS features"
+          "description": "Containerization and multi-stage builds"
         },
         {
-          "name": "React Native",
-          "proficiency": "INTERMEDIATE",
-          "description": "Cross-platform mobile development and native modules"
-        },
-        {
-          "name": "Flutter",
-          "proficiency": "INTERMEDIATE",
-          "description": "Dart programming and cross-platform UI development"
-        },
-        {
-          "name": "Mobile Architecture",
+          "name": "Kubernetes",
           "proficiency": "ADVANCED",
-          "description": "Clean architecture, state management, and performance optimization"
+          "description": "Container orchestration and deployment automation"
         },
         {
-          "name": "Mobile Testing",
+          "name": "Terraform",
           "proficiency": "INTERMEDIATE",
-          "description": "Unit testing, integration testing, and UI automation"
+          "description": "Infrastructure as code and automated provisioning"
+        },
+        {
+          "name": "CI/CD",
+          "proficiency": "ADVANCED",
+          "description": "GitHub Actions and automated deployment pipelines"
+        }
+      ]
+    },
+    {
+      "name": "Mobile & Tools",
+      "proficiency": "ADVANCED",
+      "description": "Mobile development and essential development tools",
+      "subSkills": [
+        {
+          "name": "iOS Development",
+          "proficiency": "ADVANCED",
+          "description": "Swift, Objective-C, CoreData, and SwiftUI"
+        },
+        {
+          "name": "Swift Package Manager",
+          "proficiency": "INTERMEDIATE",
+          "description": "Dependency management for iOS projects"
+        },
+        {
+          "name": "Testing Frameworks",
+          "proficiency": "ADVANCED",
+          "description": "JUnit, PyTest, Jest for comprehensive testing"
+        },
+        {
+          "name": "Development Tools",
+          "proficiency": "EXPERT",
+          "description": "Git, Postman, and debugging tools"
         }
       ]
     }

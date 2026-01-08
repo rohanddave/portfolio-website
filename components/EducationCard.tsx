@@ -1,6 +1,5 @@
 import { Education } from "@/types";
 import Image from "next/image";
-import Link from "next/link";
 import { useMemo } from "react";
 
 interface EducationCardProps {
@@ -33,39 +32,34 @@ export default function EducationCard({
 
   return (
     <div
-      className={`relative bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-white/10 hover:border-white/20 transition-all duration-300 ${className}`}
+      className={`relative bg-neutral-50 dark:bg-neutral-900 backdrop-blur-sm rounded-lg p-8 border border-neutral-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 card-hover group ${className}`}
     >
       {/* Timeline connector */}
       {!isLast && (
-        <div className="absolute left-8 top-full h-8 w-0.5 bg-white/10"></div>
+        <div className="absolute left-8 top-full h-8 w-0.5 bg-neutral-200 dark:bg-neutral-800"></div>
       )}
 
       <div className="flex flex-col md:flex-row md:items-start gap-6">
         {/* Left column - Institution Image and Info */}
         <div className="md:w-1/3">
-          <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
+          <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-800">
             <Image
               src={edu.image}
               alt={edu.institution}
               fill
-              className="object-contain bg-white/5"
+              className="object-contain group-hover-scale"
               sizes="(max-width: 768px) 100vw, 33vw"
             />
           </div>
-          <Link
-            href={`/education/${encodeURIComponent(edu.institution)}`}
-            className="group"
-          >
-            <h3 className="text-xl font-semibold text-blue-400 group-hover:text-blue-300 transition-colors">
-              {edu.institution}
-            </h3>
-          </Link>
-          <p className="text-gray-300 mt-1">{edu.period}</p>
-          <p className="text-gray-400 text-sm mt-1">{edu.location}</p>
+          <h3 className="text-xl font-medium text-neutral-900 dark:text-neutral-100">
+            {edu.institution}
+          </h3>
+          <p className="text-neutral-600 dark:text-neutral-400 mt-1 font-light">{edu.period}</p>
+          <p className="text-neutral-500 dark:text-neutral-500 text-sm mt-1 font-light">{edu.location}</p>
           <div className="mt-2 flex items-center gap-2">
-            <span className="text-gray-300">GPA: {edu.gpa}</span>
+            <span className="text-neutral-600 dark:text-neutral-400 font-light">GPA: {edu.gpa}</span>
             {edu.isCurrent && (
-              <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-400 rounded-full">
+              <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-400 rounded-md font-light">
                 Current
               </span>
             )}
@@ -74,31 +68,19 @@ export default function EducationCard({
 
         {/* Right column - Degree, Description, and Details */}
         <div className="md:w-2/3">
-          <h4 className="text-lg font-medium text-white">{edu.degree}</h4>
-          <p className="text-gray-300 mt-2">{edu.description}</p>
+          <h4 className="text-lg font-medium text-neutral-900 dark:text-neutral-100">{edu.degree}</h4>
+          <p className="text-neutral-600 dark:text-neutral-400 mt-2 font-light">{edu.description}</p>
 
           {/* Achievements */}
           <div className="mt-4">
-            <h5 className="text-sm font-medium text-gray-300 mb-2">
+            <h5 className="text-sm font-light text-neutral-600 dark:text-neutral-400 mb-2">
               Key Achievements
             </h5>
             <ul className="space-y-2">
               {edu.achievements.map((achievement, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <svg
-                    className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  <span className="text-gray-300">{achievement}</span>
+                  <span className="text-neutral-400 dark:text-neutral-600 mt-1">•</span>
+                  <span className="text-neutral-600 dark:text-neutral-400 text-sm font-light">{achievement}</span>
                 </li>
               ))}
             </ul>
@@ -106,38 +88,19 @@ export default function EducationCard({
 
           {/* Courses */}
           <div className="mt-6">
-            <h5 className="text-sm font-medium text-gray-300 mb-2">
+            <h5 className="text-sm font-light text-neutral-600 dark:text-neutral-400 mb-2">
               Relevant Courses
             </h5>
             <div className="flex flex-wrap gap-2">
               {edu.relevantCourses.map((course) => (
                 <span
                   key={course}
-                  className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm border border-white/10"
+                  className="px-2.5 py-0.5 bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 rounded-md text-xs font-light border border-neutral-200 dark:border-neutral-700"
                 >
                   {course}
                 </span>
               ))}
             </div>
-            <Link
-              href={`/education/${encodeURIComponent(edu.institution)}`}
-              className="inline-flex items-center gap-1 text-xs text-blue-400 hover:text-blue-300 transition-colors mt-3"
-            >
-              View Detailed Course Information
-              <svg
-                className="w-3 h-3"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </Link>
           </div>
         </div>
       </div>

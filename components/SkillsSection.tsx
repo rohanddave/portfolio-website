@@ -53,12 +53,12 @@ const subSkillEmojis: { [key: string]: string } = {
   "Mobile Testing": "🧪",
 };
 
-// Proficiency level colors
+// Proficiency level colors (solid colors for light/dark mode)
 const proficiencyColors: { [key: string]: string } = {
-  EXPERT: "from-green-500 to-emerald-500",
-  ADVANCED: "from-blue-500 to-indigo-500",
-  INTERMEDIATE: "from-purple-500 to-pink-500",
-  BASIC: "from-gray-500 to-gray-600",
+  EXPERT: "bg-green-600 dark:bg-green-500",
+  ADVANCED: "bg-blue-600 dark:bg-blue-500",
+  INTERMEDIATE: "bg-purple-600 dark:bg-purple-500",
+  BASIC: "bg-neutral-600 dark:bg-neutral-500",
 };
 
 export default function SkillsSection() {
@@ -102,28 +102,23 @@ export default function SkillsSection() {
   }
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-6">
       {skills.map((skill) => (
         <div
           key={skill.name}
-          className="bg-gray-900/50 backdrop-blur-sm rounded-lg p-8 border border-gray-800 hover:border-gray-700 transition-all duration-300"
+          className="bg-neutral-50 dark:bg-neutral-900 backdrop-blur-sm rounded-lg p-8 border border-neutral-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 card-hover"
         >
           {/* Main Skill Header */}
           <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center gap-3">
-              <span className="text-3xl">
-                {skillEmojis[skill.name] || "💡"}
-              </span>
-              <div>
-                <h3 className="text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                  {skill.name}
-                </h3>
-                <p className="text-gray-400 mt-1">{skill.description}</p>
-              </div>
+            <div>
+              <h3 className="text-xl font-medium text-neutral-900 dark:text-neutral-100">
+                {skill.name}
+              </h3>
+              <p className="text-neutral-600 dark:text-neutral-400 mt-1 text-sm font-light">{skill.description}</p>
             </div>
             <div className="flex items-center gap-2">
               <span
-                className={`px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r ${
+                className={`px-2.5 py-0.5 rounded-md text-xs font-light ${
                   proficiencyColors[skill.proficiency]
                 } text-white`}
               >
@@ -134,30 +129,25 @@ export default function SkillsSection() {
 
           {/* Sub-skills Grid */}
           {skill.subSkills && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-gray-800">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 border-t border-neutral-200 dark:border-neutral-800">
               {skill.subSkills.map((subSkill) => (
                 <div
                   key={subSkill.name}
-                  className="bg-gray-800/30 rounded-lg p-4 hover:bg-gray-800/50 transition-colors"
+                  className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-4 hover:bg-neutral-200 dark:hover:bg-neutral-750 smooth-transition border border-neutral-200 dark:border-neutral-700"
                 >
                   <div className="flex justify-between items-center mb-2">
-                    <div className="flex items-center gap-2">
-                      <span className="text-xl">
-                        {subSkillEmojis[subSkill.name] || "✨"}
-                      </span>
-                      <span className="font-medium text-gray-200">
-                        {subSkill.name}
-                      </span>
-                    </div>
+                    <span className="font-light text-neutral-700 dark:text-neutral-300 text-sm">
+                      {subSkill.name}
+                    </span>
                     <span
-                      className={`px-2 py-0.5 rounded-full text-xs font-medium bg-gradient-to-r ${
+                      className={`px-2 py-0.5 rounded-md text-xs font-light ${
                         proficiencyColors[subSkill.proficiency]
                       } text-white`}
                     >
                       {subSkill.proficiency}
                     </span>
                   </div>
-                  <p className="text-sm text-gray-400">
+                  <p className="text-xs text-neutral-600 dark:text-neutral-500 font-light leading-relaxed">
                     {subSkill.description}
                   </p>
                 </div>
