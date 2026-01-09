@@ -69,87 +69,93 @@ export default function EducationCard({
   }, [showCourses, education.allCourses.length]);
 
   return (
-    <div className="edu-card relative flex-shrink-0 w-screen h-screen flex flex-col justify-center overflow-hidden bg-neutral-950">
-      {/* Main Content */}
-      <div className="edu-card-content relative z-10 flex flex-col lg:flex-row items-start justify-center w-full max-w-6xl mx-auto px-6 lg:px-12 gap-10 lg:gap-20">
-        {/* Left Column - Main Info */}
-        <div className="edu-card-left flex-1 max-w-xl">
-          {/* Index */}
-          <div className="flex items-center gap-3 mb-10">
-            <span className="text-sm font-mono text-neutral-500">
-              {String(index + 1).padStart(2, "0")} /{" "}
-              {String(total).padStart(2, "0")}
-            </span>
-            {education.isCurrent && (
-              <span className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider border border-neutral-700 text-neutral-400 rounded">
-                Current
-              </span>
-            )}
-          </div>
-
-          {/* Institution */}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white leading-tight tracking-tight mb-3">
-            {education.institution}
-          </h2>
-
-          {/* Degree */}
-          <h3 className="text-lg lg:text-xl text-neutral-500 mb-8">
-            {education.degree}
-          </h3>
-
-          {/* Meta */}
-          <div className="flex flex-wrap items-center gap-6 mb-8 text-sm text-neutral-600">
-            <span className="flex items-center gap-2">
-              <Calendar className="w-4 h-4" />
-              {education.period}
-            </span>
-            <span className="flex items-center gap-2">
-              <MapPin className="w-4 h-4" />
-              {education.location}
-            </span>
-            {education.gpa && (
-              <span className="flex items-center gap-2">
-                <GraduationCap className="w-4 h-4" />
-                {education.gpa}
-              </span>
-            )}
-          </div>
-
-          {/* Description */}
-          <p className="text-base text-neutral-400 leading-relaxed">
-            {education.description}
-          </p>
-        </div>
-
-        {/* Right Column - Achievements */}
-        <div className="edu-card-right w-full lg:w-72 flex-shrink-0 lg:self-center">
-          {education.achievements.length > 0 && (
-            <div className="mb-8">
-              <h3 className="text-[10px] font-medium uppercase tracking-widest text-neutral-700 mb-4">
-                Achievements
-              </h3>
-              <div className="space-y-3">
-                {education.achievements.slice(0, 3).map((achievement, i) => (
-                  <div
-                    key={i}
-                    className="edu-achievement flex items-start gap-2"
-                  >
-                    <Award className="w-4 h-4 text-neutral-700 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-neutral-400 leading-relaxed">
-                      {achievement}
-                    </span>
-                  </div>
-                ))}
+    <div className="edu-card flex-shrink-0 w-screen h-screen flex flex-col bg-neutral-950">
+      {/* Main Content - Grows to fill space */}
+      <div className="flex-1 flex items-center pb-12">
+        <div className="edu-card-content w-full max-w-6xl mx-auto px-6 lg:px-12">
+          <div className="flex flex-col lg:flex-row items-start justify-center gap-10 lg:gap-20">
+            {/* Left Column - Main Info */}
+            <div className="edu-card-left flex-1 max-w-xl">
+              {/* Index */}
+              <div className="flex items-center gap-3 mb-10">
+                <span className="text-sm font-mono text-neutral-500">
+                  {String(index + 1).padStart(2, "0")} /{" "}
+                  {String(total).padStart(2, "0")}
+                </span>
+                {education.isCurrent && (
+                  <span className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider border border-neutral-700 text-neutral-400 rounded">
+                    Current
+                  </span>
+                )}
               </div>
+
+              {/* Institution */}
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white leading-tight tracking-tight mb-3">
+                {education.institution}
+              </h2>
+
+              {/* Degree */}
+              <h3 className="text-lg lg:text-xl text-neutral-500 mb-8">
+                {education.degree}
+              </h3>
+
+              {/* Meta */}
+              <div className="flex flex-wrap items-center gap-6 mb-8 text-sm text-neutral-600">
+                <span className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4" />
+                  {education.period}
+                </span>
+                <span className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4" />
+                  {education.location}
+                </span>
+                {education.gpa && (
+                  <span className="flex items-center gap-2">
+                    <GraduationCap className="w-4 h-4" />
+                    {education.gpa}
+                  </span>
+                )}
+              </div>
+
+              {/* Description */}
+              <p className="text-base text-neutral-400 leading-relaxed">
+                {education.description}
+              </p>
             </div>
-          )}
+
+            {/* Right Column - Achievements */}
+            <div className="edu-card-right w-full lg:w-72 flex-shrink-0 lg:self-center">
+              {education.achievements.length > 0 && (
+                <div>
+                  <h3 className="text-[10px] font-medium uppercase tracking-widest text-neutral-700 mb-4">
+                    Achievements
+                  </h3>
+                  <div className="space-y-3">
+                    {education.achievements
+                      .slice(0, 3)
+                      .map((achievement, i) => (
+                        <div
+                          key={i}
+                          className="edu-achievement flex items-start gap-2"
+                        >
+                          <Award className="w-4 h-4 text-neutral-700 flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-neutral-400 leading-relaxed">
+                            {achievement}
+                          </span>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Courses Strip - Matching main content layout */}
-      <div className="absolute bottom-20 left-0 right-0">
-        {/* View Courses Button - Same flex structure as main content */}
+      {/* Courses Strip - Fixed at bottom using flex */}
+      <div className="flex-shrink-0 pb-16">
         <div className="w-full max-w-6xl mx-auto px-6 lg:px-12">
+          {/* View Courses Button */}
           <div className="flex flex-col lg:flex-row items-start justify-center gap-10 lg:gap-20">
             <div className="flex-1 max-w-xl">
               {education.allCourses.length > 0 && (
@@ -176,16 +182,14 @@ export default function EducationCard({
 
         {/* Courses Content */}
         <div
-          className={`transition-all duration-500 ${
-            showCourses
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-8 pointer-events-none"
+          className={`transition-all duration-500 overflow-hidden ${
+            showCourses ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
-          {/* Header - Same flex structure */}
+          {/* Header */}
           <div className="w-full max-w-6xl mx-auto px-6 lg:px-12 mb-3">
             <div className="flex flex-col lg:flex-row items-start justify-center gap-10 lg:gap-20">
-              <div className="flex-1 max-w-lg flex items-center justify-between">
+              <div className="flex-1 max-w-xl flex items-center justify-between">
                 <span className="text-[10px] font-medium uppercase tracking-widest text-neutral-700">
                   Coursework
                 </span>

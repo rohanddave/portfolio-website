@@ -58,14 +58,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} relative bg-neutral-950 cursor-none lg:cursor-none`}
+        className={`${inter.className} bg-neutral-950 cursor-none lg:cursor-none`}
       >
         <ThemeProvider>
           <CustomCursor />
-          <BackgroundCanvas />
           <Analytics />
-
-          <div className="relative z-10">{children}</div>
+          {children}
         </ThemeProvider>
       </body>
     </html>
