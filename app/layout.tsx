@@ -58,24 +58,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-neutral-950 cursor-none lg:cursor-none relative`}
+        className={`${inter.className} relative bg-neutral-950 cursor-none lg:cursor-none`}
       >
-        {/* Fixed 3D Background */}
-        <div className="fixed inset-0 z-0">
+        <ThemeProvider>
+          <CustomCursor />
           <BackgroundCanvas />
-        </div>
+          <Analytics />
 
-        {/* Gradient Overlay for better content readability */}
-        <div className="fixed inset-0 z-[1] bg-gradient-to-b from-neutral-950/60 via-neutral-950/70 to-neutral-950/80 pointer-events-none" />
-
-        {/* Content */}
-        <div className="relative z-[100]">
-          <ThemeProvider>
-            <CustomCursor />
-            <Analytics />
-            {children}
-          </ThemeProvider>
-        </div>
+          <div className="relative z-10">{children}</div>
+        </ThemeProvider>
       </body>
     </html>
   );

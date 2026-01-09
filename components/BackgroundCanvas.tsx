@@ -299,5 +299,5 @@ export default function BackgroundCanvas() {
     };
   }, []);
 
-  return <div ref={containerRef} className="w-full h-full" />;
+  return <div ref={containerRef} className="relative w-full h-full"></div>;
 }
