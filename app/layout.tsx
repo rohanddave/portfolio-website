@@ -56,7 +56,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} transition-colors duration-300`}>
+      <body
+        className={`${inter.className} bg-neutral-950 cursor-none lg:cursor-none`}
+      >
         <ThemeProvider>
           <CustomCursor />
           <Analytics />

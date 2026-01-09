@@ -11,6 +11,7 @@ function TestimonialsSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   const sectionRef = useRef<HTMLElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
@@ -73,7 +74,7 @@ function TestimonialsSection() {
 
   // Auto-advance interval
   useEffect(() => {
-    if (isLoading || testimonials.length === 0) return;
+    if (isLoading || testimonials.length === 0 || isHovered) return;
 
     const interval = setInterval(() => {
       animateToNext();
@@ -85,7 +86,7 @@ function TestimonialsSection() {
         timelineRef.current.kill();
       }
     };
-  }, [isLoading, testimonials.length, animateToNext]);
+  }, [isLoading, testimonials.length, isHovered, animateToNext]);
 
   const goToIndex = (index: number) => {
     if (index === currentIndex) return;
@@ -123,24 +124,30 @@ function TestimonialsSection() {
     <section
       ref={sectionRef}
       data-section="testimonials"
-      className="min-h-screen bg-neutral-950 flex flex-col items-center justify-center py-24 px-6 lg:px-12"
+      className="min-h-screen bg-neutral-900 flex flex-col items-center justify-center py-24 px-6 lg:px-12 border-t border-neutral-800"
     >
       <div className="max-w-5xl mx-auto w-full">
         {/* Header */}
         <div className="mb-16">
-          <div className="flex items-center gap-3 mb-4">
-            <MessageSquareQuote className="w-5 h-5 text-neutral-600" />
-            <span className="text-xs font-medium uppercase tracking-widest text-neutral-600">
+          <div className="flex items-center gap-3 mb-8">
+            <MessageSquareQuote className="w-4 h-4 text-neutral-600" />
+            <span className="text-[10px] font-medium uppercase tracking-widest text-neutral-600">
               Testimonials
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white leading-tight tracking-tight">
             What People Say
           </h2>
         </div>
 
         {/* Testimonial Card */}
-        <div ref={cardRef} className="min-h-[250px]">
+        <div
+          ref={cardRef}
+          className="min-h-[250px] cursor-pointer"
+          onClick={animateToNext}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
           {testimonials[currentIndex] && (
             <TestimonialCard testimonial={testimonials[currentIndex]} />
           )}

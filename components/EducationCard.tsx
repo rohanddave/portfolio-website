@@ -125,17 +125,17 @@ export default function EducationCard({
         <div className="edu-card-right w-full lg:w-72 flex-shrink-0 lg:self-center">
           {education.achievements.length > 0 && (
             <div className="mb-8">
-              <h3 className="text-[10px] font-medium uppercase tracking-widest text-neutral-700 mb-3">
+              <h3 className="text-[10px] font-medium uppercase tracking-widest text-neutral-700 mb-4">
                 Achievements
               </h3>
-              <div className="space-y-2">
+              <div className="space-y-3">
                 {education.achievements.slice(0, 3).map((achievement, i) => (
                   <div
                     key={i}
-                    className="edu-achievement flex items-center gap-2"
+                    className="edu-achievement flex items-start gap-2"
                   >
-                    <Award className="w-3 h-3 text-neutral-700 flex-shrink-0" />
-                    <span className="text-xs text-neutral-500">
+                    <Award className="w-4 h-4 text-neutral-700 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-neutral-400 leading-relaxed">
                       {achievement}
                     </span>
                   </div>

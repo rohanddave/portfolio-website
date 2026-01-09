@@ -180,7 +180,7 @@ function ExperienceSection() {
   return (
     <section
       ref={sectionRef}
-      className="h-screen overflow-hidden relative bg-neutral-950"
+      className="h-screen overflow-hidden relative bg-neutral-950 border-t border-neutral-800"
     >
       {/* Horizontal strip containing all cards */}
       <div ref={stripRef} className="flex h-full will-change-transform">

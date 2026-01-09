@@ -15,7 +15,7 @@ function ProjectsSection() {
   const [error, setError] = useState<string | null>(null);
 
   const sectionRef = useRef<HTMLElement>(null);
-  const gridRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -36,32 +36,56 @@ function ProjectsSection() {
     fetchProjects();
   }, []);
 
+  // GSAP ScrollTrigger with pinning
   useEffect(() => {
     if (isLoading || projects.length === 0) return;
 
     const section = sectionRef.current;
-    const grid = gridRef.current;
+    const content = contentRef.current;
 
-    if (!section || !grid) return;
+    if (!section || !content) return;
 
-    const cards = grid.querySelectorAll(".project-card");
+    const timer = setTimeout(() => {
+      const ctx = gsap.context(() => {
+        // Calculate the scroll distance
+        const contentHeight = content.scrollHeight;
+        const viewportHeight = window.innerHeight;
+        const headerHeight = 180; // Approximate header height
+        const maxScroll = contentHeight - viewportHeight + headerHeight;
 
-    const ctx = gsap.context(() => {
-      gsap.from(cards, {
-        y: 60,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.1,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: section,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      });
-    }, section);
+        // Pin the section and animate content with smooth transform
+        gsap.to(content, {
+          y: -maxScroll,
+          ease: "none",
+          scrollTrigger: {
+            trigger: section,
+            pin: true,
+            scrub: 0.5,
+            start: "top top",
+            end: () => `+=${maxScroll * 1.5}`,
+            invalidateOnRefresh: true,
+          },
+        });
 
-    return () => ctx.revert();
+        // Fade in animation for cards
+        const cards = content.querySelectorAll(".project-card");
+        gsap.fromTo(
+          cards,
+          { opacity: 0, y: 30 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.6,
+            stagger: 0.05,
+            ease: "power2.out",
+          }
+        );
+      }, section);
+
+      return () => ctx.revert();
+    }, 100);
+
+    return () => clearTimeout(timer);
   }, [isLoading, projects]);
 
   // Sort: featured first
@@ -85,33 +109,52 @@ function ProjectsSection() {
     );
   }
 
+  // Assign staggered heights to projects
+  const getCardHeight = (index: number): "short" | "medium" | "tall" => {
+    const pattern = ["medium", "tall", "short", "medium", "short", "tall"];
+    return pattern[index % pattern.length] as "short" | "medium" | "tall";
+  };
+
   return (
     <section
       ref={sectionRef}
       data-section="projects"
-      className="min-h-screen bg-neutral-950 py-20 px-6 lg:px-12"
+      className="h-screen bg-neutral-900 overflow-hidden border-t border-neutral-800 relative"
     >
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
-        <div className="flex items-center gap-3 mb-4">
-          <FolderOpen className="w-5 h-5 text-neutral-600" />
-          <span className="text-xs font-medium uppercase tracking-widest text-neutral-600">
-            Projects
-          </span>
-        </div>
+      <div
+        ref={contentRef}
+        className="will-change-transform"
+      >
+        <div className="py-12 px-6 lg:px-12">
+          <div className="max-w-7xl mx-auto">
+            {/* Header */}
+            <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center gap-3">
+                <FolderOpen className="w-4 h-4 text-neutral-600" />
+                <span className="text-[10px] font-medium uppercase tracking-widest text-neutral-600">
+                  Projects
+                </span>
+              </div>
+              <span className="text-[10px] text-neutral-700">
+                Scroll to explore
+              </span>
+            </div>
 
-        <h2 className="text-3xl sm:text-4xl font-semibold text-white leading-tight tracking-tight mb-12">
-          Things I've Built
-        </h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white leading-tight tracking-tight mb-12">
+              Things I've Built
+            </h2>
 
-        {/* Grid */}
-        <div
-          ref={gridRef}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          {sortedProjects.map((project) => (
-            <ProjectCard key={project.title} project={project} />
-          ))}
+            {/* Projects Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-20">
+              {sortedProjects.map((project, index) => (
+                <ProjectCard
+                  key={project.title}
+                  project={project}
+                  height={getCardHeight(index)}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

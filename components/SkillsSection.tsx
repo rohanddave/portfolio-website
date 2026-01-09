@@ -45,14 +45,19 @@ function SkillsSection() {
   }
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-neutral-950 py-20 px-6">
+    <section className="min-h-screen flex items-center justify-center bg-neutral-950 py-20 px-6 border-t border-neutral-800">
       <div className="w-full max-w-6xl">
         {/* Header */}
-        <div className="flex items-center gap-3 mb-16">
-          <Sparkles className="w-5 h-5 text-neutral-600" />
-          <span className="text-xs font-medium uppercase tracking-widest text-neutral-600">
-            My Stack
-          </span>
+        <div className="mb-16">
+          <div className="flex items-center gap-3 mb-8">
+            <Sparkles className="w-4 h-4 text-neutral-600" />
+            <span className="text-[10px] font-medium uppercase tracking-widest text-neutral-600">
+              My Stack
+            </span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white leading-tight tracking-tight mb-16">
+            Skills & Technologies
+          </h2>
         </div>
 
         {/* Skills Grid */}
@@ -60,7 +65,7 @@ function SkillsSection() {
           {skillsData.map((category) => (
             <div
               key={category.name}
-              className="skill-category grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-6 lg:gap-12"
+              className="skill-category grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-8 lg:gap-20"
             >
               {/* Category Name */}
               <div className="flex-shrink-0">
