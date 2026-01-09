@@ -209,12 +209,6 @@ export default function Hero() {
           >
             Resume
           </Link>
-          <Link
-            href={profile.links.projects}
-            className="px-6 py-2.5 border border-neutral-300 hover:border-neutral-400 hover:bg-neutral-50 dark:border-neutral-700 dark:hover:border-neutral-600 dark:hover:bg-neutral-900 rounded-md transition-all duration-150 hover:scale-[1.02] text-sm text-neutral-700 dark:text-neutral-300"
-          >
-            Projects
-          </Link>
         </div>
       </div>
 

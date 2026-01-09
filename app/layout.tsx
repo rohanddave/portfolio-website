@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/contexts/ThemeContext";
+import CustomCursor from "@/components/CustomCursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,6 +58,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} transition-colors duration-300`}>
         <ThemeProvider>
+          <CustomCursor />
           <Analytics />
           {children}
         </ThemeProvider>
