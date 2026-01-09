@@ -23,7 +23,7 @@ export default function EducationCard({
   index,
   total,
 }: EducationCardProps) {
-  const [showCourses, setShowCourses] = useState(false);
+  const [showCourses, setShowCourses] = useState(true);
   const scrollRef = useRef<HTMLDivElement>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
