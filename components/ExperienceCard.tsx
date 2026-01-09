@@ -131,26 +131,6 @@ export default function ExperienceCard({
         </div>
       </div>
 
-      {/* Progress Dots */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-        {Array.from({ length: total }).map((_, i) => (
-          <div
-            key={i}
-            className={`h-1 rounded-full transition-all duration-300 ${
-              i === index ? "w-6 bg-white" : "w-1 bg-neutral-800"
-            }`}
-          />
-        ))}
-      </div>
-
-      {/* Scroll Hint */}
-      {index < total - 1 && (
-        <div className="hidden lg:flex absolute right-10 bottom-10 items-center gap-2 text-xs text-neutral-700">
-          <span>Scroll</span>
-          <span>→</span>
-        </div>
-      )}
-
       {/* Mobile Company Badge */}
       <div className="lg:hidden absolute bottom-24 left-1/2 -translate-x-1/2 flex items-center gap-3 px-4 py-3 border border-neutral-800 rounded-xl">
         <div className="w-8 h-8 rounded-lg bg-white p-1">
