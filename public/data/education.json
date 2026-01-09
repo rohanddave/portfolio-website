@@ -4,7 +4,7 @@
       "institution": "Northeastern University",
       "degree": "Master of Science, Computer Science",
       "period": "Aug 2024 - May 2026",
-      "location": "San Jose, CA, USA",
+      "location": "Boston, MA, USA",
       "description": "Pursuing a specialized track in Artificial Intelligence and Systems, focusing on machine learning, distributed systems, and software engineering. Combining academic excellence with practical experience through teaching and entrepreneurial initiatives.",
       "image": "/images/education/northeastern.png",
       "gpa": "3.92/4.0",
@@ -19,9 +19,137 @@
         "Foundations of AI",
         "Web Development",
         "Algorithms",
-        "Database Management Systems"
+        "Database Management Systems",
+        "Distributed Systems",
+        "Cloud Computing",
+        "Foundations of Generative AI"
       ],
       "allCourses": [
+        {
+          "name": "Foundations of Generative AI",
+          "code": "CS6180",
+          "semester": "Spring 2026",
+          "professor": "TBD",
+          "grade": null,
+          "credits": 4,
+          "description": "Comprehensive study of generative AI systems, including large language models, diffusion models, and multimodal AI architectures",
+          "isCurrent": true,
+          "startDate": "2026-01-05",
+          "topics": [
+            "Large Language Models",
+            "Transformer Architecture",
+            "Diffusion Models",
+            "Prompt Engineering",
+            "Fine-tuning & RLHF",
+            "RAG Systems",
+            "AI Agents",
+            "Multimodal AI",
+            "AI Safety & Alignment"
+          ],
+          "learnings": [
+            "Understanding transformer architecture and attention mechanisms in depth",
+            "Implementing and fine-tuning large language models for specific tasks",
+            "Building RAG (Retrieval-Augmented Generation) pipelines for knowledge-grounded AI",
+            "Developing AI agents with tool use and reasoning capabilities",
+            "Mastering prompt engineering techniques for optimal model performance",
+            "Exploring diffusion models for image and video generation",
+            "Understanding RLHF and preference optimization for model alignment",
+            "Building multimodal AI systems combining text, image, and audio",
+            "Addressing AI safety, ethics, and responsible deployment practices"
+          ]
+        },
+        {
+          "name": "Cloud Computing",
+          "code": "CS6620",
+          "semester": "Fall 2025",
+          "professor": "TBD",
+          "grade": null,
+          "credits": 4,
+          "description": "Comprehensive study of cloud computing architectures, distributed systems, and modern cloud-native application development",
+          "isCurrent": false,
+          "startDate": "2025-09-01",
+          "topics": [
+            "Cloud Architecture",
+            "AWS Services",
+            "Containerization & Docker",
+            "Kubernetes Orchestration",
+            "Serverless Computing",
+            "Infrastructure as Code",
+            "Cloud Security",
+            "Microservices Architecture"
+          ],
+          "learnings": [
+            "Designing and deploying scalable cloud architectures on AWS",
+            "Implementing containerized applications with Docker and Kubernetes",
+            "Building serverless applications using AWS Lambda and API Gateway",
+            "Managing infrastructure as code with Terraform and CloudFormation",
+            "Implementing cloud security best practices and IAM policies",
+            "Designing microservices architectures for high availability",
+            "Optimizing cloud costs and resource utilization",
+            "Building CI/CD pipelines for cloud-native applications"
+          ]
+        },
+        {
+          "name": "Distributed Systems",
+          "code": "CS6650",
+          "semester": "Fall 2025",
+          "professor": "TBD",
+          "grade": null,
+          "credits": 4,
+          "description": "Advanced study of distributed computing principles, consensus algorithms, and fault-tolerant system design",
+          "isCurrent": false,
+          "startDate": "2025-09-01",
+          "topics": [
+            "Distributed System Fundamentals",
+            "Consensus Algorithms",
+            "Replication & Consistency",
+            "Fault Tolerance",
+            "Distributed Databases",
+            "Message Queues",
+            "CAP Theorem",
+            "Distributed Transactions"
+          ],
+          "learnings": [
+            "Understanding distributed system fundamentals and challenges",
+            "Implementing consensus algorithms like Raft and Paxos",
+            "Designing systems with various consistency models",
+            "Building fault-tolerant and highly available systems",
+            "Working with distributed databases and partitioning strategies",
+            "Implementing message queues and event-driven architectures",
+            "Applying CAP theorem principles to system design",
+            "Managing distributed transactions and eventual consistency"
+          ]
+        },
+        {
+          "name": "Database Management Systems",
+          "code": "CS5200",
+          "semester": "Fall 2025",
+          "professor": "Dr. Martin Schedlbauer",
+          "grade": null,
+          "credits": 4,
+          "description": "Comprehensive study of database systems, including design, implementation, and optimization. Covers both relational and NoSQL databases, with emphasis on practical applications and performance tuning.",
+          "isCurrent": false,
+          "startDate": "2025-09-01",
+          "topics": [
+            "R Programming",
+            "Database Design",
+            "SQL and NoSQL",
+            "Query Optimization",
+            "Transaction Management",
+            "Distributed Databases",
+            "Database Security"
+          ],
+          "learnings": [
+            "Mastering advanced database design principles and normalization techniques",
+            "Implementing and optimizing complex SQL queries for high-performance applications",
+            "Designing and deploying distributed database systems with replication and sharding",
+            "Developing expertise in database security and access control mechanisms",
+            "Gaining practical experience in database performance tuning and optimization",
+            "Implementing data warehousing solutions for business intelligence",
+            "Mastering transaction management and ACID compliance in distributed systems",
+            "Developing skills in database backup, recovery, and disaster planning"
+          ]
+        },
         {
           "name": "Program Design Paradigm",
           "code": "CS5010",
@@ -113,36 +241,6 @@
             "Created responsive UI components with TypeScript and Tailwind CSS, ensuring cross-browser compatibility",
             "Established CI/CD pipeline with GitHub Actions, reducing deployment time by 80%",
             "Optimized application performance through code splitting and lazy loading, reducing bundle size by 40%"
-          ]
-        },
-        {
-          "name": "Database Management Systems",
-          "code": "CS5200",
-          "semester": "Summer 2025",
-          "professor": "Dr. Martin Schedlbauer",
-          "grade": "A",
-          "credits": 4,
-          "description": "Comprehensive study of database systems, including design, implementation, and optimization. Covers both relational and NoSQL databases, with emphasis on practical applications and performance tuning.",
-          "isCurrent": true,
-          "startDate": "2025-05-15",
-          "topics": [
-            "R",
-            "Database Design",
-            "SQL and NoSQL",
-            "Query Optimization",
-            "Transaction Management",
-            "Distributed Databases",
-            "Database Security"
-          ],
-          "learnings": [
-            "Mastered advanced database design principles and normalization techniques",
-            "Implemented and optimized complex SQL queries for high-performance applications",
-            "Designed and deployed distributed database systems with replication and sharding",
-            "Developed expertise in database security and access control mechanisms",
-            "Gained practical experience in database performance tuning and optimization",
-            "Implemented data warehousing solutions for business intelligence",
-            "Mastered transaction management and ACID compliance in distributed systems",
-            "Developed skills in database backup, recovery, and disaster planning"
           ]
         },
         {
