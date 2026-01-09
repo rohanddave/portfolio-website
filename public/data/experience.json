@@ -2,9 +2,32 @@
   "experiences": [
     {
       "company": "Rhombus Power, Inc",
+      "role": "Software Engineer",
+      "start_date": "2026-05-01",
+      "end_date": null,
+      "location": "Palo Alto, CA, USA",
+      "description": "Software Engineer building AI-powered predictive analytics and decision intelligence platforms for enterprise clients",
+      "logo": "/images/experience/rhombus.jpeg",
+      "relevant_achievements": [],
+      "all_achievements": [],
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "TypeScript",
+        "React",
+        "FastAPI",
+        "AWS",
+        "Kubernetes",
+        "Machine Learning",
+        "AI"
+      ]
+    },
+    {
+      "company": "Rhombus Power, Inc",
       "role": "Software Engineer Intern",
       "start_date": "2025-06-01",
-      "end_date": "2026-05-05",
+      "end_date": "2025-09-01",
       "location": "Palo Alto, CA, USA",
       "description": "Software Engineer Intern developing AI-powered fire detection systems and analytics platforms for real-time emergency response",
       "logo": "/images/experience/rhombus.jpeg",
