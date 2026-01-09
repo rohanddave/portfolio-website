@@ -1,6 +1,29 @@
 {
   "projects": [
     {
+      "title": "Multimodal Character Generation",
+      "description": "Advanced multimodal AI system combining Wan diffusion model for video generation and Dia voice model for emotion-controlled speech synthesis. Generates coherent 720p videos with realistic voice synthesis.",
+      "tech": ["Wan 14B", "LoRA", "PyTorch", "Dia 1.6B TTS", "Hugging Face", "Python", "Machine Learning", "AI"],
+      "link": null,
+      "image": "/images/projects/multimodal.png",
+      "categories": [
+        "AI",
+        "Machine Learning",
+        "Computer Vision",
+        "Speech Synthesis"
+      ],
+      "isFeatured": true,
+      "projectStatus": "in_development",
+      "education": "Northeastern University",
+      "course": null,
+      "experience": null,
+      "timeline": "Jan 2026 - Present",
+      "highlights": [
+        "Generated coherent 5-second 720p videos by fine-tuning Wan 14B + LoRA in PyTorch on custom dataset",
+        "Achieved realistic emotion-controlled speech by conditioning Dia 1.6B TTS model from Hugging Face"
+      ]
+    },
+    {
       "title": "LiftCrew",
       "description": "A gym community app that connects fitness enthusiasts to find workout partners, share routines, and track progress together. Features real-time workout sessions, community challenges, and social features designed for gym-goers.",
       "tech": ["Swift", "SwiftUI", "iOS", "NestJS", "TypeScript", "PostgreSQL"],
@@ -70,6 +93,10 @@
         "Python",
         "LangChain",
         "Pinecone",
+        "Llama 3.1B",
+        "Docker",
+        "FastAPI",
+        "RAG",
         "Stripe",
         "Webhooks",
         "TailwindCSS"
@@ -90,10 +117,8 @@
       "experience": null,
       "timeline": "Mar 2025 - Jun 2025",
       "highlights": [
-        "Increased user engagement by generating AI tweets with 92% relevance using a Python RAG pipeline",
-        "Improved content trust by reducing AI hallucinations 75% through structured code search tool integration",
-        "Scaled automated publishing to 50+ tweets/month via GitHub-to-Twitter API workflows",
-        "Validated monetization by converting users into 30+ paid customers using Stripe webhook subscriptions"
+        "Reduced LLM hallucinations 75% and achieved 90% relevant tweets via RAG with structured code search tool",
+        "Deployed Llama 3.1B via Dockerized FastAPI with optimized prompts using few-shot and CoT reasoning"
       ]
     },
     {
@@ -111,9 +136,10 @@
         "AWS",
         "Terraform",
         "Docker",
-        "Kubernetes"
+        "Kubernetes",
+        "CI/CD"
       ],
-      "link": "https://testflight.apple.com/join/oneprediction",
+      "link": "https://testflight.apple.com/join/f3wk9jpA",
       "image": "/images/projects/oneprediction.png",
       "categories": [
         "iOS Mobile Development",
@@ -128,10 +154,9 @@
       "experience": null,
       "timeline": "Aug 2024 - Mar 2025",
       "highlights": [
-        "Improved system stability 30% by leading code reviews and enforcing consistent architecture",
-        "Drove engagement for 5K+ users by enabling real-time AI scoring and Redis leaderboards in TypeScript",
+        "Drove engagement for 5K+ users by enabling real-time algorithmic scoring and Redis leaderboards in TypeScript",
         "Reduced search time 80% by syncing Postgres to Elasticsearch for fast full-text discovery",
-        "Shipped features 75% faster by automating AWS deployments with Terraform, Docker and Kubernetes"
+        "Shipped features 75% faster by building CI/CD pipelines with Terraform, Docker and Kubernetes on AWS"
       ]
     },
     {

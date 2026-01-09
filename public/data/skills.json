@@ -74,8 +74,8 @@
         },
         {
           "name": "TensorFlow & PyTorch",
-          "proficiency": "INTERMEDIATE",
-          "description": "Deep learning frameworks for neural networks",
+          "proficiency": "ADVANCED",
+          "description": "Deep learning frameworks, model fine-tuning, and production neural networks",
           "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
         }
       ]
