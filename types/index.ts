@@ -1,19 +1,21 @@
+export interface Domain {
+  name: string;
+  description: string;
+  skills: Skill[];
+}
+
 export interface Skill {
   name: string;
   proficiency: string;
   description: string;
-  subSkills?: {
-    name: string;
-    proficiency: string;
-    description: string;
-  }[];
+  icon: string;
 }
 
 export interface SkillsData {
   proficiencyScale: {
     [key: string]: string;
   };
-  skills: Skill[];
+  domains: Domain[];
 }
 
 export interface Achievement {

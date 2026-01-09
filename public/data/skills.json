@@ -5,31 +5,35 @@
     "INTERMEDIATE": "Good understanding and practical experience",
     "BASIC": "Fundamental understanding and some practical experience"
   },
-  "skills": [
+  "domains": [
     {
       "name": "Programming Languages",
       "proficiency": "EXPERT",
       "description": "Proficient in multiple programming languages for diverse application development",
-      "subSkills": [
+      "skills": [
         {
           "name": "TypeScript",
           "proficiency": "EXPERT",
-          "description": "Full-stack development with strong typing and advanced type system"
+          "description": "Full-stack development with strong typing and advanced type system",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
         },
         {
           "name": "Python",
           "proficiency": "EXPERT",
-          "description": "AI/ML development, data science, and backend services"
+          "description": "AI/ML development, data science, and backend services",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
         },
         {
           "name": "Java",
           "proficiency": "ADVANCED",
-          "description": "Object-oriented design, Spring Boot, and enterprise applications"
+          "description": "Object-oriented design, Spring Boot, and enterprise applications",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
         },
         {
           "name": "JavaScript",
           "proficiency": "EXPERT",
-          "description": "ES6+, functional programming, and modern web development"
+          "description": "ES6+, functional programming, and modern web development",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
         }
       ]
     },
@@ -37,36 +41,42 @@
       "name": "AI & Machine Learning",
       "proficiency": "ADVANCED",
       "description": "Expertise in modern AI technologies and machine learning systems",
-      "subSkills": [
+      "skills": [
         {
           "name": "LangGraph & LangChain",
           "proficiency": "ADVANCED",
-          "description": "Building AI agents and complex LLM workflows"
+          "description": "Building AI agents and complex LLM workflows",
+          "icon": null
         },
         {
           "name": "Pinecone & Vector DBs",
           "proficiency": "ADVANCED",
-          "description": "Vector databases for semantic search and RAG systems"
+          "description": "Vector databases for semantic search and RAG systems",
+          "icon": null
         },
         {
           "name": "RAG Systems",
           "proficiency": "ADVANCED",
-          "description": "Retrieval-augmented generation for context-aware AI"
+          "description": "Retrieval-augmented generation for context-aware AI",
+          "icon": null
         },
         {
           "name": "MCP Servers",
           "proficiency": "ADVANCED",
-          "description": "Model Context Protocol for AI agent communication"
+          "description": "Model Context Protocol for AI agent communication",
+          "icon": null
         },
         {
           "name": "Scikit-learn",
           "proficiency": "INTERMEDIATE",
-          "description": "Traditional ML algorithms and model evaluation"
+          "description": "Traditional ML algorithms and model evaluation",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
         },
         {
           "name": "TensorFlow & PyTorch",
           "proficiency": "INTERMEDIATE",
-          "description": "Deep learning frameworks for neural networks"
+          "description": "Deep learning frameworks for neural networks",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
         }
       ]
     },
@@ -74,36 +84,42 @@
       "name": "Web Development",
       "proficiency": "EXPERT",
       "description": "Full-stack web development with modern frameworks and technologies",
-      "subSkills": [
+      "skills": [
         {
           "name": "React",
           "proficiency": "EXPERT",
-          "description": "Advanced hooks, state management, and performance optimization"
+          "description": "Advanced hooks, state management, and performance optimization",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
         },
         {
           "name": "Express & NestJS",
           "proficiency": "EXPERT",
-          "description": "Node.js frameworks for scalable backend services"
+          "description": "Node.js frameworks for scalable backend services",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg"
         },
         {
           "name": "Next.js",
           "proficiency": "EXPERT",
-          "description": "Server-side rendering and full-stack React applications"
+          "description": "Server-side rendering and full-stack React applications",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
         },
         {
           "name": "FastAPI",
           "proficiency": "ADVANCED",
-          "description": "High-performance Python web framework for APIs"
+          "description": "High-performance Python web framework for APIs",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
         },
         {
           "name": "REST & GraphQL",
           "proficiency": "EXPERT",
-          "description": "API design and implementation patterns"
+          "description": "API design and implementation patterns",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
         },
         {
           "name": "Web Sockets & Webhooks",
           "proficiency": "ADVANCED",
-          "description": "Real-time communication and event-driven architectures"
+          "description": "Real-time communication and event-driven architectures",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
         }
       ]
     },
@@ -111,26 +127,30 @@
       "name": "Databases",
       "proficiency": "EXPERT",
       "description": "Expertise in both SQL and NoSQL database systems",
-      "subSkills": [
+      "skills": [
         {
           "name": "PostgreSQL",
           "proficiency": "EXPERT",
-          "description": "Advanced queries, optimization, and database design"
+          "description": "Advanced queries, optimization, and database design",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
         },
         {
           "name": "MongoDB",
           "proficiency": "ADVANCED",
-          "description": "NoSQL database design and aggregation pipelines"
+          "description": "NoSQL database design and aggregation pipelines",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
         },
         {
           "name": "Redis",
           "proficiency": "EXPERT",
-          "description": "Caching, pub/sub, and real-time data structures"
+          "description": "Caching, pub/sub, and real-time data structures",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
         },
         {
           "name": "Elasticsearch",
           "proficiency": "ADVANCED",
-          "description": "Full-text search and analytics engine"
+          "description": "Full-text search and analytics engine",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg"
         }
       ]
     },
@@ -138,31 +158,36 @@
       "name": "Cloud & DevOps",
       "proficiency": "ADVANCED",
       "description": "Cloud infrastructure and DevOps practices for scalable systems",
-      "subSkills": [
+      "skills": [
         {
           "name": "AWS Services",
           "proficiency": "EXPERT",
-          "description": "S3, Lambda, EC2, CloudWatch - core infrastructure services"
+          "description": "S3, Lambda, EC2, CloudWatch - core infrastructure services",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
         },
         {
           "name": "Docker",
           "proficiency": "ADVANCED",
-          "description": "Containerization and multi-stage builds"
+          "description": "Containerization and multi-stage builds",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
         },
         {
           "name": "Kubernetes",
           "proficiency": "ADVANCED",
-          "description": "Container orchestration and deployment automation"
+          "description": "Container orchestration and deployment automation",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
         },
         {
           "name": "Terraform",
           "proficiency": "INTERMEDIATE",
-          "description": "Infrastructure as code and automated provisioning"
+          "description": "Infrastructure as code and automated provisioning",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"
         },
         {
           "name": "CI/CD",
           "proficiency": "ADVANCED",
-          "description": "GitHub Actions and automated deployment pipelines"
+          "description": "GitHub Actions and automated deployment pipelines",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg"
         }
       ]
     },
@@ -170,26 +195,30 @@
       "name": "Mobile & Tools",
       "proficiency": "ADVANCED",
       "description": "Mobile development and essential development tools",
-      "subSkills": [
+      "skills": [
         {
           "name": "iOS Development",
           "proficiency": "ADVANCED",
-          "description": "Swift, Objective-C, CoreData, and SwiftUI"
+          "description": "Swift, Objective-C, CoreData, and SwiftUI",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"
         },
         {
           "name": "Swift Package Manager",
           "proficiency": "INTERMEDIATE",
-          "description": "Dependency management for iOS projects"
+          "description": "Dependency management for iOS projects",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"
         },
         {
           "name": "Testing Frameworks",
           "proficiency": "ADVANCED",
-          "description": "JUnit, PyTest, Jest for comprehensive testing"
+          "description": "JUnit, PyTest, Jest for comprehensive testing",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
         },
         {
           "name": "Development Tools",
           "proficiency": "EXPERT",
-          "description": "Git, Postman, and debugging tools"
+          "description": "Git, Postman, and debugging tools",
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
         }
       ]
     }

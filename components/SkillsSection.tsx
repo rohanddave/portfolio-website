@@ -1,16 +1,14 @@
 "use client";
-
 import { useEffect, useState } from "react";
-import { Skill, SkillsData } from "@/types";
+import { Domain, SkillsData } from "@/types";
 import SkillCard from "./SkillCard";
 import { Sparkles } from "lucide-react";
 
 function SkillsSection() {
-  const [skillsData, setSkillsData] = useState<Skill[]>([]);
+  const [skillsData, setSkillsData] = useState<Domain[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Fetch skills data
   useEffect(() => {
     const fetchSkills = async () => {
       try {
@@ -19,7 +17,7 @@ function SkillsSection() {
           throw new Error("Failed to fetch skills data");
         }
         const data: SkillsData = await response.json();
-        setSkillsData(data.skills);
+        setSkillsData(data.domains);
         setIsLoading(false);
       } catch (error) {
         console.error("Error loading skills data:", error);
@@ -27,7 +25,6 @@ function SkillsSection() {
         setIsLoading(false);
       }
     };
-
     fetchSkills();
   }, []);
 
@@ -60,32 +57,23 @@ function SkillsSection() {
 
         {/* Skills Grid */}
         <div className="space-y-16">
-          {skillsData.map((category, index) => (
+          {skillsData.map((category) => (
             <div
               key={category.name}
-              className="skill-category flex flex-col lg:flex-row gap-8 lg:gap-20"
+              className="skill-category grid grid-cols-1 lg:grid-cols-[200px_1fr] gap-6 lg:gap-12"
             >
               {/* Category Name */}
-              <div className="lg:w-48 flex-shrink-0">
-                <h2 className="text-4xl lg:text-5xl font-bold text-neutral-800 uppercase tracking-tight">
+              <div className="flex-shrink-0">
+                <h2 className="text-3xl lg:text-4xl font-bold text-neutral-800 uppercase tracking-tight leading-tight">
                   {category.name}
                 </h2>
               </div>
 
               {/* Skills */}
-              <div className="flex-1">
-                <div className="flex flex-wrap gap-x-8 gap-y-4">
-                  {category.subSkills?.map((skill, i) => (
-                    <SkillCard
-                      key={skill.name}
-                      skill={{
-                        name: skill.name,
-                        proficiency: skill.proficiency,
-                        description: skill.description,
-                      }}
-                    />
-                  ))}
-                </div>
+              <div className="flex flex-wrap gap-x-8 gap-y-4">
+                {category.skills.map((skill) => (
+                  <SkillCard key={skill.name} skill={skill} />
+                ))}
               </div>
             </div>
           ))}

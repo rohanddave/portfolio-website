@@ -254,26 +254,6 @@ export default function EducationCard({
           </div>
         </div>
       </div>
-
-      {/* Progress Dots */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-        {Array.from({ length: total }).map((_, i) => (
-          <div
-            key={i}
-            className={`h-1 rounded-full transition-all duration-300 ${
-              i === index ? "w-6 bg-white" : "w-1 bg-neutral-800"
-            }`}
-          />
-        ))}
-      </div>
-
-      {/* Scroll Hint */}
-      {index < total - 1 && (
-        <div className="hidden lg:flex absolute right-10 bottom-8 items-center gap-2 text-[10px] text-neutral-800">
-          <span>Scroll</span>
-          <span>→</span>
-        </div>
-      )}
     </div>
   );
 }
