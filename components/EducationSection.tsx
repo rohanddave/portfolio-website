@@ -165,7 +165,7 @@ function EducationSection() {
 
   if (isLoading) {
     return (
-      <section className="h-screen flex items-center justify-center bg-neutral-950">
+      <section className="h-screen flex items-center justify-center">
         <div className="text-neutral-500">Loading education...</div>
       </section>
     );
@@ -173,7 +173,7 @@ function EducationSection() {
 
   if (error) {
     return (
-      <section className="h-screen flex items-center justify-center bg-neutral-950">
+      <section className="h-screen flex items-center justify-center">
         <div className="text-red-500">{error}</div>
       </section>
     );
@@ -182,7 +182,7 @@ function EducationSection() {
   return (
     <section
       ref={sectionRef}
-      className="h-screen overflow-hidden relative bg-neutral-950 border-t border-neutral-800"
+      className="h-screen overflow-hidden relative border-t border-neutral-800"
     >
       {/* Horizontal strip containing all cards */}
       <div ref={stripRef} className="flex h-full will-change-transform">

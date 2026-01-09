@@ -95,7 +95,7 @@ function ProjectsSection() {
 
   if (isLoading) {
     return (
-      <section className="min-h-screen flex items-center justify-center bg-neutral-950">
+      <section className="min-h-screen flex items-center justify-center">
         <div className="text-neutral-500 text-sm">Loading projects...</div>
       </section>
     );
@@ -103,7 +103,7 @@ function ProjectsSection() {
 
   if (error) {
     return (
-      <section className="min-h-screen flex items-center justify-center bg-neutral-950">
+      <section className="min-h-screen flex items-center justify-center">
         <div className="text-red-500 text-sm">{error}</div>
       </section>
     );
@@ -119,7 +119,7 @@ function ProjectsSection() {
     <section
       ref={sectionRef}
       data-section="projects"
-      className="h-screen bg-neutral-900 overflow-hidden border-t border-neutral-800 relative"
+      className="h-screen overflow-hidden border-t border-neutral-800 relative"
     >
       <div
         ref={contentRef}

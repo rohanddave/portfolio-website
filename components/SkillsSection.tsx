@@ -30,7 +30,7 @@ function SkillsSection() {
 
   if (isLoading) {
     return (
-      <section className="min-h-screen flex items-center justify-center bg-neutral-950">
+      <section className="min-h-screen flex items-center justify-center">
         <div className="text-neutral-500 text-sm">Loading skills...</div>
       </section>
     );
@@ -38,14 +38,14 @@ function SkillsSection() {
 
   if (error) {
     return (
-      <section className="min-h-screen flex items-center justify-center bg-neutral-950">
+      <section className="min-h-screen flex items-center justify-center">
         <div className="text-red-500 text-sm">{error}</div>
       </section>
     );
   }
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-neutral-950 py-20 px-6 border-t border-neutral-800">
+    <section className="min-h-screen flex items-center justify-center py-20 px-6 border-t border-neutral-800">
       <div className="w-full max-w-6xl">
         {/* Header */}
         <div className="mb-16">

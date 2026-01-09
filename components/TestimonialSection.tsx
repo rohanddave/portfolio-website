@@ -106,7 +106,7 @@ function TestimonialsSection() {
 
   if (isLoading) {
     return (
-      <section className="min-h-screen flex items-center justify-center bg-neutral-950">
+      <section className="min-h-screen flex items-center justify-center">
         <div className="text-neutral-500 text-sm">Loading testimonials...</div>
       </section>
     );
@@ -114,7 +114,7 @@ function TestimonialsSection() {
 
   if (error) {
     return (
-      <section className="min-h-screen flex items-center justify-center bg-neutral-950">
+      <section className="min-h-screen flex items-center justify-center">
         <div className="text-red-500 text-sm">{error}</div>
       </section>
     );
@@ -124,7 +124,7 @@ function TestimonialsSection() {
     <section
       ref={sectionRef}
       data-section="testimonials"
-      className="min-h-screen bg-neutral-900 flex flex-col items-center justify-center py-24 px-6 lg:px-12 border-t border-neutral-800"
+      className="min-h-screen flex flex-col items-center justify-center py-24 px-6 lg:px-12 border-t border-neutral-800"
     >
       <div className="max-w-5xl mx-auto w-full">
         {/* Header */}

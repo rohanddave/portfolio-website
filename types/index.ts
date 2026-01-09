@@ -148,11 +148,18 @@ export interface HobbiesData {
   hobbies: Hobby[];
 }
 
+export interface Stat {
+  value: number;
+  suffix: string;
+  label: string;
+}
+
 export interface Profile {
   name: string;
   title: string;
   openToRoles: string[];
   summary: string;
+  stats?: Stat[];
   links: {
     resume: string;
     projects: string;

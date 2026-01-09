@@ -6,6 +6,23 @@
   "phone": "(617) 691-6918",
   "openToRoles": ["Software Engineer", "AI/ML Engineer"],
   "summary": "From distributed backends to LLM-powered agents. I engineer intelligent systems that solve hard problems at scale.",
+  "stats": [
+    {
+      "value": 2,
+      "suffix": "+",
+      "label": "Years of Experience"
+    },
+    {
+      "value": 15,
+      "suffix": "+",
+      "label": "Completed Projects"
+    },
+    {
+      "value": 1000,
+      "suffix": "+",
+      "label": "GitHub Commits"
+    }
+  ],
   "links": {
     "resume": "/resume.pdf",
     "projects": "#projects",

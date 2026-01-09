@@ -4,6 +4,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import CustomCursor from "@/components/CustomCursor";
+import BackgroundCanvas from "@/components/BackgroundCanvas";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -57,13 +58,24 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-neutral-950 cursor-none lg:cursor-none`}
+        className={`${inter.className} bg-neutral-950 cursor-none lg:cursor-none relative`}
       >
-        <ThemeProvider>
-          <CustomCursor />
-          <Analytics />
-          {children}
-        </ThemeProvider>
+        {/* Fixed 3D Background */}
+        <div className="fixed inset-0 z-0">
+          <BackgroundCanvas />
+        </div>
+
+        {/* Gradient Overlay for better content readability */}
+        <div className="fixed inset-0 z-[1] bg-gradient-to-b from-neutral-950/60 via-neutral-950/70 to-neutral-950/80 pointer-events-none" />
+
+        {/* Content */}
+        <div className="relative z-[100]">
+          <ThemeProvider>
+            <CustomCursor />
+            <Analytics />
+            {children}
+          </ThemeProvider>
+        </div>
       </body>
     </html>
   );
