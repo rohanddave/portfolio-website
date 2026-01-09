@@ -26,10 +26,8 @@
         "React",
         "FastAPI",
         "AWS",
-        "S3",
-        "Lambda",
-        "CNN-LSTM",
-        "Machine Learning"
+        "Machine Learning",
+        "AI"
       ]
     },
     {
@@ -67,16 +65,10 @@
         "Redis",
         "GitHub Actions",
         "Docker",
-        "AWS Lambda",
-        "S3",
-        "CloudWatch",
+        "AWS",
         "iOS",
         "Swift",
-        "SwiftUI",
-        "Android",
-        "Kotlin",
-        "Flutter",
-        "Dart"
+        "SwiftUI"
       ]
     },
     {
@@ -118,15 +110,11 @@
         "Redis",
         "Elasticsearch",
         "Stripe API",
-        "AWS S3",
+        "AWS",
         "Cloudflare CDN",
         "Docker",
-        "Flutter",
-        "Dart",
         "ReactJS",
-        "Firebase",
-        "Google Maps API",
-        "Apple Maps API"
+        "Firebase"
       ]
     }
   ]
