@@ -26,10 +26,7 @@ export default function Hero() {
   if (!profile) return null;
 
   return (
-    <section
-      id="home"
-      className="min-h-screen relative overflow-hidden"
-    >
+    <section id="home" className="min-h-screen relative overflow-hidden">
       {/* Content */}
       <div className="min-h-screen flex items-center px-4 sm:px-6 md:px-8 lg:px-12 max-w-6xl mx-auto">
         <div
@@ -59,12 +56,6 @@ export default function Hero() {
               className="px-8 py-3 bg-white text-neutral-900 hover:bg-neutral-200 rounded-lg transition-all duration-150 hover:scale-[1.02] text-sm font-medium shadow-lg"
             >
               Resume
-            </Link>
-            <Link
-              href="#projects"
-              className="px-8 py-3 bg-neutral-800/50 backdrop-blur-sm text-white hover:bg-neutral-800 border border-neutral-700 rounded-lg transition-all duration-150 hover:scale-[1.02] text-sm font-medium"
-            >
-              View Work
             </Link>
           </div>
         </div>
