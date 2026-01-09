@@ -118,15 +118,6 @@ export default function ExperienceCard({
                 )}
               </div>
             </div>
-
-            {/* Link */}
-            <a
-              href="#"
-              className="flex items-center justify-center gap-2 text-xs text-neutral-500 hover:text-white transition-colors"
-            >
-              <span>Details</span>
-              <ArrowUpRight className="w-3 h-3" />
-            </a>
           </div>
         </div>
       </div>
