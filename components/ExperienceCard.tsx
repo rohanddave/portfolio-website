@@ -84,10 +84,7 @@ export default function ExperienceCard({
             </h4>
             <div className="space-y-3">
               {experience.relevant_achievements.map((achievement, i) => (
-                <div
-                  key={i}
-                  className="exp-achievement flex items-start gap-3"
-                >
+                <div key={i} className="exp-achievement flex items-start gap-3">
                   <div className="w-1.5 h-1.5 rounded-full bg-neutral-700 flex-shrink-0 mt-2" />
                   <span className="text-sm text-neutral-300 leading-relaxed">
                     {achievement}
@@ -99,44 +96,41 @@ export default function ExperienceCard({
         </div>
 
         {/* Right Column - Technologies */}
-        <div className="exp-card-right w-full lg:w-80 flex-shrink-0">
-          <div className="sticky top-24">
-            {/* Tech Stack */}
-            <div>
-              <h4 className="text-[10px] font-medium uppercase tracking-widest text-neutral-600 mb-4">
-                Technologies Used
-              </h4>
-              <div className="flex flex-wrap gap-3">
-                {experience.technologies.map((tech) => {
-                  const icon = getTechIcon(tech);
-                  return (
-                    <div
-                      key={tech}
-                      className="exp-tech-tag flex items-center gap-2 group"
-                    >
-                      {/* Icon */}
-                      <div className="w-8 h-8 rounded-lg bg-neutral-900 border border-neutral-800 flex items-center justify-center overflow-hidden group-hover:border-neutral-700 transition-colors">
-                        {icon ? (
-                          <img
-                            src={icon}
-                            alt={tech}
-                            className="w-5 h-5 object-contain"
-                          />
-                        ) : (
-                          <span className="text-[10px] font-bold text-neutral-600">
-                            {tech.slice(0, 2).toUpperCase()}
-                          </span>
-                        )}
-                      </div>
-
-                      {/* Name */}
-                      <span className="text-xs text-neutral-400 group-hover:text-white transition-colors">
-                        {tech}
-                      </span>
+        <div className="exp-card-right w-full lg:w-96 flex-shrink-0 lg:self-center">
+          <div>
+            <h4 className="text-[10px] font-medium uppercase tracking-widest text-neutral-600 mb-6">
+              Technologies Used
+            </h4>
+            <div className="grid grid-cols-3 gap-3">
+              {experience.technologies.map((tech) => {
+                const icon = getTechIcon(tech);
+                return (
+                  <div
+                    key={tech}
+                    className="exp-tech-tag flex flex-col items-center gap-2 p-4 rounded-xl bg-neutral-900/50 border border-neutral-800/50 hover:border-neutral-700 hover:bg-neutral-900 transition-all group"
+                  >
+                    {/* Icon */}
+                    <div className="w-10 h-10 rounded-lg bg-neutral-800/50 flex items-center justify-center overflow-hidden">
+                      {icon ? (
+                        <img
+                          src={icon}
+                          alt={tech}
+                          className="w-6 h-6 object-contain"
+                        />
+                      ) : (
+                        <span className="text-xs font-bold text-neutral-500">
+                          {tech.slice(0, 2).toUpperCase()}
+                        </span>
+                      )}
                     </div>
-                  );
-                })}
-              </div>
+
+                    {/* Name */}
+                    <span className="text-[11px] text-neutral-500 group-hover:text-white transition-colors text-center leading-tight">
+                      {tech}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
