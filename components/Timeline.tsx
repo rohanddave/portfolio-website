@@ -5,6 +5,7 @@ import ExperienceSection from "./ExperienceSection";
 import EducationSection from "./EducationSection";
 import SkillsSection from "./SkillsSection";
 import ProjectsSection from "./ProjectSection";
+import TestimonialsSection from "./TestimonialSection";
 
 export default function Timeline() {
   return (
@@ -22,6 +23,8 @@ export default function Timeline() {
         <EducationSection />
 
         <ProjectsSection />
+
+        <TestimonialsSection />
 
         {/* Skills */}
         <SkillsSection />

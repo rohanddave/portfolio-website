@@ -57,6 +57,7 @@ export interface Testimonial {
   name: string;
   role: string;
   company: string;
+  companyLogo: string;
   testimonial: string;
   linkedin: string;
   experience: string;
