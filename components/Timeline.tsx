@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import ExperienceSection from "./ExperienceSection";
 import EducationSection from "./EducationSection";
 import SkillsSection from "./SkillsSection";
+import ProjectsSection from "./ProjectSection";
 
 export default function Timeline() {
   return (
@@ -19,6 +20,8 @@ export default function Timeline() {
 
         {/* Education */}
         <EducationSection />
+
+        <ProjectsSection />
 
         {/* Skills */}
         <SkillsSection />
