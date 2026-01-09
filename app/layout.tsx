@@ -4,7 +4,6 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import CustomCursor from "@/components/CustomCursor";
-import BackgroundCanvas from "@/components/BackgroundCanvas";
 
 const inter = Inter({ subsets: ["latin"] });
 
