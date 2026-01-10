@@ -1,16 +1,104 @@
 {
   "projects": [
     {
+      "title": "Multimodal Character Generation",
+      "description": "Advanced multimodal AI system combining Wan diffusion model for video generation and Dia voice model for emotion-controlled speech synthesis. Generates coherent 720p videos with realistic voice synthesis.",
+      "tech": ["Wan 14B", "LoRA", "PyTorch", "Dia 1.6B TTS", "Hugging Face", "Python", "Machine Learning", "AI"],
+      "link": null,
+      "image": "/images/projects/multimodal.png",
+      "categories": [
+        "AI",
+        "Machine Learning",
+        "Computer Vision",
+        "Speech Synthesis"
+      ],
+      "isFeatured": true,
+      "projectStatus": "in_development",
+      "education": "Northeastern University",
+      "course": null,
+      "experience": null,
+      "timeline": "Jan 2026 - Present",
+      "highlights": [
+        "Generated coherent 5-second 720p videos by fine-tuning Wan 14B + LoRA in PyTorch on custom dataset",
+        "Achieved realistic emotion-controlled speech by conditioning Dia 1.6B TTS model from Hugging Face"
+      ]
+    },
+    {
+      "title": "LiftCrew",
+      "description": "A gym community app that connects fitness enthusiasts to find workout partners, share routines, and track progress together. Features real-time workout sessions, community challenges, and social features designed for gym-goers.",
+      "tech": ["Swift", "SwiftUI", "iOS", "NestJS", "TypeScript", "PostgreSQL"],
+      "link": null,
+      "image": "/images/projects/liftcrew.png",
+      "categories": [
+        "iOS Mobile Development",
+        "Full Stack Development",
+        "Social"
+      ],
+      "isFeatured": true,
+      "projectStatus": "in_development",
+      "education": null,
+      "course": null,
+      "experience": null,
+      "timeline": "Jan 2025 - Present",
+      "highlights": [
+        "Building real-time workout session sharing with live activity updates",
+        "Implementing community challenges and leaderboards",
+        "Designing social features for gym partner matching"
+      ]
+    },
+    {
+      "title": "EHR for Doctors",
+      "description": "A modern Electronic Health Records platform designed for healthcare providers. Streamlines patient management, appointment scheduling, medical history tracking, and secure document handling with HIPAA-compliant architecture.",
+      "tech": ["Next.js", "NestJS", "TypeScript", "PostgreSQL", "Redis"],
+      "link": null,
+      "image": "/images/projects/ehr.png",
+      "categories": ["Web Development", "Full Stack Development", "Healthcare"],
+      "isFeatured": true,
+      "projectStatus": "in_development",
+      "education": null,
+      "course": null,
+      "experience": null,
+      "timeline": "Feb 2025 - Present",
+      "highlights": [
+        "Building HIPAA-compliant patient data management system",
+        "Implementing secure appointment scheduling and reminders",
+        "Designing intuitive medical history tracking interface"
+      ]
+    },
+    {
+      "title": "AirTune",
+      "description": "A native macOS app that brings Dynamic Island-style notifications and media controls to MacBooks. Features now-playing widgets, system alerts, and customizable interactions in an elegant floating interface inspired by iOS.",
+      "tech": ["Swift", "AppKit", "macOS", "CoreAudio", "MediaPlayer"],
+      "link": null,
+      "image": "/images/projects/airtune.png",
+      "categories": ["macOS Development", "Desktop App", "Utilities"],
+      "isFeatured": true,
+      "projectStatus": "in_development",
+      "education": null,
+      "course": null,
+      "experience": null,
+      "timeline": "Dec 2024 - Present",
+      "highlights": [
+        "Building Dynamic Island-style floating interface for macOS",
+        "Implementing now-playing media controls and visualizations",
+        "Designing customizable notification system"
+      ]
+    },
+    {
       "title": "Tessa",
-      "description": "An AI-powered Twitter agent that helps creators write engaging tweets for building in public. Built with Next.js and integrated with Twitter's API, Tessa uses a MCP server to generate contextually relevant content that resonates with your audience.",
+      "description": "AI powered web app that generates relevant tweets from code commits. Increased user engagement by generating AI tweets with 92% relevance using a Python RAG pipeline. Validated monetization by converting users into 30+ paid customers using Stripe webhook subscriptions.",
       "tech": [
         "Next.js",
         "TypeScript",
-        "Twitter API",
-        "OpenAI",
-        "AI Model Context Protocol Server",
-        "AI Agentic Systems",
-        "AI RAG Systems",
+        "Python",
+        "LangChain",
+        "Pinecone",
+        "Llama 3.1B",
+        "Docker",
+        "FastAPI",
+        "RAG",
+        "Stripe",
+        "Webhooks",
         "TailwindCSS"
       ],
       "link": "https://tessa-web-app.vercel.app",
@@ -18,92 +106,66 @@
       "categories": [
         "AI",
         "Web Development",
-        "Social Media",
         "Automation",
-        "AI Retrieval-Augmented Generation",
-        "AI Model Context Protocol Server",
-        "AI Agentic Systems"
+        "RAG Systems",
+        "AI Agents"
       ],
       "isFeatured": true,
       "projectStatus": "live_maintained",
-      "education": null,
+      "education": "Northeastern University",
       "course": null,
-      "experience": null
+      "experience": null,
+      "timeline": "Mar 2025 - Jun 2025",
+      "highlights": [
+        "Reduced LLM hallucinations 75% and achieved 90% relevant tweets via RAG with structured code search tool",
+        "Deployed Llama 3.1B via Dockerized FastAPI with optimized prompts using few-shot and CoT reasoning"
+      ]
     },
     {
       "title": "OnePrediction",
-      "description": "A comprehensive football predictions mobile app for iOS that combines squad building with match predictions. Features include team management, player statistics, and real-time match predictions. Built with a modern tech stack ensuring smooth performance and intuitive user experience.",
+      "description": "iOS app with AI scoring for competing against users on soccer match predictions. Drove engagement for 5K+ users by enabling real-time AI scoring and Redis leaderboards. Shipped features 75% faster by automating AWS deployments with Terraform, Docker and Kubernetes.",
       "tech": [
+        "Swift",
         "SwiftUI",
-        "NestJS",
+        "iOS",
         "TypeScript",
+        "NestJS",
         "PostgreSQL",
         "Redis",
-        "Firebase",
-        "Elasticsearch"
+        "Elasticsearch",
+        "AWS",
+        "Terraform",
+        "Docker",
+        "Kubernetes",
+        "CI/CD"
       ],
-      "link": "https://apps.apple.com/app/oneprediction",
+      "link": "https://testflight.apple.com/join/f3wk9jpA",
       "image": "/images/projects/oneprediction.png",
       "categories": [
         "iOS Mobile Development",
-        "Sports",
-        "Full Stack Development"
-      ],
-      "isFeatured": true,
-      "projectStatus": "beta",
-      "education": null,
-      "course": null,
-      "experience": "TheFridayCompany"
-    },
-    {
-      "title": "Juno: AI-Powered Job Application Assistant",
-      "description": "Developed an intelligent job application platform that automates and streamlines the job search process. Features include automated job scraping from career pages, smart resume tailoring using AI, and application tracking. The system uses natural language processing to analyze job descriptions and automatically customize resumes to match specific requirements, significantly improving application success rates.",
-      "tech": [
-        "Next.js",
-        "TypeScript",
-        "Python",
-        "OpenAI GPT-4",
-        "Web Scraping",
-        "NLP",
-        "PDF Processing",
-        "Vector Databases",
-        "TailwindCSS"
-      ],
-      "link": "https://juno-app.vercel.app",
-      "image": "/images/projects/juno.jpeg",
-      "categories": [
+        "Full Stack Development",
         "AI",
-        "Web Development",
-        "Automation",
-        "NLP",
-        "Full Stack Development"
+        "DevOps"
       ],
       "isFeatured": true,
-      "projectStatus": "in_development",
-      "education": null,
+      "projectStatus": "live_maintained",
+      "education": "Northeastern University",
       "course": null,
-      "experience": null
+      "experience": null,
+      "timeline": "Aug 2024 - Mar 2025",
+      "highlights": [
+        "Drove engagement for 5K+ users by enabling real-time algorithmic scoring and Redis leaderboards in TypeScript",
+        "Reduced search time 80% by syncing Postgres to Elasticsearch for fast full-text discovery",
+        "Shipped features 75% faster by building CI/CD pipelines with Terraform, Docker and Kubernetes on AWS"
+      ]
     },
     {
-      "title": "PlaySync: Cross-Platform Collaborative Playlist",
-      "description": "Developed a universal music sharing platform that enables cross-platform playlist collaboration across Spotify, Apple Music, and YouTube Music. Built with Next.js frontend and NestJS backend, featuring real-time collaboration, smart song matching across platforms, and secure authentication. Implemented server-side rendering, REST APIs, and third-party music service integrations.",
-      "tech": [
-        "Next.js",
-        "NestJS",
-        "TypeScript",
-        "MongoDB",
-        "REST APIs",
-        "Authentication",
-        "Real-time Collaboration"
-      ],
+      "title": "PlaySync",
+      "description": "Universal music sharing platform enabling cross-platform playlist collaboration across Spotify, Apple Music, and YouTube Music. Features real-time collaboration, smart song matching, and secure authentication.",
+      "tech": ["Next.js", "NestJS", "TypeScript", "MongoDB"],
       "link": "https://playsync-web-app.vercel.app",
       "image": "/images/projects/playsync.jpeg",
-      "categories": [
-        "Web Development",
-        "Music",
-        "Real Time Collaboration",
-        "Full Stack Development"
-      ],
+      "categories": ["Web Development", "Full Stack Development"],
       "isFeatured": true,
       "projectStatus": "concept",
       "education": "Northeastern University",
@@ -112,7 +174,7 @@
     },
     {
       "title": "Turf Booking Platform",
-      "description": "Built a high-performance turf booking system with real-time notifications and payment integration. Ranked in top 25 sports apps with features including map integration, universal links, and video streaming capabilities.",
+      "description": "High-performance turf booking system with real-time notifications and payment integration. Ranked in top 25 sports apps with map integration, universal links, and video streaming capabilities.",
       "tech": [
         "Flutter",
         "Dart",
@@ -121,17 +183,11 @@
         "PostgreSQL",
         "MongoDB",
         "Redis",
-        "Elasticsearch",
-        "Stripe API"
+        "Elasticsearch"
       ],
       "link": null,
       "image": "/images/projects/tfc-turf.png",
-      "categories": [
-        "Cross Platform Mobile Development",
-        "Web Development",
-        "Payments",
-        "Maps"
-      ],
+      "categories": ["Cross Platform Mobile Development", "Web Development"],
       "isFeatured": true,
       "projectStatus": "live_maintained",
       "education": null,
@@ -140,50 +196,24 @@
     },
     {
       "title": "Advanced Image Processing Suite",
-      "description": "Developed a comprehensive image processing application with both GUI and CLI interfaces, featuring color channel analysis, image transformations, advanced filters, histogram visualization, and batch processing capabilities. Implemented using MVC architecture for clean separation of concerns.",
-      "tech": ["Java", "Swing", "MVC Pattern", "Object-Oriented Programming"],
+      "description": "Comprehensive image processing application with GUI and CLI interfaces, featuring color channel analysis, transformations, advanced filters, and batch processing. Built with MVC architecture.",
+      "tech": ["Java", "Swing", "MVC Pattern"],
       "link": "https://github.com/rohanddave/PdpImageManipulatorAndEnhancer",
       "image": "/images/projects/image-processing.png",
       "categories": ["Desktop App", "Image Processing", "Java"],
-      "isFeatured": true,
+      "isFeatured": false,
       "projectStatus": "completed_archived",
       "education": "Northeastern University",
       "course": "Program Design Paradigm",
       "experience": null
     },
     {
-      "title": "Sound Sage: A Smart Music Recommendation System",
-      "description": "Developed an advanced music recommendation system using Spotify's 12M-song dataset. Implemented K-Nearest Neighbors algorithm for personalized music suggestions based on detailed audio features including valence, tempo, danceability, and energy. Created a dynamic user profile modeling system that adapts recommendations based on user feedback ratings.",
-      "tech": [
-        "Python",
-        "Machine Learning",
-        "KNN Algorithm",
-        "Recommender Systems",
-        "Data Analysis"
-      ],
+      "title": "Sound Sage",
+      "description": "Advanced music recommendation system using Spotify's 12M-song dataset. Implements K-Nearest Neighbors for personalized suggestions based on audio features including valence, tempo, and danceability.",
+      "tech": ["Python", "Pandas", "Scikit-Learn"],
       "link": "https://github.com/rohanddave/sound-sage",
       "image": "/images/projects/sound-sage.png",
-      "categories": ["AI", "Machine Learning", "Data Science", "Python"],
-      "isFeatured": true,
-      "projectStatus": "completed_archived",
-      "education": "Northeastern University",
-      "course": "Foundations of AI",
-      "experience": null
-    },
-    {
-      "title": "Escape The Castle: Intelligent Agents with Monte Carlo Methods",
-      "description": "Developed intelligent agents for the 'Escape The Castle' game using both model-based and model-free Monte Carlo methods. Implemented a two-phase approach: first using Model-Based Monte Carlo (MCMC) for environment learning and state transition modeling, then transitioning to Model-Free Monte Carlo for improved performance and faster convergence. The project demonstrated enhanced learning efficiency and flexible adaptation to dynamic environments.",
-      "tech": [
-        "Python",
-        "Reinforcement Learning",
-        "Monte Carlo Methods",
-        "Game AI",
-        "Model-Based Learning",
-        "Model-Free Learning"
-      ],
-      "link": "https://github.com/rohanddave/ReinforcementLearningMFMC-MBMC",
-      "image": "/images/projects/escape-castle.png",
-      "categories": ["AI", "Reinforcement Learning", "Game Theory", "Python"],
+      "categories": ["AI", "Machine Learning", "Data Science"],
       "isFeatured": false,
       "projectStatus": "completed_archived",
       "education": "Northeastern University",
@@ -191,18 +221,24 @@
       "experience": null
     },
     {
-      "title": "AI-Powered Grid Coloring: Intelligent Optimization in Action",
-      "description": "Built an AI agent to solve complex grid coloring problems using the Hill Climbing algorithm. Implemented an interactive system that optimizes grid coloring while minimizing both color usage and brush shape variety. The agent uses adaptive brush strategies and constraint satisfaction techniques to achieve optimal solutions, demonstrating the application of AI in creative problem-solving.",
-      "tech": [
-        "Python",
-        "Pygame",
-        "Artificial Intelligence",
-        "Hill Climbing Algorithm",
-        "Constraint Satisfaction",
-        "Optimization"
-      ],
+      "title": "Escape The Castle",
+      "description": "Intelligent agents for game playing using Model-Based and Model-Free Monte Carlo methods. Demonstrates enhanced learning efficiency and flexible adaptation to dynamic environments.",
+      "tech": ["Python"],
+      "link": "https://github.com/rohanddave/ReinforcementLearningMFMC-MBMC",
+      "image": "/images/projects/escape-castle.png",
+      "categories": ["AI", "Reinforcement Learning", "Game Theory"],
+      "isFeatured": false,
+      "projectStatus": "completed_archived",
+      "education": "Northeastern University",
+      "course": "Foundations of AI",
+      "experience": null
+    },
+    {
+      "title": "AI Grid Coloring",
+      "description": "AI agent solving complex grid coloring problems using Hill Climbing algorithm. Optimizes grid coloring while minimizing color usage and brush shape variety through adaptive strategies.",
+      "tech": ["Python"],
       "image": "/images/projects/grid-coloring.png",
-      "categories": ["AI", "Optimization", "Game Development", "Python"],
+      "categories": ["AI", "Optimization", "Constraint Satisfaction"],
       "isFeatured": false,
       "projectStatus": "completed_archived",
       "education": "Northeastern University",
@@ -211,17 +247,8 @@
     },
     {
       "title": "TokenSale Platform",
-      "description": "A decentralized token sale platform that facilitated over 500 secure user transactions through MetaMask integration. Implemented a custom ERC-20 token smart contract on Ethereum for asset tokenization and management, providing a seamless experience for token holders.",
-      "tech": [
-        "ReactJS",
-        "Solidity",
-        "Ethereum",
-        "MetaMask",
-        "Web3.js",
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
+      "description": "Decentralized token sale platform facilitating 500+ secure transactions through MetaMask. Features custom ERC-20 token smart contract on Ethereum for asset tokenization.",
+      "tech": ["ReactJS", "Solidity", "Ethereum", "MetaMask", "Web3.js"],
       "link": "https://github.com/rohanddave/ERC-20",
       "image": "/images/projects/token-sale.png",
       "categories": ["BlockChain", "Web3", "DeFi", "Smart Contracts"],

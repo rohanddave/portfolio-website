@@ -1,143 +1,260 @@
-import { Education } from "@/types";
-import Image from "next/image";
-import Link from "next/link";
-import { useMemo } from "react";
+"use client";
 
-interface EducationCardProps {
+import { useState, useEffect, useRef } from "react";
+import { Education } from "@/types";
+import {
+  Calendar,
+  MapPin,
+  GraduationCap,
+  Award,
+  BookOpen,
+  ChevronDown,
+  ChevronUp,
+} from "lucide-react";
+
+type EducationCardProps = {
   education: Education;
-  isLast?: boolean;
-  className?: string;
-}
+  index: number;
+  total: number;
+};
 
 export default function EducationCard({
-  education: edu,
-  isLast = false,
-  className = "",
+  education,
+  index,
+  total,
 }: EducationCardProps) {
-  // Sort all courses chronologically
-  const sortedAllCourses = useMemo(() => {
-    return [...edu.allCourses].sort((a, b) => {
-      // Current courses should appear first
-      if (a.isCurrent && !b.isCurrent) return -1;
-      if (!a.isCurrent && b.isCurrent) return 1;
+  const [showCourses, setShowCourses] = useState(true);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-      // For completed courses, sort by end date (most recent first)
-      if (!a.isCurrent && !b.isCurrent) {
-        return new Date(b.endDate!).getTime() - new Date(a.endDate!).getTime();
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!showCourses || !scrollContainer || education.allCourses.length === 0)
+      return;
+
+    let scrollPosition = 0;
+    const scrollSpeed = 0.8;
+
+    const startScroll = () => {
+      intervalRef.current = setInterval(() => {
+        if (!scrollContainer) return;
+        scrollPosition += scrollSpeed;
+        if (
+          scrollPosition >=
+          scrollContainer.scrollWidth - scrollContainer.clientWidth
+        ) {
+          scrollPosition = 0;
+        }
+        scrollContainer.scrollLeft = scrollPosition;
+      }, 30);
+    };
+
+    const stopScroll = () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
       }
+    };
 
-      // For current courses, sort by start date
-      return new Date(b.startDate).getTime() - new Date(a.startDate).getTime();
-    });
-  }, [edu.allCourses]);
+    const timer = setTimeout(startScroll, 500);
+    scrollContainer.addEventListener("mouseenter", stopScroll);
+    scrollContainer.addEventListener("mouseleave", startScroll);
+
+    return () => {
+      clearTimeout(timer);
+      stopScroll();
+      scrollContainer.removeEventListener("mouseenter", stopScroll);
+      scrollContainer.removeEventListener("mouseleave", startScroll);
+    };
+  }, [showCourses, education.allCourses.length]);
 
   return (
-    <div
-      className={`relative bg-white/5 backdrop-blur-sm rounded-lg p-8 border border-white/10 hover:border-white/20 transition-all duration-300 ${className}`}
-    >
-      {/* Timeline connector */}
-      {!isLast && (
-        <div className="absolute left-8 top-full h-8 w-0.5 bg-white/10"></div>
-      )}
+    <div className="edu-card flex-shrink-0 w-screen h-screen flex flex-col bg-neutral-950">
+      {/* Main Content - Grows to fill space */}
+      <div className="flex-1 flex items-center pb-12">
+        <div className="edu-card-content w-full max-w-6xl mx-auto px-6 lg:px-12">
+          <div className="flex flex-col lg:flex-row items-start justify-center gap-10 lg:gap-20">
+            {/* Left Column - Main Info */}
+            <div className="edu-card-left flex-1 max-w-xl">
+              {/* Index */}
+              <div className="flex items-center gap-3 mb-10">
+                <span className="text-sm font-mono text-neutral-500">
+                  {String(index + 1).padStart(2, "0")} /{" "}
+                  {String(total).padStart(2, "0")}
+                </span>
+                {education.isCurrent && (
+                  <span className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider border border-neutral-700 text-neutral-400 rounded">
+                    Current
+                  </span>
+                )}
+              </div>
 
-      <div className="flex flex-col md:flex-row md:items-start gap-6">
-        {/* Left column - Institution Image and Info */}
-        <div className="md:w-1/3">
-          <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
-            <Image
-              src={edu.image}
-              alt={edu.institution}
-              fill
-              className="object-contain bg-white/5"
-              sizes="(max-width: 768px) 100vw, 33vw"
-            />
+              {/* Institution */}
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white leading-tight tracking-tight mb-3">
+                {education.institution}
+              </h2>
+
+              {/* Degree */}
+              <h3 className="text-lg lg:text-xl text-neutral-500 mb-8">
+                {education.degree}
+              </h3>
+
+              {/* Meta */}
+              <div className="flex flex-wrap items-center gap-6 mb-8 text-sm text-neutral-600">
+                <span className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4" />
+                  {education.period}
+                </span>
+                <span className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4" />
+                  {education.location}
+                </span>
+                {education.gpa && (
+                  <span className="flex items-center gap-2">
+                    <GraduationCap className="w-4 h-4" />
+                    {education.gpa}
+                  </span>
+                )}
+              </div>
+
+              {/* Description */}
+              <p className="text-base text-neutral-400 leading-relaxed">
+                {education.description}
+              </p>
+            </div>
+
+            {/* Right Column - Achievements */}
+            <div className="edu-card-right w-full lg:w-72 flex-shrink-0 lg:self-center">
+              {education.achievements.length > 0 && (
+                <div>
+                  <h3 className="text-[10px] font-medium uppercase tracking-widest text-neutral-700 mb-4">
+                    Achievements
+                  </h3>
+                  <div className="space-y-3">
+                    {education.achievements
+                      .slice(0, 3)
+                      .map((achievement, i) => (
+                        <div
+                          key={i}
+                          className="edu-achievement flex items-start gap-2"
+                        >
+                          <Award className="w-4 h-4 text-neutral-700 flex-shrink-0 mt-0.5" />
+                          <span className="text-sm text-neutral-400 leading-relaxed">
+                            {achievement}
+                          </span>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
-          <Link
-            href={`/education/${encodeURIComponent(edu.institution)}`}
-            className="group"
-          >
-            <h3 className="text-xl font-semibold text-blue-400 group-hover:text-blue-300 transition-colors">
-              {edu.institution}
-            </h3>
-          </Link>
-          <p className="text-gray-300 mt-1">{edu.period}</p>
-          <p className="text-gray-400 text-sm mt-1">{edu.location}</p>
-          <div className="mt-2 flex items-center gap-2">
-            <span className="text-gray-300">GPA: {edu.gpa}</span>
-            {edu.isCurrent && (
-              <span className="px-2 py-0.5 text-xs bg-green-500/20 text-green-400 rounded-full">
-                Current
-              </span>
-            )}
+        </div>
+      </div>
+
+      {/* Courses Strip - Fixed at bottom using flex */}
+      <div className="flex-shrink-0 pb-16">
+        <div className="w-full max-w-6xl mx-auto px-6 lg:px-12">
+          {/* View Courses Button */}
+          <div className="flex flex-col lg:flex-row items-start justify-center gap-10 lg:gap-20">
+            <div className="flex-1 max-w-xl">
+              {education.allCourses.length > 0 && (
+                <button
+                  onClick={() => setShowCourses(!showCourses)}
+                  className="flex items-center gap-2 text-xs text-neutral-500 hover:text-white transition-colors mb-4"
+                >
+                  <BookOpen className="w-3.5 h-3.5" />
+                  <span>
+                    {showCourses ? "Hide" : "View"} Courses (
+                    {education.allCourses.length})
+                  </span>
+                  {showCourses ? (
+                    <ChevronUp className="w-3.5 h-3.5" />
+                  ) : (
+                    <ChevronDown className="w-3.5 h-3.5" />
+                  )}
+                </button>
+              )}
+            </div>
+            <div className="w-full lg:w-72 flex-shrink-0 hidden lg:block" />
           </div>
         </div>
 
-        {/* Right column - Degree, Description, and Details */}
-        <div className="md:w-2/3">
-          <h4 className="text-lg font-medium text-white">{edu.degree}</h4>
-          <p className="text-gray-300 mt-2">{edu.description}</p>
-
-          {/* Achievements */}
-          <div className="mt-4">
-            <h5 className="text-sm font-medium text-gray-300 mb-2">
-              Key Achievements
-            </h5>
-            <ul className="space-y-2">
-              {edu.achievements.map((achievement, i) => (
-                <li key={i} className="flex items-start gap-2">
-                  <svg
-                    className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                  <span className="text-gray-300">{achievement}</span>
-                </li>
-              ))}
-            </ul>
+        {/* Courses Content */}
+        <div
+          className={`transition-all duration-500 overflow-hidden ${
+            showCourses ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          {/* Header */}
+          <div className="w-full max-w-6xl mx-auto px-6 lg:px-12 mb-3">
+            <div className="flex flex-col lg:flex-row items-start justify-center gap-10 lg:gap-20">
+              <div className="flex-1 max-w-xl flex items-center justify-between">
+                <span className="text-[10px] font-medium uppercase tracking-widest text-neutral-700">
+                  Coursework
+                </span>
+                <span className="text-[10px] text-neutral-800">
+                  Hover to pause
+                </span>
+              </div>
+              <div className="w-full lg:w-72 flex-shrink-0 hidden lg:block" />
+            </div>
           </div>
 
-          {/* Courses */}
-          <div className="mt-6">
-            <h5 className="text-sm font-medium text-gray-300 mb-2">
-              Relevant Courses
-            </h5>
-            <div className="flex flex-wrap gap-2">
-              {edu.relevantCourses.map((course) => (
-                <span
-                  key={course}
-                  className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm border border-white/10"
+          {/* Horizontal Scrolling Courses */}
+          <div className="w-full max-w-6xl mx-auto px-6 lg:px-12">
+            <div className="flex flex-col lg:flex-row items-start justify-center gap-10 lg:gap-20">
+              <div className="flex-1 max-w-xl overflow-visible">
+                <div
+                  ref={scrollRef}
+                  className="flex gap-3 overflow-x-auto scrollbar-hide pb-2 -mr-[calc(50vw-50%)] pr-6 lg:pr-12"
                 >
-                  {course}
-                </span>
-              ))}
+                  {education.allCourses.map((course, i) => (
+                    <div
+                      key={i}
+                      className="flex-shrink-0 w-64 px-4 py-3 bg-neutral-900/50 border border-neutral-800/50 rounded-xl hover:border-neutral-700 hover:bg-neutral-900 transition-all"
+                    >
+                      <div className="flex items-start justify-between mb-1">
+                        <div className="flex items-center gap-2">
+                          <span className="text-[10px] font-mono text-neutral-700">
+                            {course.code}
+                          </span>
+                          {course.isCurrent && (
+                            <span className="px-1 py-0.5 text-[8px] uppercase tracking-wider text-neutral-500 bg-neutral-800 rounded">
+                              Now
+                            </span>
+                          )}
+                        </div>
+                        {course.grade && (
+                          <span className="text-[10px] font-mono text-neutral-600">
+                            {course.grade}
+                          </span>
+                        )}
+                      </div>
+                      <h4 className="text-sm font-medium text-neutral-300 truncate mb-2">
+                        {course.name}
+                      </h4>
+                      <div className="flex flex-wrap gap-1">
+                        {course.topics.slice(0, 2).map((topic) => (
+                          <span
+                            key={topic}
+                            className="px-1.5 py-0.5 text-[9px] text-neutral-600 bg-neutral-800/50 rounded"
+                          >
+                            {topic}
+                          </span>
+                        ))}
+                        {course.topics.length > 2 && (
+                          <span className="text-[9px] text-neutral-700">
+                            +{course.topics.length - 2}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="w-full lg:w-72 flex-shrink-0 hidden lg:block" />
             </div>
-            <Link
-              href={`/education/${encodeURIComponent(edu.institution)}`}
-              className="inline-flex items-center gap-1 text-xs text-blue-400 hover:text-blue-300 transition-colors mt-3"
-            >
-              View Detailed Course Information
-              <svg
-                className="w-3 h-3"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </Link>
           </div>
         </div>
       </div>

@@ -1,93 +1,61 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
-import TestimonialModal from "./TestimonialModal";
 import { Testimonial } from "@/types";
+import { Linkedin, Quote } from "lucide-react";
 
-interface TestimonialCardProps {
+type TestimonialCardProps = {
   testimonial: Testimonial;
-}
+};
 
-export function TestimonialCard({ testimonial }: TestimonialCardProps) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const maxLength = 200;
-  const shouldTruncate = testimonial.testimonial.length > maxLength;
-  const displayText = shouldTruncate
-    ? testimonial.testimonial.slice(0, maxLength) + "..."
-    : testimonial.testimonial;
-
-  const handleCardClick = (e: React.MouseEvent) => {
-    // Don't open modal if clicking on the LinkedIn link
-    if ((e.target as HTMLElement).closest("a")) {
-      return;
-    }
-    setIsModalOpen(true);
-  };
-
+export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
   return (
-    <>
-      <div
-        onClick={handleCardClick}
-        className="w-full bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer"
-      >
-        <div className="p-6 space-y-6">
-          {/* Header */}
-          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
-            <div className="space-y-1">
-              <h3 className="text-xl font-semibold text-white">
-                {testimonial.name}
-              </h3>
-              <p className="text-sm text-gray-400">
-                {testimonial.role} at {testimonial.company}
-              </p>
-            </div>
+    <div className="testimonial-card flex flex-col lg:flex-row gap-12 lg:gap-16 w-full">
+      {/* Left - Author Info */}
+      <div className="flex flex-col items-center lg:items-start lg:w-64 flex-shrink-0">
+        {/* Company Logo */}
+        {testimonial.companyLogo && (
+          <div className="w-16 h-16 rounded-2xl bg-white p-3 mb-6">
+            <img
+              src={testimonial.companyLogo}
+              alt={testimonial.company}
+              className="w-full h-full object-contain"
+            />
           </div>
+        )}
 
-          {/* Testimonial */}
-          <div className="space-y-4">
-            <p className="text-gray-300 text-sm leading-relaxed italic">
-              "{displayText}"
-            </p>
+        {/* Author Details */}
+        <h4 className="text-lg font-semibold text-white mb-1">
+          {testimonial.name}
+        </h4>
+        <p className="text-sm text-neutral-400 mb-1">{testimonial.role}</p>
+        <p className="text-sm text-neutral-500 mb-3">{testimonial.company}</p>
 
-            {shouldTruncate && (
-              <span className="inline-block text-xs px-2.5 py-1 rounded-full bg-white/5 text-gray-300 border border-white/10">
-                Read More
-              </span>
-            )}
-          </div>
+        {testimonial.experience && (
+          <p className="text-xs text-neutral-600 mb-4">
+            {testimonial.experience}
+          </p>
+        )}
 
-          {/* LinkedIn Link */}
-          <div className="pt-2" onClick={(e) => e.stopPropagation()}>
-            <Link
-              href={testimonial.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-sm text-blue-400 hover:text-blue-300 transition-colors"
-            >
-              <svg
-                className="w-4 h-4 mr-1"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-              </svg>
-              View LinkedIn Profile
-            </Link>
-          </div>
-        </div>
+        {testimonial.linkedin && (
+          <a
+            href={testimonial.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-xs text-neutral-500 hover:text-white transition-colors"
+          >
+            <Linkedin className="w-4 h-4" />
+            <span>LinkedIn</span>
+          </a>
+        )}
       </div>
 
-      <TestimonialModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        name={testimonial.name}
-        role={testimonial.role}
-        company={testimonial.company}
-        testimonial={testimonial.testimonial}
-        linkedin={testimonial.linkedin}
-        experience={testimonial.experience}
-      />
-    </>
+      {/* Right - Testimonial */}
+      <div className="flex-1">
+        <Quote className="w-10 h-10 text-neutral-800 mb-6" />
+        <p className="text-lg sm:text-xl text-neutral-300 leading-relaxed font-light">
+          {testimonial.testimonial}
+        </p>
+      </div>
+    </div>
   );
 }

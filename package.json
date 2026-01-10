@@ -9,13 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@langchain/openai": "^0.5.10",
     "@vercel/analytics": "^1.5.0",
-    "langchain": "^0.3.24",
-    "next": "15.3.2",
-    "openai": "^4.98.0",
+    "gsap": "^3.14.2",
+    "lucide-react": "^0.562.0",
+    "next": "16.1.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "three": "^0.182.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

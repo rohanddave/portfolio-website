@@ -2,28 +2,32 @@
   "experiences": [
     {
       "company": "Rhombus Power, Inc",
-      "role": "Summer Intern (Full Stack)",
+      "role": "Software Engineer Intern",
       "start_date": "2025-06-01",
-      "end_date": "2025-09-1",
+      "end_date": "2025-08-01",
       "location": "Palo Alto, CA, USA",
-      "description": "Full-stack development focusing on AI-powered solutions",
+      "description": "Software Engineer Intern developing AI-powered fire detection systems and analytics platforms for real-time emergency response",
       "logo": "/images/experience/rhombus.jpeg",
       "relevant_achievements": [
-        "Created and trained an AI model in Python on 25 years of geospatial data, detecting live fires with 95% accuracy",
-        "Spearheaded a team of 5 to build HavenAI in React, Typescript and FastAPI, driving $1M in revenue"
+        "Achieved 95% accuracy for real-time fire alerts by architecting a CNN-LSTM Python model using TensorFlow",
+        "Drove $150K in customer revenue by owning the React/TypeScript web platform for live fire analytics",
+        "Reduced incident response time 20% by implementing observability with CloudWatch dashboards and alerts"
       ],
       "all_achievements": [
-        "Created and trained an AI model in Python on 25 years of geospatial data, detecting live fires with 95% accuracy",
-        "Spearheaded a team of 5 to build HavenAI in React, Typescript and FastAPI, driving $1M in revenue"
+        "Achieved 95% accuracy for real-time fire alerts by architecting a CNN-LSTM Python model using TensorFlow",
+        "Drove $150K in customer revenue by owning the React/TypeScript web platform for live fire analytics",
+        "Reduced incident response time 20% by implementing observability with CloudWatch dashboards and alerts"
       ],
       "technologies": [
-        "TypeScript",
-        "ReactJS",
         "Python",
-        "FastAPI",
+        "TensorFlow",
+        "CNN-LSTM",
+        "TypeScript",
+        "React",
         "AWS",
-        "S3",
-        "AI/ML"
+        "CloudWatch",
+        "Machine Learning",
+        "AI"
       ]
     },
     {
@@ -32,93 +36,89 @@
       "start_date": "2023-08-01",
       "end_date": "2024-08-31",
       "location": "Mumbai, MH, India",
-      "description": "Full-stack and mobile development focusing on educational platforms",
+      "description": "Software Engineer leading feature development and infrastructure improvements for educational platforms serving 100K+ daily active users across web and mobile",
       "logo": "/images/experience/mgh.png",
       "relevant_achievements": [
-        "Developed text-to-speech feature in iOS using native engine and JS bridge, serving 10K+ DAUs across educational resources",
-        "Enhanced user engagement by 75% through implementing data synchronization across web and mobile platforms",
-        "Reduced API response times by 40% by optimizing Redis-based caching for user content",
-        "Enabled real-time language switching through localization, expanding audience by 30% through multi-region support",
-        "Architected a flashcards feature with Swift UI, enabling users to search, favorite, share and download"
+        "Cut feature time-to-market 40% by leading 4 engineers cross functionally with product to ship 10+ releases",
+        "Improved reliability at scale for 100K+ DAUs by unifying 200K+ web/mobile resources via TypeScript and SQL",
+        "Reduced user facing data staleness issues 50% by optimizing Redis cluster caching with TTL and LRU eviction",
+        "Reduced deployment time 20% & regressions 30% by optimizing AWS Lambda deploys and Jest test coverage"
       ],
       "all_achievements": [
-        "Developed text-to-speech feature in iOS using native engine and JS bridge, serving 10K+ DAUs across educational resources",
+        "Cut feature time-to-market 40% by leading 4 engineers cross functionally with product to ship 10+ releases",
+        "Improved reliability at scale for 100K+ DAUs by unifying 200K+ web/mobile resources via TypeScript and SQL",
+        "Reduced user facing data staleness issues 50% by optimizing Redis cluster caching with TTL and LRU eviction",
+        "Reduced deployment time 20% & regressions 30% by optimizing AWS Lambda deploys and Jest test coverage",
+        "Developed text-to-speech feature in iOS using native engine and JS bridge, serving 10K+ DAUs",
         "Enhanced user engagement by 75% through implementing data synchronization across web and mobile platforms",
-        "Reduced API response times by 40% by optimizing Redis-based caching for user content",
         "Enabled real-time language switching through localization, expanding audience by 30% through multi-region support",
-        "Architected a flashcards feature with Swift UI, enabling users to search, favorite, share and download",
+        "Architected a flashcards feature with SwiftUI, enabling users to search, favorite, share and download",
         "Increased test coverage from 40% to 75% using Jest, significantly improving code reliability",
-        "Cut deployment time by 50% by reducing lambda bundle size and improving CI/CD speed",
         "Maintained backward compatibility while adding new content through API versioning",
-        "Integrated a differential diagnosis API with search, filter and sort functionality, reducing diagnosis search time by 40%"
+        "Integrated a differential diagnosis API with search, filter and sort functionality"
       ],
       "technologies": [
         "TypeScript",
+        "SQL",
         "NodeJS",
         "NestJS",
+        "Jest",
+        "Redis",
         "GitHub Actions",
         "Docker",
         "AWS Lambda",
-        "S3",
-        "CloudWatch",
+        "AWS",
         "iOS",
         "Swift",
-        "Android",
-        "Kotlin",
-        "Flutter",
-        "Dart"
+        "SwiftUI"
       ]
     },
     {
-      "company": "TheFridayCompany",
-      "role": "Founder & Founding Engineer",
-      "start_date": "2022-09-01",
+      "company": "The Friday Company",
+      "role": "Founder",
+      "start_date": "2022-08-01",
       "end_date": "2023-08-31",
       "location": "Mumbai, MH, India",
-      "description": "Full-stack and mobile development focusing on turf booking system",
+      "description": "Founded and scaled a B2B SaaS platform for turf booking and management, generating $30K annual revenue with 6 revenue-driving products",
       "logo": "/images/experience/tfc.jpeg",
       "relevant_achievements": [
-        "Led a team of 12, architecting 6+ software products while ensuring scalability and quality standards",
-        "Drove Agile/Scrum processes using Jira and Confluence, increasing team productivity by 40%",
-        "Automated turf booking and recording with 2 Flutter apps and ReactJS admin panel, ranking top 25 in sports apps",
-        "Enhanced data protection via Firebase authentication with Google and OTP OAuth logins, increasing user acquisition by 25%",
-        "Increased user engagement by 40% through real-time notification delivery via Firebase Cloud Messaging"
+        "Generated $30K annual revenue by founding and scaling B2B SaaS with 6 revenue driving products",
+        "Boosted conversions 35% with low-latency sub-200ms reservations via distributed microservices and gRPC",
+        "Protected revenue by eliminating double bookings using PostgreSQL locking and optimistic concurrency control",
+        "Improved margins 15% by reducing video delivery costs through AWS S3 tiering and CDN optimization"
       ],
       "all_achievements": [
+        "Generated $30K annual revenue by founding and scaling B2B SaaS with 6 revenue driving products",
+        "Boosted conversions 35% with low-latency sub-200ms reservations via distributed microservices and gRPC",
+        "Protected revenue by eliminating double bookings using PostgreSQL locking and optimistic concurrency control",
+        "Improved margins 15% by reducing video delivery costs through AWS S3 tiering and CDN optimization",
         "Led a team of 12, architecting 6+ software products while ensuring scalability and quality standards",
         "Drove Agile/Scrum processes using Jira and Confluence, increasing team productivity by 40%",
-        "Reviewed code quality, adhering to best practices and performance standards",
         "Automated turf booking and recording with 2 Flutter apps and ReactJS admin panel, ranking top 25 in sports apps",
-        "Enhanced data protection via Firebase authentication with Google and OTP OAuth logins, increasing user acquisition by 25%",
+        "Enhanced data protection via Firebase authentication with Google and OTP OAuth logins",
         "Increased user engagement by 40% through real-time notification delivery via Firebase Cloud Messaging",
         "Optimized turf discovery by 30% through search and filtering via Google/Apple Maps API",
         "Enhanced transaction flow by integrating with Stripe API, increasing revenue by 25%",
-        "Developed high-performance turf booking system with <200ms response time using OpenAPI REST API",
         "Implemented JWT authentication & role-based authorization, increasing secure access by 70%",
-        "Enabled users to share turfs by implementing universal links and deep linking, increasing user acquisition by 25%",
-        "Enabled users to stream videos by developing a network video viewer module, enhancing user engagement",
+        "Enabled users to share turfs by implementing universal links and deep linking",
         "Optimized video delivery using Cloudflare CDN & AWS S3, reducing load times by 40%"
       ],
       "technologies": [
-        "NestJS",
         "TypeScript",
+        "NestJS",
+        "gRPC",
+        "microservices",
         "PostgreSQL",
         "MongoDB",
         "Redis",
         "Elasticsearch",
         "Stripe API",
+        "AWS S3",
         "Cloudflare CDN",
         "AWS",
         "Docker",
-        "iOS",
-        "Swift",
-        "Android",
-        "Kotlin",
-        "Flutter",
-        "Dart",
         "ReactJS",
-        "HTML",
-        "CSS"
+        "Firebase"
       ]
     }
   ]

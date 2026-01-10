@@ -1,19 +1,21 @@
+export interface Domain {
+  name: string;
+  description: string;
+  skills: Skill[];
+}
+
 export interface Skill {
   name: string;
   proficiency: string;
   description: string;
-  subSkills?: {
-    name: string;
-    proficiency: string;
-    description: string;
-  }[];
+  icon: string;
 }
 
 export interface SkillsData {
   proficiencyScale: {
     [key: string]: string;
   };
-  skills: Skill[];
+  domains: Domain[];
 }
 
 export interface Achievement {
@@ -55,6 +57,7 @@ export interface Testimonial {
   name: string;
   role: string;
   company: string;
+  companyLogo: string;
   testimonial: string;
   linkedin: string;
   experience: string;
@@ -145,11 +148,18 @@ export interface HobbiesData {
   hobbies: Hobby[];
 }
 
+export interface Stat {
+  value: number;
+  suffix: string;
+  label: string;
+}
+
 export interface Profile {
   name: string;
   title: string;
   openToRoles: string[];
   summary: string;
+  stats?: Stat[];
   links: {
     resume: string;
     projects: string;
